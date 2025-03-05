@@ -60,7 +60,7 @@
         {"$GMRInstance":"v1","%Name":"inst_6B29F2BA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6B29F2BA","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":112.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[
-          -27,-2147483648,1,36,-4,41,1,35,-14,-2147483648,6,34,53,51,51,55,32,-14,-2147483648,6,34,61,59,59,63,
+          -27,-2147483648,1,36,-4,41,1,35,-14,-2147483648,6,34,48,51,51,50,32,-14,-2147483648,6,34,56,59,59,58,
           32,-14,-2147483648,1,34,-4,1,1,32,-14,-2147483648,1,34,-4,1,1,32,-14,-2147483648,1,34,-4,1,1,32,-14,
           -2147483648,1,34,-4,1,1,32,-14,-2147483648,1,28,-4,25,1,27,-67,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_japan_inside","path":"tilesets/ts_japan_inside/ts_japan_inside.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

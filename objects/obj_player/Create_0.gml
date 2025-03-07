@@ -9,3 +9,8 @@ sprite[LEFT] = spr_player_left;
 sprite[DOWN] = spr_player_down;
 
 face = DOWN;
+
+hp = 10;
+total_hp = hp;
+damage = 2;
+charge = 0;

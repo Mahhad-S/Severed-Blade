@@ -1,0 +1,1 @@
+data = obj_battle_switcher.enemy_data;

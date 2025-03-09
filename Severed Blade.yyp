@@ -52,6 +52,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Test_battle_room","path":"rooms/Test_battle_room/Test_battle_room.yy",},},
     {"id":{"name":"Test_battle_scene","path":"rooms/Test_battle_scene/Test_battle_scene.yy",},},
+    {"id":{"name":"World_map","path":"rooms/World_map/World_map.yy",},},
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},},
     {"id":{"name":"spr_attack","path":"sprites/spr_attack/spr_attack.yy",},},
     {"id":{"name":"spr_battle_enemy","path":"sprites/spr_battle_enemy/spr_battle_enemy.yy",},},
@@ -77,6 +78,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"OSARA","path":"rooms/OSARA/OSARA.yy",},},
     {"roomId":{"name":"Test_battle_scene","path":"rooms/Test_battle_scene/Test_battle_scene.yy",},},
+    {"roomId":{"name":"World_map","path":"rooms/World_map/World_map.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

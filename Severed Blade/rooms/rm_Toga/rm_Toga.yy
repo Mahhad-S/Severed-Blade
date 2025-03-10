@@ -125,8 +125,8 @@
   ],
   "name":"rm_Toga",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"settlements",
+    "path":"folders/Rooms/settlements.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

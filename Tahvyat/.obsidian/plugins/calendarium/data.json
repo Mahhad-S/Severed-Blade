@@ -1,0 +1,461 @@
+{
+  "addToDefaultIfMissing": true,
+  "calendars": [
+    {
+      "name": "Deidal Calendar",
+      "description": "",
+      "id": "ID_39baeaaafa9b",
+      "showIntercalarySeparately": true,
+      "static": {
+        "incrementDay": false,
+        "firstWeekDay": 0,
+        "overflow": false,
+        "weekdays": [
+          {
+            "type": "day",
+            "name": "Priun",
+            "id": "ID_9ad868ca1a59",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Seduo",
+            "id": "ID_7a68789a0aeb",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Teria",
+            "id": "ID_19f8b91a49aa",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Quor",
+            "id": "ID_2939380bc8bb",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Kinque",
+            "id": "ID_6adbda49d80b",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Lisea",
+            "id": "ID_2abaeaa94849",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Derko",
+            "id": "ID_78a9a8ebfb58",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Octre",
+            "id": "ID_c99b1a286a7b",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Norqu",
+            "id": "ID_c82bc9bbd849",
+            "number": null
+          },
+          {
+            "type": "day",
+            "name": "Dectium",
+            "id": "ID_8a385a8ada29",
+            "number": null
+          }
+        ],
+        "months": [
+          {
+            "name": "Mane",
+            "type": "month",
+            "length": 40,
+            "id": "ID_2b5b9969492a",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Occa",
+            "type": "month",
+            "length": 40,
+            "id": "ID_8b3b2b4ba90a",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Solis",
+            "type": "month",
+            "length": 40,
+            "id": "ID_899b8a99bb6a",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Dinem",
+            "type": "month",
+            "length": 40,
+            "id": "ID_2b7ac8d8494b",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Tae",
+            "type": "month",
+            "length": 40,
+            "id": "ID_3bfa69a94a3b",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Pluvia",
+            "type": "month",
+            "length": 40,
+            "id": "ID_5adb78ea096a",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Tibus",
+            "type": "month",
+            "length": 40,
+            "id": "ID_2a1a0bc828e8",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Zardus",
+            "type": "month",
+            "length": 40,
+            "id": "ID_38690be97859",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Iffen",
+            "type": "month",
+            "length": 40,
+            "id": "ID_39085a3ab85a",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Mirtes",
+            "type": "month",
+            "length": 40,
+            "id": "ID_3baa1bca8b59",
+            "interval": 1,
+            "offset": 0
+          },
+          {
+            "name": "Phobos",
+            "type": "month",
+            "length": 40,
+            "id": "ID_595b6babfa4a",
+            "interval": 1,
+            "offset": 0
+          }
+        ],
+        "moons": [
+          {
+            "name": "Quov",
+            "cycle": 20,
+            "offset": 0,
+            "faceColor": "#ffffff",
+            "shadowColor": "#292b4a",
+            "id": "ID_78ca78790b5a"
+          }
+        ],
+        "displayMoons": true,
+        "displayDayNumber": false,
+        "leapDays": [],
+        "eras": [
+          {
+            "id": "ID_1b8a68a8d9b9",
+            "type": "era",
+            "name": "Era of Origin",
+            "description": "",
+            "format": "EO",
+            "endsYear": false,
+            "isEvent": false,
+            "category": null,
+            "isStartingEra": true,
+            "date": {
+              "day": 1,
+              "month": 0,
+              "year": 750
+            }
+          },
+          {
+            "id": "ID_0b188b4929f8",
+            "type": "era",
+            "name": "Era of Chaos",
+            "description": "",
+            "format": "EC",
+            "endsYear": false,
+            "isEvent": false,
+            "category": null,
+            "isStartingEra": false,
+            "date": {
+              "day": 1,
+              "month": 0,
+              "year": 1
+            },
+            "end": {
+              "day": 40,
+              "month": 10,
+              "year": 85000
+            }
+          },
+          {
+            "id": "ID_2b1a3a58c8b9",
+            "type": "era",
+            "name": "Era of Ashes",
+            "description": "",
+            "format": "EA",
+            "endsYear": false,
+            "isEvent": false,
+            "category": null,
+            "isStartingEra": false,
+            "date": {
+              "day": 1,
+              "month": 0,
+              "year": 85001
+            },
+            "end": {
+              "day": 40,
+              "month": 10,
+              "year": 100000
+            }
+          },
+          {
+            "id": "ID_ba1abb885ae8",
+            "type": "era",
+            "name": "Era of Equilibrium",
+            "description": "",
+            "format": "EE",
+            "endsYear": false,
+            "isEvent": false,
+            "category": null,
+            "isStartingEra": false,
+            "date": {
+              "day": 1,
+              "month": 0,
+              "year": 100001
+            }
+          }
+        ]
+      },
+      "current": {
+        "day": 15,
+        "month": 0,
+        "year": 100750
+      },
+      "events": [
+        {
+          "name": "The Foundation of Hestein",
+          "description": "Hestein is founded as a province",
+          "date": {
+            "day": 39,
+            "month": 9,
+            "year": 450
+          },
+          "id": "ID_5aa8194ba96b",
+          "note": null,
+          "category": null,
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Date"
+        },
+        {
+          "name": "The Foundation of Hestein",
+          "description": "Hestein is founded as a province",
+          "date": {
+            "day": 39,
+            "month": 9,
+            "year": 100450
+          },
+          "id": "ID_e91a5b9ad949",
+          "note": null,
+          "category": null,
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Date"
+        },
+        {
+          "name": "Mozai Crusade",
+          "description": "Hestein declares War against Tenso to reclaim Mozai. Hestein won and annex Mozai and sign a peace treaty with Tenso.",
+          "date": {
+            "day": 24,
+            "month": 10,
+            "year": 100451
+          },
+          "id": "ID_59083908b848",
+          "note": null,
+          "category": null,
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Date"
+        },
+        {
+          "name": "Ketsu's Attempted Invasion",
+          "description": "Ketsu tried to invade the Mozai territory and was forced to withdrew.",
+          "date": {
+            "day": 1,
+            "month": 1,
+            "year": 100457
+          },
+          "id": "ID_58d889d868e9",
+          "note": "Development/Aentis/Data/Historical Events/National/Hestein Empire History/Ketsu's Attempted Invasion.md",
+          "category": null,
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Date"
+        },
+        {
+          "name": "The Retribution War",
+          "description": "",
+          "date": {
+            "month": 1,
+            "day": 2,
+            "year": 100457
+          },
+          "id": "ID_493afb3bdbda",
+          "note": null,
+          "category": null,
+          "sort": {
+            "timestamp": 5e-324,
+            "order": ""
+          },
+          "type": "Range",
+          "end": {
+            "month": 9,
+            "day": 7,
+            "year": 100457
+          }
+        }
+      ],
+      "categories": [],
+      "autoParse": false,
+      "path": [
+        "/"
+      ],
+      "supportInlineEvents": false,
+      "inlineEventTag": "#inline-events",
+      "seasonal": {
+        "seasons": [
+          {
+            "id": "ID_4a2b995a2b69",
+            "name": "Jenous",
+            "type": "Periodic",
+            "color": "#7aee63",
+            "duration": 88,
+            "peak": 0,
+            "weatherOffset": 56,
+            "weatherPeak": 5,
+            "kind": "None"
+          },
+          {
+            "id": "ID_291bc8f8287a",
+            "name": "Maethur",
+            "type": "Periodic",
+            "color": "#d1601f",
+            "duration": 88,
+            "peak": 0,
+            "weatherOffset": 56,
+            "weatherPeak": 5,
+            "kind": "None"
+          },
+          {
+            "id": "ID_5988d8fb1908",
+            "name": "Sindder",
+            "type": "Periodic",
+            "color": "#cb2525",
+            "duration": 88,
+            "peak": 0,
+            "weatherOffset": 56,
+            "weatherPeak": 5,
+            "kind": "None"
+          },
+          {
+            "id": "ID_6a583adab928",
+            "name": "Laghor",
+            "type": "Periodic",
+            "color": "#613bc9",
+            "duration": 88,
+            "peak": 0,
+            "weatherOffset": 56,
+            "weatherPeak": 5,
+            "kind": "None"
+          },
+          {
+            "id": "ID_8b8a1a0a1a4a",
+            "name": "Hobttus",
+            "type": "Periodic",
+            "color": "#00bfff",
+            "duration": 88,
+            "peak": 0,
+            "weatherOffset": 56,
+            "weatherPeak": 5,
+            "kind": "None"
+          }
+        ],
+        "offset": 0,
+        "type": "Periodic",
+        "displayColors": true,
+        "interpolateColors": true,
+        "weather": {
+          "enabled": false,
+          "seed": 1170114816,
+          "tempUnits": "Metric",
+          "windUnits": "Metric",
+          "primaryWindDirection": "E"
+        }
+      },
+      "locations": {
+        "locations": []
+      },
+      "dateFormat": "YYYY-MM-DD"
+    }
+  ],
+  "configDirectory": null,
+  "dailyNotes": false,
+  "dateFormat": "YYYY-MM-DD",
+  "defaultCalendar": "ID_39baeaaafa9b",
+  "eventPreview": false,
+  "exit": {
+    "saving": false,
+    "event": false,
+    "calendar": false,
+    "savingEvent": false
+  },
+  "eventFrontmatter": false,
+  "parseDates": false,
+  "version": {
+    "major": 2,
+    "minor": 0,
+    "patch": 0,
+    "beta": null
+  },
+  "debug": false,
+  "askedToMoveFC": false,
+  "askedAboutSync": false,
+  "syncBehavior": "Ask",
+  "inlineEventsTag": null,
+  "paths": [],
+  "autoParse": true
+}

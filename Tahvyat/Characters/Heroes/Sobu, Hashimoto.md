@@ -1,0 +1,2 @@
+Protagonist
+Class: Samurai

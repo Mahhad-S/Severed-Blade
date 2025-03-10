@@ -1,0 +1,19 @@
+{
+  "templater-obsidian:Development/Syntax/Template.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ],
+  "digitalgarden:publish-multiple-notes": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Z"
+    }
+  ]
+}

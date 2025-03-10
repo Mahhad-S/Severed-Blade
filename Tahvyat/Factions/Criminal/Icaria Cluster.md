@@ -1,0 +1,2 @@
+#factions
+The [[Icaria Cluster]] is an organized crime syndicate that has influence in all of the continent. Their are not very well known since they usually stay on the shadows and utilizes other factions for their own benefit.

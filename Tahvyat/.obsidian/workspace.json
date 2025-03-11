@@ -18,6 +18,12 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "Akuto, Iori",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Akuto, Iori.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Akuto, Iori\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":642},\"to\":{\"line\":4,\"ch\":642}}}"
+                },
+                {
                   "title": "Ikari, Aizen",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Ikari, Aizen.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ikari, Aizen\"}",
@@ -118,13 +124,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Characters/Villains/Akuto, Iori.md",
+                "file": "Locations/Settlements/Nagata Region/Toga.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Akuto, Iori"
+              "title": "Toga"
             }
           }
         ]
@@ -255,7 +261,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Characters/Villains/Akuto, Iori.md",
+                "file": "Locations/Settlements/Nagata Region/Toga.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -265,7 +271,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Akuto, Iori"
+              "title": "Backlinks for Toga"
             }
           },
           {
@@ -365,8 +371,8 @@
   },
   "active": "782cba75f49053a0",
   "lastOpenFiles": [
-    "Untitled.md",
     "Characters/Villains/Akuto, Iori.md",
+    "Untitled.md",
     "Characters/Villains/Ikari, Aizen.md",
     "Characters/Villains/Morren Hart.md",
     "Characters/Villains/Yatsir Amiad.md",

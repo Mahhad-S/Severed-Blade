@@ -1,4 +1,3 @@
-
 Plot: 
 
 Samurai the looks for revenge for its family. The enemy (Aizen) left the sword in the corpse of his family.

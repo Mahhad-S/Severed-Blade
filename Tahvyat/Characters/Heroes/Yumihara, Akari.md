@@ -1,9 +1,9 @@
 #char
 Race: Human
 Ethnicity: Nagatian
-Elementalist Birth: Aqua
+Elementalist Birth: Umbra
 
-Class: Mage
+Class: Shaman + Ventus
 Appearance: Japanese Character
 
 Found in [[Osara]]

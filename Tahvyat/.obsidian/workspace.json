@@ -8,28 +8,123 @@
         "type": "tabs",
         "children": [
           {
-            "id": "50d3b3a49d03dc17",
+            "id": "782cba75f49053a0",
             "type": "leaf",
             "pane-relief:history-v1": {
-              "pos": 1,
+              "pos": 0,
               "stack": [
                 {
-                  "title": "Locations",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Writing/Locations.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Locations\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+                  "state": "{}",
+                  "eState": "{}"
                 },
                 {
-                  "state": "{}",
+                  "title": "Ikari, Aizen",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Ikari, Aizen.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ikari, Aizen\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Morren Hart",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Morren Hart.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Morren Hart\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Yatsir Amiad",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Yatsir Amiad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yatsir Amiad\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Morren Hart",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Morren Hart.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Morren Hart\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Ikari, Aizen",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Ikari, Aizen.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ikari, Aizen\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Akuto, Iori",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Akuto, Iori.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Akuto, Iori\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Ardeshir Azad",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Ardeshir Azad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ardeshir Azad\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Siora Lubella",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Siora Lubella.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Siora Lubella\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Sobu, Hashimoto",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Yumihara, Akari",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":22},\"to\":{\"line\":5,\"ch\":22}}}"
+                },
+                {
+                  "title": "Sobu, Hashimoto",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Ardeshir Azad",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Ardeshir Azad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ardeshir Azad\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Siora Lubella",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Siora Lubella.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Siora Lubella\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":3,\"ch\":23},\"to\":{\"line\":3,\"ch\":23}}}"
+                },
+                {
+                  "title": "Magic System",
+                  "icon": "lucide-layout-dashboard",
+                  "state": "{\"type\":\"canvas\",\"state\":{\"file\":\"Data/Magic System.canvas\",\"viewState\":{\"x\":35.135385254637754,\"y\":-35.903618209413395,\"zoom\":-0.07310049092426862}},\"icon\":\"lucide-layout-dashboard\",\"title\":\"Magic System\"}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Story",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Writing/Story.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Story\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":0},\"to\":{\"line\":11,\"ch\":0}}}"
+                },
+                {
+                  "title": "Graph view",
+                  "icon": "lucide-git-fork",
+                  "state": "{\"type\":\"graph\",\"state\":{},\"icon\":\"lucide-git-fork\",\"title\":\"Graph view\"}",
                   "eState": "{}"
                 }
               ]
             },
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Characters/Villains/Akuto, Iori.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Akuto, Iori"
             }
           }
         ]
@@ -146,42 +241,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4556e5fc2d410ccc",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "CALENDARIUM",
-              "state": {
-                "calendar": "ID_39baeaaafa9b",
-                "ephemeral": {
-                  "viewing": null,
-                  "viewState": 0,
-                  "displaying": {
-                    "day": 15,
-                    "month": 0,
-                    "year": 100750
-                  },
-                  "displayDayNumber": false,
-                  "displaySeasonColors": true,
-                  "interpolateColors": true,
-                  "displayMoons": true,
-                  "displayWeather": true
-                },
-                "id": "ID_ba1bd969a9ba"
-              },
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
             "id": "d9bca58b8dfd4a76",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -196,6 +255,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Characters/Villains/Akuto, Iori.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -205,7 +265,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Akuto, Iori"
             }
           },
           {
@@ -278,8 +338,7 @@
               "title": "Tags"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -304,8 +363,19 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "50d3b3a49d03dc17",
+  "active": "782cba75f49053a0",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Characters/Villains/Akuto, Iori.md",
+    "Characters/Villains/Ikari, Aizen.md",
+    "Characters/Villains/Morren Hart.md",
+    "Characters/Villains/Yatsir Amiad.md",
+    "Characters/Heroes/Ardeshir Azad.md",
+    "Characters/Heroes/Siora Lubella.md",
+    "Characters/Heroes/Sobu, Hashimoto.md",
+    "Characters/Heroes/Yumihara, Akari.md",
+    "Data/Magic System.canvas",
+    "- Games/Severed Blade/Writing/Story.md",
     "- Games/Severed Blade/Writing/Locations.md",
     "Locations/Settlements/Zguk Region/Olgrog.md",
     "Locations/Settlements/Zguk Region/Ezro.md",
@@ -322,17 +392,6 @@
     "Locations/Settlements/Cordonia East Region/Montelia.md",
     "Locations/Forests/Silen Forest.md",
     "Locations/Settlements/Bhar Region/Tenna.md",
-    "Locations/Settlements/Bhar Region/Tajel.md",
-    "Locations/Settlements/Bhar Region/Qardan.md",
-    "Locations/Settlements/Bhar Region/Bergo.md",
-    "Locations/Ports/Venesi Docks.md",
-    "Locations/Ports/Udrol Port.md",
-    "Locations/Ports/Galiaga Docks.md",
-    "Locations/POIs/Hyongo Citadel.md",
-    "Locations/POIs/Solstice Palace.md",
-    "Locations/POIs/Sobu Ruins.md",
-    "Locations/POIs/Gamnar Tower.md",
-    "Data/Magic System.canvas",
     "Deities",
     "Factions/Criminal",
     "Factions/Political",

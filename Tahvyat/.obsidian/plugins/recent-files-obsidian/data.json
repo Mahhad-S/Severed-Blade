@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Ardeshir Azad",
-      "path": "Characters/Heroes/Ardeshir Azad.md"
+      "basename": "Story",
+      "path": "- Games/Severed Blade/Writing/Story.md"
     },
     {
-      "basename": "Siora Lubella",
-      "path": "Characters/Heroes/Siora Lubella.md"
+      "basename": "Locations",
+      "path": "- Games/Severed Blade/Writing/Locations.md"
+    },
+    {
+      "basename": "Magic System",
+      "path": "- Games/Severed Blade/Mechanics/Magic System.md"
+    },
+    {
+      "basename": "Classes",
+      "path": "- Games/Severed Blade/Mechanics/Classes.md"
+    },
+    {
+      "basename": "Resources",
+      "path": "- Games/Severed Blade/Resources.md"
     },
     {
       "basename": "Yumihara, Akari",
@@ -17,28 +29,16 @@
       "path": "Characters/Heroes/Sobu, Hashimoto.md"
     },
     {
-      "basename": "Magic System",
-      "path": "Data/Magic System.canvas"
+      "basename": "Siora Lubella",
+      "path": "Characters/Heroes/Siora Lubella.md"
     },
     {
-      "basename": "Classes",
-      "path": "- Games/Severed Blade/Mechanics/Classes.md"
+      "basename": "Ardeshir Azad",
+      "path": "Characters/Heroes/Ardeshir Azad.md"
     },
     {
-      "basename": "Magic System",
-      "path": "- Games/Severed Blade/Mechanics/Magic System.md"
-    },
-    {
-      "basename": "Aether",
-      "path": "Data/Aether.md"
-    },
-    {
-      "basename": "Resources",
-      "path": "- Games/Severed Blade/Resources.md"
-    },
-    {
-      "basename": "Story",
-      "path": "- Games/Severed Blade/Writing/Story.md"
+      "basename": "Akuto, Iori",
+      "path": "Characters/Villains/Akuto, Iori.md"
     }
   ],
   "omittedPaths": [],

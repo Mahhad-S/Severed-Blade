@@ -18,83 +18,132 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "Story",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Writing/Story.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Story\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":17.09722222222222}"
+                },
+                {
+                  "title": "Locations",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Writing/Locations.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Locations\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Magic System",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Magic System.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Magic System\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Classes",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Classes.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Classes\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Resources",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Resources.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Resources\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Yumihara, Akari",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Sobu, Hashimoto",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
                   "title": "Siora Lubella",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Siora Lubella.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Siora Lubella\"}",
                   "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
                 },
                 {
-                  "title": "Yumihara, Akari",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":11},\"to\":{\"line\":1,\"ch\":11}}}"
-                },
-                {
-                  "title": "Sobu, Hashimoto",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Yumihara, Akari",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Sobu, Hashimoto",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":14},\"to\":{\"line\":1,\"ch\":14}}}"
-                },
-                {
-                  "title": "Yumihara, Akari",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Sobu, Hashimoto",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":11},\"to\":{\"line\":0,\"ch\":11}}}"
-                },
-                {
                   "title": "Ardeshir Azad",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Ardeshir Azad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ardeshir Azad\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":62},\"to\":{\"line\":0,\"ch\":62}}}"
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
                 },
                 {
-                  "title": "Siora Lubella",
+                  "title": "Akuto, Iori",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Siora Lubella.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Siora Lubella\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":33},\"to\":{\"line\":0,\"ch\":0}}}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Akuto, Iori.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Akuto, Iori\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
                 },
                 {
-                  "title": "Ardeshir Azad",
+                  "title": "Ikari, Aizen",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Ardeshir Azad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ardeshir Azad\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":31},\"to\":{\"line\":2,\"ch\":31}}}"
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Ikari, Aizen.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ikari, Aizen\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Aether",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Data/Aether.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Aether\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
                 },
                 {
                   "title": "Magic System",
                   "icon": "lucide-layout-dashboard",
-                  "state": "{\"type\":\"canvas\",\"state\":{\"file\":\"Data/Magic System.canvas\",\"viewState\":{\"x\":40.81009658630148,\"y\":-87.52925884118908,\"zoom\":-0.4060297604139394}},\"icon\":\"lucide-layout-dashboard\",\"title\":\"Magic System\"}",
+                  "state": "{\"type\":\"canvas\",\"state\":{\"file\":\"Data/Magic System.canvas\",\"viewState\":{\"x\":33.459833795013864,\"y\":134.9806094182826,\"zoom\":-1.4871385478071393}},\"icon\":\"lucide-layout-dashboard\",\"title\":\"Magic System\"}",
                   "eState": "{}"
+                },
+                {
+                  "title": "Sobu Clan",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Factions/Sobu Clan.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu Clan\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Montelia",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Locations/Settlements/Cordonia East Region/Montelia.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Montelia\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Venesi",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Locations/Settlements/Cordonia East Region/Venesi.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Venesi\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Krassut Region",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Regions/Krassut Region.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Krassut Region\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Cordonia East Region",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Regions/Cordonia East Region.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Cordonia East Region\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Bhar Region",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Regions/Bhar Region.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Bhar Region\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Ardeshir Azad",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Ardeshir Azad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ardeshir Azad\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
                 }
               ]
             },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Characters/Heroes/Ardeshir Azad.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Ardeshir Azad"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -192,8 +241,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -242,8 +291,8 @@
                 },
                 "id": "ID_ba1bd969a9ba"
               },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -361,50 +410,50 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-kanban:Create new board": false,
       "fantasy-content-generator:Fantasy Generators": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "timelines-revamped:Insert Timeline Event": false,
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false,
+      "calendarium:Open Calendarium": false,
       "obsidian42-brat:BRAT": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "digitalgarden:Digital Garden Publication Center": false,
-      "templater-obsidian:Templater": false,
-      "calendarium:Open Calendarium": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "ba7ae67ac4980754",
   "lastOpenFiles": [
-    "Characters/Heroes/Siora Lubella.md",
+    "- Games/Severed Blade/Writing/Story.md",
+    "- Games/Severed Blade/Writing/Locations.md",
+    "- Games/Severed Blade/Mechanics/Magic System.md",
+    "- Games/Severed Blade/Mechanics/Classes.md",
+    "- Games/Severed Blade/Resources.md",
     "Characters/Heroes/Yumihara, Akari.md",
     "Characters/Heroes/Sobu, Hashimoto.md",
+    "Characters/Heroes/Siora Lubella.md",
     "Characters/Heroes/Ardeshir Azad.md",
-    "Data/Magic System.canvas",
-    "- Games/Severed Blade/Mechanics/Classes.md",
-    "- Games/Severed Blade/Mechanics/Magic System.md",
-    "Data/Aether.md",
-    "Data",
-    "- Games/Severed Blade/Resources.md",
-    "- Games/Severed Blade/Writing",
-    "- Games/Severed Blade/Writing/Story.md",
-    "- Games/Severed Blade/Mechanics",
     "Characters/Villains/Akuto, Iori.md",
     "Characters/Villains/Ikari, Aizen.md",
-    "- Games/Severed Blade/Writing/Locations.md",
+    "Data/Aether.md",
+    "Data/Magic System.canvas",
+    "Factions/Sobu Clan.md",
+    "Locations/Settlements/Cordonia East Region/Montelia.md",
+    "Locations/Settlements/Cordonia East Region/Venesi.md",
+    "Regions/Krassut Region.md",
+    "Regions/Cordonia East Region.md",
+    "Regions/Bhar Region.md",
+    "Data",
+    "- Games/Severed Blade/Writing",
+    "- Games/Severed Blade/Mechanics",
     "Characters/Untitled",
     "Characters/Villains",
     "Characters/Heroes",
     "Locations/POIs/Hyongo Citadel.md",
     "Locations/Camps/Splitton Camp.md",
-    "Factions/Sobu Clan.md",
     "Locations/Camps/Ickpoint Camp.md",
     "Locations/Camps/Brekog Camp.md",
     "Locations/Camps/Jestrull Camp.md",
     "Locations/Camps",
     "Locations/Caves/Raveni Cave.md",
     "Locations/Caves/Vethea Cave.md",
-    "Locations/Caves/Febria Cave.md",
-    "Locations/Caves/Deserto Cave.md",
-    "Locations/Caves/Picenza Cave.md",
-    "Locations/Caves/Albak Cave.md",
-    "Locations/Caves/Zlita Cave.md",
     "Locations/Ports",
     "Locations/Dungeons",
     "Locations",

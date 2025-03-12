@@ -20,6 +20,7 @@
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"battletest","folderPath":"folders/Rooms/battletest.yy","name":"battletest","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"shops","folderPath":"folders/Rooms/shops.yy","name":"shops","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"settlements","folderPath":"folders/Rooms/settlements.yy","name":"settlements","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -54,6 +55,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
+    {"id":{"name":"rm_nagato_itemshop","path":"rooms/rm_nagato_itemshop/rm_nagato_itemshop.yy",},},
     {"id":{"name":"rm_Osara","path":"rooms/rm_Osara/rm_Osara.yy",},},
     {"id":{"name":"rm_overworld","path":"rooms/rm_overworld/rm_overworld.yy",},},
     {"id":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},
@@ -91,6 +93,7 @@
     {"roomId":{"name":"rm_test_battlescene","path":"rooms/rm_test_battlescene/rm_test_battlescene.yy",},},
     {"roomId":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
     {"roomId":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
+    {"roomId":{"name":"rm_nagato_itemshop","path":"rooms/rm_nagato_itemshop/rm_nagato_itemshop.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

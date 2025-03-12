@@ -53,6 +53,7 @@
     {"id":{"name":"obj_mini_player","path":"objects/obj_mini_player/obj_mini_player.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
     {"id":{"name":"rm_Osara","path":"rooms/rm_Osara/rm_Osara.yy",},},
     {"id":{"name":"rm_overworld","path":"rooms/rm_overworld/rm_overworld.yy",},},
     {"id":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},
@@ -89,6 +90,7 @@
     {"roomId":{"name":"rm_Osara","path":"rooms/rm_Osara/rm_Osara.yy",},},
     {"roomId":{"name":"rm_test_battlescene","path":"rooms/rm_test_battlescene/rm_test_battlescene.yy",},},
     {"roomId":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
+    {"roomId":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

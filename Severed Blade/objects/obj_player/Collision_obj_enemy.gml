@@ -4,6 +4,6 @@ var _switcher = instance_create_depth(0, 0, 0, obj_battle_switcher);
 
 _switcher.player_data = self;
 _switcher.enemy_data = other;
-_switcher.original_room = Test_battle_room;
+_switcher.original_room = rm_test_battleroom;
 
-room_goto(Test_battle_scene);
+room_goto(rm_test_battlescene);

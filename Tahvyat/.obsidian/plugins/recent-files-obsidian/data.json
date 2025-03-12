@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Toga",
-      "path": "Locations/Settlements/Nagata Region/Toga.md"
+      "basename": "Classes",
+      "path": "- Games/Severed Blade/Mechanics/Classes.md"
+    },
+    {
+      "basename": "Magic System",
+      "path": "- Games/Severed Blade/Mechanics/Magic System.md"
+    },
+    {
+      "basename": "Locations",
+      "path": "- Games/Severed Blade/Writing/Locations.md"
     },
     {
       "basename": "Akuto, Iori",
       "path": "Characters/Villains/Akuto, Iori.md"
+    },
+    {
+      "basename": "Sobu, Hashimoto",
+      "path": "Characters/Heroes/Sobu, Hashimoto.md"
+    },
+    {
+      "basename": "Sobu Clan",
+      "path": "Factions/Political/Sobu Clan.md"
     },
     {
       "basename": "Ikari, Aizen",
@@ -21,24 +37,8 @@
       "path": "Characters/Villains/Yatsir Amiad.md"
     },
     {
-      "basename": "Ardeshir Azad",
-      "path": "Characters/Heroes/Ardeshir Azad.md"
-    },
-    {
-      "basename": "Siora Lubella",
-      "path": "Characters/Heroes/Siora Lubella.md"
-    },
-    {
-      "basename": "Sobu, Hashimoto",
-      "path": "Characters/Heroes/Sobu, Hashimoto.md"
-    },
-    {
       "basename": "Yumihara, Akari",
       "path": "Characters/Heroes/Yumihara, Akari.md"
-    },
-    {
-      "basename": "Magic System",
-      "path": "Data/Magic System.canvas"
     }
   ],
   "omittedPaths": [],

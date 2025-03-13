@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_diagonal_road",
+  "%Name":"ts_overworld_japan",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_diagonal_road",
-  "out_columns":3,
+  "name":"ts_overworld_japan",
+  "out_columns":16,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_diagonal_road",
-    "path":"sprites/spr_diagonal_road/spr_diagonal_road.yy",
+    "name":"spr_overworld_japan",
+    "path":"sprites/spr_overworld_japan/spr_overworld_japan.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":10,
+  "tile_count":256,
 }

@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_diagonal_road",
+  "%Name":"spr_overworld_japan",
   "bboxMode":0,
-  "bbox_bottom":31,
-  "bbox_left":0,
-  "bbox_right":79,
+  "bbox_bottom":255,
+  "bbox_left":1,
+  "bbox_right":254,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e69dacf4-78b9-4676-a64b-5d7999892d05","name":"e69dacf4-78b9-4676-a64b-5d7999892d05","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7ecd80ff-c6a2-4c96-ba69-2e53c889c5c4","name":"7ecd80ff-c6a2-4c96-ba69-2e53c889c5c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":32,
+  "height":256,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"36aea55b-a650-485d-bca8-aa69959e91ec","blendMode":0,"displayName":"default","isLocked":false,"name":"36aea55b-a650-485d-bca8-aa69959e91ec","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"491b9c2b-5452-4c4d-984d-7f0bc6e21159","blendMode":0,"displayName":"default","isLocked":false,"name":"491b9c2b-5452-4c4d-984d-7f0bc6e21159","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_diagonal_road",
+  "name":"spr_overworld_japan",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_diagonal_road",
+    "%Name":"spr_overworld_japan",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_diagonal_road",
+    "name":"spr_overworld_japan",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e69dacf4-78b9-4676-a64b-5d7999892d05","path":"sprites/spr_diagonal_road/spr_diagonal_road.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ba6b8027-f7bc-4902-abc7-3782662513c0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7ecd80ff-c6a2-4c96-ba69-2e53c889c5c4","path":"sprites/spr_overworld_japan/spr_overworld_japan.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"83664494-0c87-4b1f-b6f8-c00daa1cb492","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":80,
+  "width":256,
 }

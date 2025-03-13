@@ -1,0 +1,8 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"OSARA","order":1,"path":"rooms/OSARA/OSARA.yy",},
+    {"name":"spr_japan_master_tiles","order":1,"path":"sprites/spr_japan_master_tiles/spr_japan_master_tiles.yy",},
+    {"name":"ts_japan_master","order":1,"path":"tilesets/ts_japan_master/ts_japan_master.yy",},
+  ],
+}

@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Toga",
+      "path": "Locations/Settlements/Nagata Region/Toga.md"
+    },
+    {
+      "basename": "Akuto, Iori",
+      "path": "Characters/Villains/Akuto, Iori.md"
+    },
+    {
+      "basename": "Ikari, Aizen",
+      "path": "Characters/Villains/Ikari, Aizen.md"
+    },
+    {
+      "basename": "Morren Hart",
+      "path": "Characters/Villains/Morren Hart.md"
+    },
+    {
+      "basename": "Yatsir Amiad",
+      "path": "Characters/Villains/Yatsir Amiad.md"
+    },
+    {
       "basename": "Ardeshir Azad",
       "path": "Characters/Heroes/Ardeshir Azad.md"
     },
@@ -9,36 +29,16 @@
       "path": "Characters/Heroes/Siora Lubella.md"
     },
     {
-      "basename": "Yumihara, Akari",
-      "path": "Characters/Heroes/Yumihara, Akari.md"
-    },
-    {
       "basename": "Sobu, Hashimoto",
       "path": "Characters/Heroes/Sobu, Hashimoto.md"
     },
     {
+      "basename": "Yumihara, Akari",
+      "path": "Characters/Heroes/Yumihara, Akari.md"
+    },
+    {
       "basename": "Magic System",
       "path": "Data/Magic System.canvas"
-    },
-    {
-      "basename": "Classes",
-      "path": "- Games/Severed Blade/Mechanics/Classes.md"
-    },
-    {
-      "basename": "Magic System",
-      "path": "- Games/Severed Blade/Mechanics/Magic System.md"
-    },
-    {
-      "basename": "Aether",
-      "path": "Data/Aether.md"
-    },
-    {
-      "basename": "Resources",
-      "path": "- Games/Severed Blade/Resources.md"
-    },
-    {
-      "basename": "Story",
-      "path": "- Games/Severed Blade/Writing/Story.md"
     }
   ],
   "omittedPaths": [],

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "507c7f79b23d0e68",
+        "id": "ac57c0c2e8104e98",
         "type": "tabs",
         "children": [
           {
-            "id": "ba7ae67ac4980754",
+            "id": "fa0d3ba3ba50bb23",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -16,85 +16,14 @@
                 {
                   "state": "{}",
                   "eState": "{}"
-                },
-                {
-                  "title": "Siora Lubella",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Siora Lubella.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Siora Lubella\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Yumihara, Akari",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":11},\"to\":{\"line\":1,\"ch\":11}}}"
-                },
-                {
-                  "title": "Sobu, Hashimoto",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Yumihara, Akari",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Sobu, Hashimoto",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":1,\"ch\":14},\"to\":{\"line\":1,\"ch\":14}}}"
-                },
-                {
-                  "title": "Yumihara, Akari",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Yumihara, Akari.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Yumihara, Akari\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Sobu, Hashimoto",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":11},\"to\":{\"line\":0,\"ch\":11}}}"
-                },
-                {
-                  "title": "Ardeshir Azad",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Ardeshir Azad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ardeshir Azad\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":62},\"to\":{\"line\":0,\"ch\":62}}}"
-                },
-                {
-                  "title": "Siora Lubella",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Siora Lubella.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Siora Lubella\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":33},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Ardeshir Azad",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Ardeshir Azad.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Ardeshir Azad\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":31},\"to\":{\"line\":2,\"ch\":31}}}"
-                },
-                {
-                  "title": "Magic System",
-                  "icon": "lucide-layout-dashboard",
-                  "state": "{\"type\":\"canvas\",\"state\":{\"file\":\"Data/Magic System.canvas\",\"viewState\":{\"x\":40.81009658630148,\"y\":-87.52925884118908,\"zoom\":-0.4060297604139394}},\"icon\":\"lucide-layout-dashboard\",\"title\":\"Magic System\"}",
-                  "eState": "{}"
                 }
               ]
             },
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Characters/Heroes/Ardeshir Azad.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Ardeshir Azad"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -192,8 +121,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -211,42 +140,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4556e5fc2d410ccc",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "CALENDARIUM",
-              "state": {
-                "calendar": "ID_39baeaaafa9b",
-                "ephemeral": {
-                  "viewing": null,
-                  "viewState": 0,
-                  "displaying": {
-                    "day": 15,
-                    "month": 0,
-                    "year": 100750
-                  },
-                  "displayDayNumber": false,
-                  "displaySeasonColors": true,
-                  "interpolateColors": true,
-                  "displayMoons": true,
-                  "displayWeather": true
-                },
-                "id": "ID_ba1bd969a9ba"
-              },
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
-            }
-          },
-          {
             "id": "d9bca58b8dfd4a76",
             "type": "leaf",
             "pane-relief:history-v1": {
@@ -261,6 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Locations/Settlements/Nagata Region/Toga.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -270,7 +164,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Toga"
             }
           },
           {
@@ -343,8 +237,7 @@
               "title": "Tags"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -361,53 +254,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-kanban:Create new board": false,
       "fantasy-content-generator:Fantasy Generators": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "timelines-revamped:Insert Timeline Event": false,
       "timelines-revamped:Insert Timeline Event (Frontmatter)": false,
       "obsidian42-brat:BRAT": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "digitalgarden:Digital Garden Publication Center": false,
       "templater-obsidian:Templater": false,
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "ba7ae67ac4980754",
+  "active": "fa0d3ba3ba50bb23",
   "lastOpenFiles": [
-    "Characters/Heroes/Siora Lubella.md",
-    "Characters/Heroes/Yumihara, Akari.md",
-    "Characters/Heroes/Sobu, Hashimoto.md",
-    "Characters/Heroes/Ardeshir Azad.md",
-    "Data/Magic System.canvas",
-    "- Games/Severed Blade/Mechanics/Classes.md",
-    "- Games/Severed Blade/Mechanics/Magic System.md",
-    "Data/Aether.md",
-    "Data",
-    "- Games/Severed Blade/Resources.md",
-    "- Games/Severed Blade/Writing",
-    "- Games/Severed Blade/Writing/Story.md",
-    "- Games/Severed Blade/Mechanics",
+    "Locations/Settlements/Nagata Region/Toga.md",
     "Characters/Villains/Akuto, Iori.md",
+    "Untitled.md",
     "Characters/Villains/Ikari, Aizen.md",
+    "Characters/Villains/Morren Hart.md",
+    "Characters/Villains/Yatsir Amiad.md",
+    "Characters/Heroes/Ardeshir Azad.md",
+    "Characters/Heroes/Siora Lubella.md",
+    "Characters/Heroes/Sobu, Hashimoto.md",
+    "Characters/Heroes/Yumihara, Akari.md",
+    "Data/Magic System.canvas",
+    "- Games/Severed Blade/Writing/Story.md",
     "- Games/Severed Blade/Writing/Locations.md",
+    "Locations/Settlements/Zguk Region/Olgrog.md",
+    "Locations/Settlements/Zguk Region/Ezro.md",
+    "Locations/Settlements/Zguk Region/Brohg.md",
+    "Locations/Settlements/Silvahn Region/Lenora.md",
+    "Locations/Settlements/Silvahn Region/Rhous.md",
+    "Locations/Settlements/Silvahn Region/Mhalert.md",
+    "Locations/Settlements/Nagata Region/Osara.md",
+    "Locations/Settlements/Krassut Region/Tharmut.md",
+    "Locations/Settlements/Cordonia West Region/Galiaga.md",
+    "Locations/Settlements/Cordonia West Region/Barcega.md",
+    "Locations/Settlements/Cordonia East Region/Venesi.md",
+    "Locations/Settlements/Cordonia East Region/Montelia.md",
+    "Locations/Forests/Silen Forest.md",
+    "Locations/Settlements/Bhar Region/Tenna.md",
+    "Deities",
+    "Factions/Criminal",
+    "Factions/Political",
+    "Data",
+    "- Games/Severed Blade/Writing",
+    "- Games/Severed Blade/Mechanics",
     "Characters/Untitled",
     "Characters/Villains",
     "Characters/Heroes",
-    "Locations/POIs/Hyongo Citadel.md",
-    "Locations/Camps/Splitton Camp.md",
-    "Factions/Sobu Clan.md",
-    "Locations/Camps/Ickpoint Camp.md",
-    "Locations/Camps/Brekog Camp.md",
-    "Locations/Camps/Jestrull Camp.md",
     "Locations/Camps",
-    "Locations/Caves/Raveni Cave.md",
-    "Locations/Caves/Vethea Cave.md",
-    "Locations/Caves/Febria Cave.md",
-    "Locations/Caves/Deserto Cave.md",
-    "Locations/Caves/Picenza Cave.md",
-    "Locations/Caves/Albak Cave.md",
-    "Locations/Caves/Zlita Cave.md",
-    "Locations/Ports",
-    "Locations/Dungeons",
-    "Locations",
     "Development/Aentis/Data/Timelines/Canvas/Hestein Empire Timeline.canvas",
     "Pasted image 20240817172155.png",
     "Development/Aentis/Data/Historical Events/Country/Hestein Empire HE/Hestein History Timeline.canvas"

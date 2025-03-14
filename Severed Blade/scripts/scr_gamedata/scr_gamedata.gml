@@ -18,9 +18,9 @@ global.party =
 //Enemy Data
 global.enemies =
 {
-	slime:
+	slimeG:
 	{
-		name: "Slime",
+		name: "Green Slime",
 		hp: 10,
 		hp_max: 10,
 		mp: 10,
@@ -28,7 +28,7 @@ global.enemies =
 		strength: 10,
 		intelligence: 10,
 		dexterity: 10,
-		sprites : {},
+		sprites : { idle: spr_slime },
 		actions : [],
 		xpValue : 15,
 		AIscript : function()

@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_overworld_mountain",
+  "%Name":"ts_overworld_forest",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_overworld_mountain",
-  "out_columns":17,
+  "name":"ts_overworld_forest",
+  "out_columns":16,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_overworld_mountain",
-    "path":"sprites/spr_overworld_mountain/spr_overworld_mountain.yy",
+    "name":"spr_overworld_forest",
+    "path":"sprites/spr_overworld_forest/spr_overworld_forest.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":304,
+  "tile_count":256,
 }

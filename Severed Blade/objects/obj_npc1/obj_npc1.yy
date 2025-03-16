@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oNPCParent",
+  "%Name":"obj_npc1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oNPCParent",
+  "name":"obj_npc1",
   "overriddenProperties":[],
   "parent":{
     "name":"NPCs",
-    "path":"folders/Objects/AI/NPCs.yy",
+    "path":"folders/Objects/NPCs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_npc1_down",
+    "path":"sprites/spr_npc1_down/spr_npc1_down.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

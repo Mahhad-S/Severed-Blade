@@ -33,6 +33,15 @@ if place_meeting(x, y + yspd, obj_wall) == true {
 	yspd = 0
 }
 
+if place_meeting(x + xspd, y, obj_npc1) == true {
+	xspd = 0
+}
+
+if place_meeting(x, y + yspd, obj_npc1) == true {
+	yspd = 0
+}
+	
+
 //move player
 x += xspd;
 y += yspd;

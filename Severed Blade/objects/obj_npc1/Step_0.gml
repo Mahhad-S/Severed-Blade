@@ -14,3 +14,11 @@ if (direction >= 226 && direction <= 305) {
 	sprite_index = spr_npc1_down;
 	image_xscale = 1;
 }
+
+if place_meeting(x, y, obj_player) == true {
+	path_speed = 0;
+	image_speed = 0;
+} else {
+	path_speed = 0.5
+	image_speed = 1;
+}

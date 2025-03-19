@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_overworld_A",
+  "%Name":"ts_overworld_ruins",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_overworld_A",
-  "out_columns":11,
+  "name":"ts_overworld_ruins",
+  "out_columns":32,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_overworld_A",
-    "path":"sprites/spr_overworld_A/spr_overworld_A.yy",
+    "name":"spr_overwolrd_ruins",
+    "path":"sprites/spr_overwolrd_ruins/spr_overwolrd_ruins.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":128,
+  "tile_count":1014,
 }

@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f6f68d3e-87c3-42ff-888a-ad6d9b7330b5","name":"f6f68d3e-87c3-42ff-888a-ad6d9b7330b5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"dc5d969e-82cb-4893-8a63-2f454f468e61","name":"dc5d969e-82cb-4893-8a63-2f454f468e61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":928,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"5869eae6-563d-4906-bf4d-498cb3c6e667","blendMode":0,"displayName":"default","isLocked":false,"name":"5869eae6-563d-4906-bf4d-498cb3c6e667","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"daf18d6a-ec2a-4ddb-8431-f2e80bf579cd","blendMode":0,"displayName":"default","isLocked":false,"name":"daf18d6a-ec2a-4ddb-8431-f2e80bf579cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_japan_master_tiles",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f6f68d3e-87c3-42ff-888a-ad6d9b7330b5","path":"sprites/spr_japan_master_tiles/spr_japan_master_tiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"98a81554-804d-4d6f-8991-5ffff831f09f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dc5d969e-82cb-4893-8a63-2f454f468e61","path":"sprites/spr_japan_master_tiles/spr_japan_master_tiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"23748d5c-592e-4325-8abe-956b4b02de30","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

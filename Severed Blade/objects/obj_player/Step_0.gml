@@ -1,58 +1,12 @@
-right_key = keyboard_check(vk_right);
-left_key = keyboard_check(vk_left);
-up_key = keyboard_check(vk_up);
-down_key = keyboard_check(vk_down);
+right_key = keyboard_check(vk_right) ||  keyboard_check(ord("D"));
+left_key = keyboard_check(vk_left) ||  keyboard_check(ord("A"));
+up_key = keyboard_check(vk_up) ||  keyboard_check(ord("W"));
+down_key = keyboard_check(vk_down) ||  keyboard_check(ord("S"));
+
+activate_key = keyboard_check_pressed(vk_space);
+item_key = keyboard_check_pressed(vk_control);
 
 xspd = (right_key - left_key) * move_spd;
 yspd = (down_key - up_key) * move_spd;
 
-//set sprite
-mask_index = sprite[DOWN]
-if yspd == 0{
-	if xspd > 0 {face = RIGHT};
-	if xspd < 0 {face = LEFT};
-}
-if xspd > 0 && face == LEFT {face = RIGHT};
-if xspd < 0 && face == RIGHT {face = LEFT};
-
-if xspd == 0{
-	if yspd > 0 {face = DOWN};
-	if yspd < 0 {face = UP};
-}
-if yspd > 0 && face == UP {face = DOWN};
-if yspd < 0 && face == DOWN {face = UP};
-
-sprite_index = sprite[face];
-
-//collisions
-if place_meeting(x + xspd, y, obj_wall) == true {
-	xspd = 0
-}
-
-if place_meeting(x, y + yspd, obj_wall) == true {
-	yspd = 0
-}
-
-if place_meeting(x + xspd, y, obj_npc1) == true {
-	xspd = 0
-}
-
-if place_meeting(x, y + yspd, obj_npc1) == true {
-	yspd = 0
-}
-	
-
-//move player
-x += xspd;
-y += yspd;
-
-//animate
-if xspd == 0 && yspd == 0 {
-	image_index = 0;
-}
-
-//check for hp after battle
-if (hp <= 0) {
-	game_restart();
-}
-
+if (!global.gamePaused) script_execute(state);

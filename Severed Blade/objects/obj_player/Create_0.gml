@@ -1,3 +1,5 @@
+state = scr_PlayerStateFree;
+
 xspd = 0;
 yspd = 0;
 

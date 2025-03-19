@@ -1,0 +1,56 @@
+function scr_PlayerStateFree(){
+	//set sprite
+	mask_index = sprite[DOWN]
+	if yspd == 0{
+		if xspd > 0 {face = RIGHT};
+		if xspd < 0 {face = LEFT};
+	}
+	if xspd > 0 && face == LEFT {face = RIGHT};
+	if xspd < 0 && face == RIGHT {face = LEFT};
+
+	if xspd == 0{
+		if yspd > 0 {face = DOWN};
+		if yspd < 0 {face = UP};
+	}
+	if yspd > 0 && face == UP {face = DOWN};
+	if yspd < 0 && face == DOWN {face = UP};
+
+	sprite_index = sprite[face];
+
+	//collisions
+	if place_meeting(x + xspd, y, obj_wall) == true {
+		xspd = 0
+	}
+
+	if place_meeting(x, y + yspd, obj_wall) == true {
+		yspd = 0
+	}
+
+	if place_meeting(x + xspd, y, obj_npc1) == true {
+		xspd = 0
+	}
+
+	if place_meeting(x, y + yspd, obj_npc1) == true {
+		yspd = 0
+	}
+	
+
+	//move player
+	x += xspd;
+	y += yspd;
+
+	//animate
+	if xspd == 0 && yspd == 0 {
+		image_index = 0;
+	}
+
+	//check for hp after battle
+	if (hp <= 0) {
+		game_restart();
+	}
+	
+	//change state
+	//if (keyactivate) {
+	//state = ;}
+	
+}

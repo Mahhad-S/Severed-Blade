@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_overworld_treetrans",
+  "%Name":"ts_overworld_towns",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_overworld_treetrans",
-  "out_columns":6,
+  "name":"ts_overworld_towns",
+  "out_columns":18,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_overworld_treetrans",
-    "path":"sprites/spr_overworld_treetrans/spr_overworld_treetrans.yy",
+    "name":"spr_overworld_towns",
+    "path":"sprites/spr_overworld_towns/spr_overworld_towns.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":36,
+  "tile_count":320,
 }

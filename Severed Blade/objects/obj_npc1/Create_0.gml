@@ -1,1 +1,1 @@
-path_start(NPC1_path, 0.5, path_action_reverse, true);
+path_start(NPC1_path, 0.5, path_action_continue, true);

@@ -1,17 +1,11 @@
-state = scr_PlayerStateFree;
-lastState = state;
-
+image_speed = 0;
 xspd = 0;
 yspd = 0;
+speedWalk = 2.0;
 
-move_spd = 1;
-
-sprite[RIGHT] = spr_player_right;
-sprite[UP] = spr_player_up;
-sprite[LEFT] = spr_player_left;
-sprite[DOWN] = spr_player_down;
-
-face = DOWN;
+spriteWalk = spr_player_walk;
+spriteIdle = spr_player;
+localFrame = 0;
 
 hp = 10;
 total_hp = hp;

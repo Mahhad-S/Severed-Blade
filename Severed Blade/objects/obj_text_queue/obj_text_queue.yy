@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_room_Toga",
+  "%Name":"obj_text_queue",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_room_Toga",
+  "name":"obj_text_queue",
   "overriddenProperties":[],
   "parent":{
-    "name":"room transitions",
-    "path":"folders/Objects/room transitions.yy",
+    "name":"Text",
+    "path":"folders/Objects/Text.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_activate",
-    "path":"sprites/spr_activate/spr_activate.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_room",
-    "path":"sprites/spr_room/spr_room.yy",
+    "name":"spr_activate",
+    "path":"sprites/spr_activate/spr_activate.yy",
   },
   "spriteMaskId":null,
   "visible":false,

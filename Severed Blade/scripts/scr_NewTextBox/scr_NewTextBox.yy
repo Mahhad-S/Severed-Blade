@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_NineSliceBoxStretched",
+  "%Name":"scr_NewTextBox",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_NineSliceBoxStretched",
+  "name":"scr_NewTextBox",
   "parent":{
     "name":"Text",
     "path":"folders/Scripts/Text.yy",

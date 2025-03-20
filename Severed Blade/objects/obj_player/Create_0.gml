@@ -1,4 +1,5 @@
 state = scr_PlayerStateFree;
+lastState = state;
 
 xspd = 0;
 yspd = 0;

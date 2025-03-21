@@ -3,8 +3,7 @@ function PlayerStateFree(){
 	xspd = lengthdir_x(input_mag * speedWalk, input_dir);
 	yspd = lengthdir_y(input_mag * speedWalk, input_dir);
 
-	x += xspd;
-	y += yspd;
+	PlayerCollision();
 
 	//Update -Sprite Index
 	var _oldSprite = sprite_index;
@@ -25,7 +24,7 @@ function PlayerStateFree(){
         activate = instance_position(x+_activateX, y+_activateY, obj_entity);
         //2. If there is nothing, or there is something, but it has no script - nothing
         if (activate == noone || activate.entityActivateScript == -1) {
-             state = scr_PlayerStateFree;
+             state = PlayerStateFree;
         } else {
         //3. otherwise, there is something and it has a script, activate
             scr_ExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
@@ -45,4 +44,9 @@ function PlayerStateFree(){
 
 function PlayerStateLocked(){
 	
+}
+
+function PlayerStateTransition() {
+	PlayerCollision();
+	PlayerAnimateSprite();
 }

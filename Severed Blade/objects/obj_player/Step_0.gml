@@ -7,8 +7,7 @@ activate_key = keyboard_check_pressed(vk_space);
 menu_key = keyboard_check_pressed(vk_tab);
 
 input_dir = point_direction(0,0,right_key-left_key,down_key-up_key);
-	input_mag = (right_key - left_key != 0) || (down_key - up_key != 0);
+input_mag = (right_key - left_key != 0) || (down_key - up_key != 0);
 
-script_execute(state);
+if (!global.gamePaused) script_execute(state);
 depth = -bbox_bottom;
-

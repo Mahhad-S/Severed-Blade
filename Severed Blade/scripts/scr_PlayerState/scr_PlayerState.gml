@@ -3,8 +3,7 @@ function PlayerStateFree(){
 	xspd = lengthdir_x(input_mag * speedWalk, input_dir);
 	yspd = lengthdir_y(input_mag * speedWalk, input_dir);
 
-	x += xspd;
-	y += yspd;
+	PlayerCollision();
 
 	//Update -Sprite Index
 	var _oldSprite = sprite_index;
@@ -45,4 +44,9 @@ function PlayerStateFree(){
 
 function PlayerStateLocked(){
 	
+}
+
+function PlayerStateTransition() {
+	PlayerCollision();
+	PlayerAnimateSprite();
 }

@@ -11,4 +11,3 @@ input_mag = (right_key - left_key != 0) || (down_key - up_key != 0);
 
 if (!global.gamePaused) script_execute(state);
 depth = -bbox_bottom;
-

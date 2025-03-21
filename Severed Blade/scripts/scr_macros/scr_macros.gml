@@ -1,5 +1,6 @@
 #macro FRAME_RATE 60
 
+#macro CARDINAL_DIR round(direction)/90
 #macro ROOM_START rm_overworld
 #macro RESOLUTION_W 320
 #macro RESOLUTION_H 180

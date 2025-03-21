@@ -26,9 +26,9 @@ function scr_NewTextBox(){
 		}
 	}
 	with (obj_player) {
-		if (state != scr_PlayerStateLocked) {
+		if (state != PlayerStateLocked) {
 			lastState = state;
-			state = scr_PlayerStateLocked;
+			state = PlayerStateLocked;
 		}
 	}
 	

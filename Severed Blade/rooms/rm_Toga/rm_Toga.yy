@@ -177,7 +177,6 @@
     {"name":"inst_39A8CBA0","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_213CEE23","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_150CEAA9","path":"rooms/rm_Toga/rm_Toga.yy",},
-    {"name":"inst_67DBADAF","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_8680A55","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_607F9225","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_5FDC227","path":"rooms/rm_Toga/rm_Toga.yy",},
@@ -187,6 +186,7 @@
     {"name":"inst_B54810D","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_18F3E719","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_2B67F865","path":"rooms/rm_Toga/rm_Toga.yy",},
+    {"name":"inst_67DBADAF","path":"rooms/rm_Toga/rm_Toga.yy",},
   ],
   "isDnd":false,
   "layers":[

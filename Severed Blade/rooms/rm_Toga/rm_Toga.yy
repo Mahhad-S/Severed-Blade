@@ -7,10 +7,10 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_37F84D5A","path":"rooms/rm_Toga/rm_Toga.yy",},
-    {"name":"inst_60FA793","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_2B67F865","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_41CE1A2B","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_CCE46EA","path":"rooms/rm_Toga/rm_Toga.yy",},
+    {"name":"inst_60FA793","path":"rooms/rm_Toga/rm_Toga.yy",},
   ],
   "isDnd":false,
   "layers":[

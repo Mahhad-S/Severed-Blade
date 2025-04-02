@@ -9,6 +9,6 @@ function PlayerAnimateSprite(){
 	if (localFrame >= _totalFrames)
 	{
 		animationEnd = true;
-		localFrame -= _totalFrames;
+		localFrame = 0;
 	} else animationEnd = false;
 }

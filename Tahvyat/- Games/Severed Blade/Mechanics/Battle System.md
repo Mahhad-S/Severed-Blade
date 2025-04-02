@@ -6,7 +6,7 @@
 - Defense
 - STR (Strength)
 - INT (Intelligence)
-- SPD (Speed)
+- DEX (Dexterity)
 - Elemental DMG Resistance
 	- Lux
 	- Ignis
@@ -14,7 +14,7 @@
 	- Aqua
 	- Terra
 	- Umbra
-- Physical  DMG Resistance
+- Physical DMG Resistance
 	- Piercing
 	- Bludgeoning
 	- Slashing

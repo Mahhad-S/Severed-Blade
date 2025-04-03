@@ -1,16 +1,14 @@
 //Party Data
-global.party = 
+global.party =
 [
 	{
 		name: "Hashimoto Sobu",
-		hp: 10,
-		hp_max: 10,
-		mp: 10,
-		mp_max: 10,
-		strength: 10,
-		intelligence: 10,
-		dexterity: 10,
-		sprites : { idle: spr_battle_player },
+		hp: 39,
+		hpMax: 80,
+		mp: 0,
+		mpMax: 15,
+		strength: 6,
+		sprites : { idle: spr_battle_player},
 		actions : []
 	}
 ];
@@ -18,23 +16,20 @@ global.party =
 //Enemy Data
 global.enemies =
 {
-	slimeG:
+	slimeG: 
 	{
 		name: "Green Slime",
-		hp: 10,
-		hp_max: 10,
-		mp: 10,
-		mp_max: 10,
-		strength: 10,
-		intelligence: 10,
-		dexterity: 10,
-		sprites : { idle: spr_slime },
-		actions : [],
+		hp: 30,
+		hpMax: 30,
+		mp: 0,
+		mpMax: 0,
+		strength: 5,
+		sprites: { idle: spr_slime},
+		actions: [],
 		xpValue : 15,
 		AIscript : function()
 		{
 			//enemy turn ai goes here
 		}
 	}
-	
 }

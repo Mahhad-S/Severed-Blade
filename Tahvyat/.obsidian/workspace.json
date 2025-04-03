@@ -8,33 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c0a65f0700f0ce41",
-            "type": "leaf",
-            "pane-relief:history-v1": {
-              "pos": 0,
-              "stack": [
-                {
-                  "state": "{}",
-                  "eState": "{}"
-                }
-              ]
-            },
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Data/Magic System.canvas",
-                "viewState": {
-                  "x": 153.50771387035533,
-                  "y": 1015.6218686292362,
-                  "zoom": -0.07310049092426862
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Magic System"
-            }
-          },
-          {
-            "id": "6c58904cfcc91c0e",
+            "id": "2ee31bbc62562aaa",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -47,20 +21,20 @@
                   "title": "Battle System",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Battle System.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Battle System\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":8},\"to\":{\"line\":11,\"ch\":8}},\"scroll\":0}"
+                  "eState": "{\"cursor\":{\"from\":{\"line\":6,\"ch\":16},\"to\":{\"line\":6,\"ch\":16}}}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "- Games/Severed Blade/Mechanics/Classes.md",
+                "file": "Characters/Heroes/Sobu, Hashimoto.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Classes"
+              "title": "Sobu, Hashimoto"
             }
           }
         ]
@@ -299,10 +273,10 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "c0a65f0700f0ce41",
+  "active": "2ee31bbc62562aaa",
   "lastOpenFiles": [
-    "- Games/Severed Blade/Mechanics/Classes.md",
     "- Games/Severed Blade/Mechanics/Battle System.md",
+    "- Games/Severed Blade/Mechanics/Classes.md",
     "Data/Magic System.canvas",
     "- Games/Severed Blade/Mechanics/Magic System.md",
     "Characters/Heroes/Sobu, Hashimoto.md",

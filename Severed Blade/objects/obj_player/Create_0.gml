@@ -17,8 +17,3 @@ if (variable_global_exists("targetX") && global.targetX != -1) {
 	y = global.targetY;
 	direction = global.targetDirection;
 }
-
-hp = 10;
-total_hp = hp;
-damage = 2;
-charge = 0;

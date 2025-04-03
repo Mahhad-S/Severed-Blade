@@ -15,12 +15,6 @@ for (var i = 0; i < array_length(unitRenderOrder); i++)
 draw_sprite_stretched(spr_box, 0, x+75, y+120, 245, 60);
 draw_sprite_stretched(spr_box, 0, x, y+120, 74, 60);
 
-//Positions
-#macro COLUMN_ENEMY 5
-#macro COLUMN_NAME 80
-#macro COLUMN_HP 180
-#macro COLUMN_EP 240
-
 //Draw Headings
 draw_set_font(f_text);
 draw_set_halign(fa_left);

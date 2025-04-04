@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"turned_base_battle",
-    "path":"folders/Sprites/turned_base_battle.yy",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

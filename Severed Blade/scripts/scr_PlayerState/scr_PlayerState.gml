@@ -1,5 +1,4 @@
 function PlayerStateFree(){
-	//Movement
 	xspd = lengthdir_x(input_mag * speedWalk, input_dir);
 	yspd = lengthdir_y(input_mag * speedWalk, input_dir);
 
@@ -40,9 +39,7 @@ function PlayerStateFree(){
                 }
             }
         }
-        
-    }
-	
+    }	
 }
 
 function PlayerStateLocked(){

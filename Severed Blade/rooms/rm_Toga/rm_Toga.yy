@@ -11,6 +11,9 @@
     {"name":"inst_41CE1A2B","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_CCE46EA","path":"rooms/rm_Toga/rm_Toga.yy",},
     {"name":"inst_60FA793","path":"rooms/rm_Toga/rm_Toga.yy",},
+    {"name":"inst_3D956CBD","path":"rooms/rm_Toga/rm_Toga.yy",},
+    {"name":"inst_7532ADBA","path":"rooms/rm_Toga/rm_Toga.yy",},
+    {"name":"inst_6DCAE64D","path":"rooms/rm_Toga/rm_Toga.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,6 +30,15 @@
         {"$GMRInstance":"v1","%Name":"inst_2B67F865","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B67F865","objectId":{"name":"obj_npc2","path":"objects/obj_npc2/obj_npc2.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"propertyId":{"name":"entityActivateArgs","path":"objects/obj_entity/obj_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[\"Hello\", 1, [\"1: Response A\", \"2: Response B\"]]",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":912.0,},
+        {"$GMRInstance":"v1","%Name":"inst_3D956CBD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D956CBD","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"propertyId":{"name":"targetRoom","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_nagato_weaponshop",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":784.0,"y":848.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7532ADBA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7532ADBA","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"propertyId":{"name":"targetRoom","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_nagato_armorshop",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":912.0,"y":496.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6DCAE64D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DCAE64D","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"propertyId":{"name":"targetRoom","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_nagato_itemshop",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":448.0,"y":608.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Wall","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":69,"SerialiseWidth":63,"TileCompressedData":[
           -1493,-2147483648,-10,1,-8,-2147483648,1,1,-44,-2147483648,1,1,-8,-2147483648,1,1,-8,-2147483648,1,1,
@@ -444,7 +456,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":320,"hport":720,"hspeed":1,"hview":180,"inherit":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"vborder":180,"visible":true,"vspeed":1,"wport":1280,"wview":320,"xport":0,"xview":40,"yport":0,"yview":930,},
+    {"hborder":160,"hport":720,"hspeed":-1,"hview":180,"inherit":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"vborder":90,"visible":true,"vspeed":-1,"wport":1280,"wview":320,"xport":0,"xview":40,"yport":0,"yview":930,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},

@@ -6,7 +6,8 @@
 - Defense
 - STR (Strength)
 - INT (Intelligence)
-- DEX (Dexterity)
+- CON (Constitution)
+- SPD (Speed)
 - Elemental DMG Resistance
 	- Lux
 	- Ignis

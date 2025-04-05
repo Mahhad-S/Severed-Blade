@@ -16,11 +16,18 @@ localFrame = 0;
 if (variable_global_exists("playerXLoad") && global.playerXLoad != -1) {
     x = global.playerXLoad;
     y = global.playerYLoad;
-    direction = global.targetDirection; // optional: use saved direction if you store it
+    
+	if (variable_global_exists("targetDirection")) {
+        direction = global.targetDirection;
+    }
+	
     global.playerXLoad = -1;
     global.playerYLoad = -1;
 } else if (variable_global_exists("targetX") && global.targetX != -1) {
     x = global.targetX;
     y = global.targetY;
-    direction = global.targetDirection;
+    
+	if (variable_global_exists("targetDirection")) {
+        direction = global.targetDirection;
+    }
 }

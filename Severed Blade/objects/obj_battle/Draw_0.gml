@@ -16,7 +16,7 @@ draw_sprite_stretched(spr_box, 0, x+75, y+120, 245, 60);
 draw_sprite_stretched(spr_box, 0, x, y+120, 74, 60);
 
 //Draw Headings
-draw_set_font(f_text);
+draw_set_font(f_text_battle);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_gray);
@@ -26,7 +26,7 @@ draw_text(x+COLUMN_HP,y+120,"HP");
 draw_text(x+COLUMN_EP,y+120,"EP");
 
 //Draw Enemy Names
-draw_set_font(f_text);
+draw_set_font(f_text_battle);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);

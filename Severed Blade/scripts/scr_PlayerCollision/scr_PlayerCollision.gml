@@ -8,6 +8,7 @@ function PlayerCollision(){
 		if (sign(xspd) == 1) {x += TILE_SIZE - 1;}
 		xspd = 0;
 		_collision = true;
+
 	}
 	//Horizontal Move Commit 
 	x += xspd;

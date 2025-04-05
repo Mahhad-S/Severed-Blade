@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":511,
   "bbox_left":2,
-  "bbox_right":511,
+  "bbox_right":607,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b857cd42-f12d-4216-ad3b-768617a6b8cb","name":"b857cd42-f12d-4216-ad3b-768617a6b8cb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"23ad0e9f-59a0-4bf3-9b66-b9dc81683b00","name":"23ad0e9f-59a0-4bf3-9b66-b9dc81683b00","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":32,
   "gridY":32,
   "height":512,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ab9f3136-75ba-4e01-b66c-003217048bb2","blendMode":0,"displayName":"default","isLocked":false,"name":"ab9f3136-75ba-4e01-b66c-003217048bb2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"2381da60-d7e0-42ab-8154-14d6d33fb962","blendMode":0,"displayName":"default","isLocked":false,"name":"2381da60-d7e0-42ab-8154-14d6d33fb962","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_ow_forestnmountains",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b857cd42-f12d-4216-ad3b-768617a6b8cb","path":"sprites/spr_ow_forestnmountains/spr_ow_forestnmountains.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ea58249d-02da-4d93-baa7-afcfb5584d56","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23ad0e9f-59a0-4bf3-9b66-b9dc81683b00","path":"sprites/spr_ow_forestnmountains/spr_ow_forestnmountains.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"aceafb4d-fa4d-43a4-9c2d-d7e69e02617c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":512,
+  "width":608,
 }

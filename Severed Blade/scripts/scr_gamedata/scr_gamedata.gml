@@ -7,7 +7,7 @@ global.actionLibrary =
 		description: "{0} attacks!",
 		subMenu: -1,
 		targetRequired: true,
-		tergetEnemyByDefault: true,
+		targetEnemyByDefault: true,
 		targetAll: MODE.NEVER,
 		userAnimation: "strike",
 		effectSprite: spr_slash,
@@ -16,6 +16,25 @@ global.actionLibrary =
 		{
 			var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
 			BattleChangeHP(_targets[0], -_damage, 0);
+		}
+	},
+	ice:
+	{
+		name: "Ice",
+		description: "{0} casts Ice!",
+		subMenu: "Magic",
+		epCost: 4, 
+		targetRequired: true,
+		targetEnemyByDefault: true, //0: party/self, 1: enemy
+		targetAll: MODE.VARIES,
+		userAnimation: "cast",
+		effectSprite: spr_slash,
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			var _damage = ceil(_user.intelligence + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+			BattleChangeHP(_targets[0], -_damage);
+			//BattleChangeEP(_user, -_epCost);
 		}
 	}
 }
@@ -32,13 +51,14 @@ global.party =
 [
 	{
 		name: "Hashimoto Sobu",
-		hp: 39,
+		hp: 70,
 		hpMax: 80,
 		mp: 0,
 		mpMax: 15,
 		strength: 6,
+		intelligence: 5,
 		sprites : { idle: spr_pIdle, strike: spr_pStrike, Aura: spr_pAura, defend: spr_pDefend, item: spr_pItem, down: spr_pDown },
-		actions : []
+		actions : [global.actionLibrary.strike, global.actionLibrary.ice]
 	}
 ];
 

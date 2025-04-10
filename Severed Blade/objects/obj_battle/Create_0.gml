@@ -56,7 +56,26 @@ function BattleStateSelectAction()
 	}
 	
 	//Select an action to perform
-	BeginAction(_unit.id, global.actionLibrary.attack, _unit.id);
+	//BeginAction(_unit.id, global.actionLibrary.strike, _unit.id); - testing self-damage
+	
+	//if unit is player controlled:
+	if (_unit.object_index == obj_battle_unit_pc)
+	{
+		var _action = global.actionLibrary.strike;
+		var _possibleTargets = array_filter(obj_battle.enemyUnits, function(_unit, index)
+		{
+			return (_unit.hp > 0);
+		});
+		var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
+		BeginAction(_unit.id, _action, _target);
+	}
+	else
+	{
+		//if unit is AI controlled:
+		var _enemyAction = _unit.AIscript();
+		if (_enemyAction != 1) BeginAction(_unit.id, _enemyAction[0], _enemyAction[1]);
+	}
+	
 }
 
 function BeginAction(_user, _action, _targets)
@@ -81,17 +100,70 @@ function BeginAction(_user, _action, _targets)
 
 function BattleStatePerformAction()
 {
-	//if animation
+	//if animation etc is still playing
+	if (currentUser.acting)
+	{
+		//when it ends, perform action effect if it exists
+		if (currentUser.image_index >= currentUser.image_number - 1)
+		{
+			with (currentUser)
+			{
+				sprite_index = sprites.idle;
+				image_index = 0;
+				acting = false;
+			}
+			
+			if (variable_struct_exists(currentAction, "effectSprite" ))
+			{
+				if (currentAction.effectOnTarget == MODE.ALWAYS) || ((currentAction.effectOnTarget == MODE.VARIES) && (array_length(currentTargets) <= 1))
+				{
+					for (var i = 0; i < array_length(currentTargets); i++)
+					{
+						instance_create_depth(currentTargets[i].x,currentTargets[i].y,currentTargets[i].depth-1, obj_battle_effect,{sprite_index : currentAction.effectSprite});
+					}
+				}
+				else //play it at 0,0
+				{
+					var _effectSprite = currentAction.effectSprite;
+					if (variable_struct_exists(currentAction, "effectSpriteNoTarget"))
+					{
+						_effectSprite = currentAction.effectSpriteNoTarget;
+						instance_create_depth(x,y,depth-100, obj_battle_effect,{sprite_index : _effectSprite});
+					}
+				}
+			}
+			currentAction.func(currentUser, currentTargets);
+		}
+	}
+	else //wait for delay and then end the turn
+	{
+		if (!instance_exists(obj_battle_effect))
+		{
+			battleWaitTimeRemaining--
+			if (battleWaitTimeRemaining == 0)
+			{
+				battleState = BattleStateVictoryCheck;
+			}
+		}
+	}
 }
 
 function BattleStateVictoryCheck()
 {
-	
+	battleState = BattleStateTurnProgression;
 }
 
 function BattleStateTurnProgression()
 {
-	
+	turnCount++;
+	turn++;
+	//Loop turns
+	if (turn > array_length(unitTurnOrder) - 1)
+	{
+		turn = 0;
+		roundCount++;
+	}
+	battleState = BattleStateSelectAction;
 }
 
 battleState = BattleStateSelectAction;

@@ -16,7 +16,7 @@ draw_sprite_stretched(spr_box, 0, x+75, y+120, 245, 60);
 draw_sprite_stretched(spr_box, 0, x, y+120, 74, 60);
 
 //Draw Headings
-draw_set_font(f_text);
+draw_set_font(f_text_battle);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_gray);
@@ -26,7 +26,7 @@ draw_text(x+COLUMN_HP,y+120,"HP");
 draw_text(x+COLUMN_EP,y+120,"EP");
 
 //Draw Enemy Names
-draw_set_font(f_text);
+draw_set_font(f_text_battle);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
@@ -66,4 +66,38 @@ for (var i = 0; i < array_length(partyUnits); i++)
 	draw_text(x+COLUMN_EP+40,y+130+(i*12),string(_char.mp) + "/" + string(_char.mpMax));
 	
 	draw_set_color(c_white);
+}
+
+//Draw target cursor
+if (cursor.active)
+{
+	with (cursor)
+	{
+		if (activeTarget != noone)
+		{
+			if (!is_array(activeTarget))
+			{
+				draw_sprite(spr_pointer, 0, activeTarget.x+10, activeTarget.y+20);
+			}
+			else
+			{
+				draw_set_alpha(sin(get_timer()/50000)+1)
+				for (var i = 0; i < array_length(activeTarget); i++)
+				{
+					draw_sprite(spr_pointer, 0, activeTarget[i].x+10, activeTarget[i].y+20);
+				}
+				draw_set_alpha(1.0);
+			}
+		}
+	}
+}
+
+//Draw battle text
+if (battleText != "")
+{
+	var _w = string_width(battleText)+25;
+	draw_sprite_stretched(spr_box, 0, x+160-(_w*0.5), y+5, _w, 25);
+	draw_set_halign(fa_center);
+	draw_set_color(c_white);
+	draw_text(x+160,y+10,battleText);
 }

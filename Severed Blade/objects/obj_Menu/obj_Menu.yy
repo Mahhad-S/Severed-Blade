@@ -10,8 +10,8 @@
   "name":"obj_Menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Manager",
-    "path":"folders/Objects/Manager.yy",
+    "name":"Battle",
+    "path":"folders/Objects/Battle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

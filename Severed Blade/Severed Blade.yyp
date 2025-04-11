@@ -117,7 +117,6 @@
     {"id":{"name":"spr_grassfield_bg","path":"sprites/spr_grassfield_bg/spr_grassfield_bg.yy",},},
     {"id":{"name":"spr_japan_inside_tiles","path":"sprites/spr_japan_inside_tiles/spr_japan_inside_tiles.yy",},},
     {"id":{"name":"spr_japan_master_tiles","path":"sprites/spr_japan_master_tiles/spr_japan_master_tiles.yy",},},
-    {"id":{"name":"spr_menu_player","path":"sprites/spr_menu_player/spr_menu_player.yy",},},
     {"id":{"name":"spr_npc1_down","path":"sprites/spr_npc1_down/spr_npc1_down.yy",},},
     {"id":{"name":"spr_npc1_left","path":"sprites/spr_npc1_left/spr_npc1_left.yy",},},
     {"id":{"name":"spr_npc1_right","path":"sprites/spr_npc1_right/spr_npc1_right.yy",},},
@@ -201,6 +200,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},
     {"roomId":{"name":"rm_overworld_2","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},},
     {"roomId":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
@@ -209,7 +209,6 @@
     {"roomId":{"name":"rm_nagato_itemshop","path":"rooms/rm_nagato_itemshop/rm_nagato_itemshop.yy",},},
     {"roomId":{"name":"rm_nagato_weaponshop","path":"rooms/rm_nagato_weaponshop/rm_nagato_weaponshop.yy",},},
     {"roomId":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
-    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

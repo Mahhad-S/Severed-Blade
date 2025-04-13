@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Severed Blade",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -13,6 +13,7 @@
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Inventory Test","folderPath":"folders/Inventory Test.yy","name":"Inventory Test","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Battle","folderPath":"folders/Objects/Battle.yy","name":"Battle","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -46,11 +47,12 @@
     {"$GMFolder":"","%Name":"overworld","folderPath":"folders/Tile Sets/overworld.yy","name":"overworld","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Severed Blade",
   "resources":[
@@ -75,6 +77,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"NPC1_path","path":"paths/NPC1_path/NPC1_path.yy",},},
     {"id":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
+    {"id":{"name":"rm_invTestRoom","path":"rooms/rm_invTestRoom/rm_invTestRoom.yy",},},
     {"id":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
     {"id":{"name":"rm_nagato_itemshop","path":"rooms/rm_nagato_itemshop/rm_nagato_itemshop.yy",},},
     {"id":{"name":"rm_nagato_weaponshop","path":"rooms/rm_nagato_weaponshop/rm_nagato_weaponshop.yy",},},
@@ -163,13 +166,14 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_overworld","path":"rooms/rm_overworld/rm_overworld.yy",},},
     {"roomId":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
-    {"roomId":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},
     {"roomId":{"name":"rm_Osara","path":"rooms/rm_Osara/rm_Osara.yy",},},
     {"roomId":{"name":"rm_test_battlescene","path":"rooms/rm_test_battlescene/rm_test_battlescene.yy",},},
     {"roomId":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
     {"roomId":{"name":"rm_nagato_itemshop","path":"rooms/rm_nagato_itemshop/rm_nagato_itemshop.yy",},},
     {"roomId":{"name":"rm_nagato_weaponshop","path":"rooms/rm_nagato_weaponshop/rm_nagato_weaponshop.yy",},},
     {"roomId":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
+    {"roomId":{"name":"rm_invTestRoom","path":"rooms/rm_invTestRoom/rm_invTestRoom.yy",},},
+    {"roomId":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

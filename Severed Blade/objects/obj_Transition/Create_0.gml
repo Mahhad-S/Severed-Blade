@@ -6,8 +6,8 @@ enum TRANS_TYPE {
 	WIPE
 }
 
-width = RESOLUTION_W;
-height = RESOLUTION_H;
+width = display_get_gui_width();
+height = display_get_gui_height();
 heighthalf = (height * 0.5) + 20;
 percent = 0;
 leading = OUT;

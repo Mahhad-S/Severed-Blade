@@ -1,8 +1,10 @@
 function PlayerStateFree(){
-	//Movement
 	xspd = lengthdir_x(input_mag * speedWalk, input_dir);
 	yspd = lengthdir_y(input_mag * speedWalk, input_dir);
 
+	xspd = ceil(abs(xspd)) * sign(xspd);
+	yspd = ceil(abs(yspd)) * sign(yspd);
+	
 	PlayerCollision();
 
 	//Update -Sprite Index
@@ -37,9 +39,7 @@ function PlayerStateFree(){
                 }
             }
         }
-        
-    }
-	
+    }	
 }
 
 function PlayerStateLocked(){

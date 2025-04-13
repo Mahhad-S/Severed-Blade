@@ -6,7 +6,6 @@
 - Defense
 - STR (Strength)
 - INT (Intelligence)
-- CON (Constitution)
 - SPD (Speed)
 - Elemental DMG Resistance
 	- Lux
@@ -15,7 +14,7 @@
 	- Aqua
 	- Terra
 	- Umbra
-- Physical DMG Resistance
+- Physical  DMG Resistance
 	- Piercing
 	- Bludgeoning
 	- Slashing

@@ -1,91 +1,40 @@
-//Action Library
-global.actionLibrary =
-{
-	strike:
-	{
-		name: "Strike",
-		description: "{0} attacks!",
-		subMenu: -1,
-		targetRequired: true,
-		targetEnemyByDefault: true,
-		targetAll: MODE.NEVER,
-		userAnimation: "strike",
-		effectSprite: spr_slash,
-		effectOnTarget: MODE.ALWAYS,
-		func: function(_user, _targets)
-		{
-			var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-			BattleChangeHP(_targets[0], -_damage, 0);
-		}
-	},
-	ice:
-	{
-		name: "Ice",
-		description: "{0} casts Ice!",
-		subMenu: "Magic",
-		epCost: 4, 
-		targetRequired: true,
-		targetEnemyByDefault: true, //0: party/self, 1: enemy
-		targetAll: MODE.VARIES,
-		userAnimation: "cast",
-		effectSprite: spr_slash,
-		effectOnTarget: MODE.ALWAYS,
-		func: function(_user, _targets)
-		{
-			var _damage = ceil(_user.intelligence + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-			BattleChangeHP(_targets[0], -_damage);
-			//BattleChangeEP(_user, -_epCost);
-		}
-	}
-}
-
-enum MODE
-{
-	NEVER = 0,
-	ALWAYS = 1,
-	VARIES = 2
-}
-
 //Party Data
-global.party =
+global.party = 
 [
 	{
 		name: "Hashimoto Sobu",
-		hp: 70,
-		hpMax: 80,
-		mp: 0,
-		mpMax: 15,
-		strength: 6,
-		intelligence: 5,
-		sprites : { idle: spr_pIdle, strike: spr_pStrike, Aura: spr_pAura, defend: spr_pDefend, item: spr_pItem, down: spr_pDown },
-		actions : [global.actionLibrary.strike, global.actionLibrary.ice]
+		hp: 10,
+		hp_max: 10,
+		mp: 10,
+		mp_max: 10,
+		strength: 10,
+		intelligence: 10,
+		dexterity: 10,
+		sprites : { idle: spr_battle_player },
+		actions : []
 	}
 ];
 
 //Enemy Data
 global.enemies =
 {
-	slimeG: 
+	slimeG:
 	{
 		name: "Green Slime",
-		hp: 30,
-		hpMax: 30,
-		mp: 0,
-		mpMax: 0,
-		strength: 5,
-		sprites: { idle: spr_slime_idle, strike: spr_slime_strike },
-		actions: [global.actionLibrary.strike],
+		hp: 10,
+		hp_max: 10,
+		mp: 10,
+		mp_max: 10,
+		strength: 10,
+		intelligence: 10,
+		dexterity: 10,
+		sprites : { idle: spr_slime },
+		actions : [],
 		xpValue : 15,
 		AIscript : function()
 		{
-			//attack random party member
-			var _action = actions[0];
-			var _possibleTargets = array_filter(obj_battle.partyUnits, function(_unit, index)
-			{
-				return (_unit.hp > 0);
-			});
-			var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
-			return [_action, _target];
+			//enemy turn ai goes here
 		}
 	}
+	
 }

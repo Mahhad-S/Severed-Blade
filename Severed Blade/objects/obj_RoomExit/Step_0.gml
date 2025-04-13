@@ -6,6 +6,6 @@ if (instance_exists(obj_player)) && (position_meeting(obj_player.x, obj_player.y
 		global.targetDirection = obj_player.direction;
 		with (obj_player) state = PlayerStateTransition;
 		RoomTransition(TRANS_TYPE.SLIDE,targetRoom);
-		instance_destroy();
+		alarm[0] = 1;
 	}
 }

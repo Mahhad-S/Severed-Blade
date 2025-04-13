@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2ee31bbc62562aaa",
+            "id": "dc85bc4a7dc486f9",
             "type": "leaf",
             "pane-relief:history-v1": {
               "pos": 0,
@@ -18,41 +18,67 @@
                   "eState": "{}"
                 },
                 {
-                  "title": "Menus",
-                  "icon": "lucide-layout-dashboard",
-                  "state": "{\"type\":\"canvas\",\"state\":{\"file\":\"- Games/Severed Blade/Menus.canvas\",\"viewState\":{\"x\":107,\"y\":22,\"zoom\":0}},\"icon\":\"lucide-layout-dashboard\",\"title\":\"Menus\"}",
-                  "eState": "{}"
-                },
-                {
-                  "title": "Resources",
+                  "title": "Story",
                   "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Resources.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Resources\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-                },
-                {
-                  "title": "Sobu, Hashimoto",
-                  "icon": "lucide-file",
-                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Heroes/Sobu, Hashimoto.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Sobu, Hashimoto\"}",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Writing/Story.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Story\"}",
                   "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
                 },
                 {
                   "title": "Battle System",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Battle System.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Battle System\"}",
-                  "eState": "{\"cursor\":{\"from\":{\"line\":6,\"ch\":16},\"to\":{\"line\":6,\"ch\":16}}}"
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Classes",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Classes.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Classes\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Magic System",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Magic System.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Magic System\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Graph view",
+                  "icon": "lucide-git-fork",
+                  "state": "{\"type\":\"graph\",\"state\":{},\"icon\":\"lucide-git-fork\",\"title\":\"Graph view\"}",
+                  "eState": "{}"
+                },
+                {
+                  "title": "Battle System",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Battle System.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Battle System\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Classes",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Classes.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Classes\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "Magic System",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Magic System.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Magic System\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
                 }
               ]
             },
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "- Games/Severed Blade/Mechanics/Battle System.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "Data/Magic System.canvas",
+                "viewState": {
+                  "x": 427.68676288944044,
+                  "y": 1017.1049944737847,
+                  "zoom": -0.15380521447380613
+                }
               },
-              "icon": "lucide-file",
-              "title": "Battle System"
+              "icon": "lucide-layout-dashboard",
+              "title": "Magic System"
             }
           }
         ]
@@ -291,15 +317,14 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "8f4198aa89f67a6e",
+  "active": "dc85bc4a7dc486f9",
   "lastOpenFiles": [
-    "- Games/Severed Blade/Menus.canvas",
-    "- Games/Severed Blade/Resources.md",
-    "Characters/Heroes/Sobu, Hashimoto.md",
+    "- Games/Severed Blade/Writing/Story.md",
     "- Games/Severed Blade/Mechanics/Battle System.md",
     "- Games/Severed Blade/Mechanics/Classes.md",
-    "Data/Magic System.canvas",
     "- Games/Severed Blade/Mechanics/Magic System.md",
+    "Data/Magic System.canvas",
+    "Characters/Heroes/Sobu, Hashimoto.md",
     "- Games/Severed Blade/Writing/Locations.md",
     "Characters/Villains/Akuto, Iori.md",
     "Factions/Political/Sobu Clan.md",
@@ -310,7 +335,7 @@
     "Characters/Heroes/Siora Lubella.md",
     "Characters/Heroes/Ardeshir Azad.md",
     "Locations/Settlements/Nagata Region/Osara.md",
-    "- Games/Severed Blade/Writing/Story.md",
+    "- Games/Severed Blade/Resources.md",
     "Locations/Settlements/Nagata Region/Toga.md",
     "Locations/Settlements/Zguk Region/Olgrog.md",
     "Locations/Settlements/Zguk Region/Ezro.md",

@@ -1,20 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Magic System",
+      "path": "Data/Magic System.canvas"
+    },
+    {
+      "basename": "Story",
+      "path": "- Games/Severed Blade/Writing/Story.md"
+    },
+    {
       "basename": "Battle System",
       "path": "- Games/Severed Blade/Mechanics/Battle System.md"
-    },
-    {
-      "basename": "Menus",
-      "path": "- Games/Severed Blade/Menus.canvas"
-    },
-    {
-      "basename": "Resources",
-      "path": "- Games/Severed Blade/Resources.md"
-    },
-    {
-      "basename": "Sobu, Hashimoto",
-      "path": "Characters/Heroes/Sobu, Hashimoto.md"
     },
     {
       "basename": "Classes",
@@ -22,23 +18,27 @@
     },
     {
       "basename": "Magic System",
-      "path": "Data/Magic System.canvas"
-    },
-    {
-      "basename": "Magic System",
       "path": "- Games/Severed Blade/Mechanics/Magic System.md"
     },
     {
-      "basename": "Story",
-      "path": "- Games/Severed Blade/Writing/Story.md"
+      "basename": "Sobu, Hashimoto",
+      "path": "Characters/Heroes/Sobu, Hashimoto.md"
     },
     {
       "basename": "Locations",
       "path": "- Games/Severed Blade/Writing/Locations.md"
     },
     {
+      "basename": "Resources",
+      "path": "- Games/Severed Blade/Resources.md"
+    },
+    {
       "basename": "Yumihara, Akari",
       "path": "Characters/Heroes/Yumihara, Akari.md"
+    },
+    {
+      "basename": "Siora Lubella",
+      "path": "Characters/Heroes/Siora Lubella.md"
     }
   ],
   "omittedPaths": [],

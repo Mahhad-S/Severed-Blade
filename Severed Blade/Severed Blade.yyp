@@ -85,6 +85,7 @@
     {"id":{"name":"obj_UI","path":"objects/obj_UI/obj_UI.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"NPC1_path","path":"paths/NPC1_path/NPC1_path.yy",},},
+    {"id":{"name":"rm_Graveyard","path":"rooms/rm_Graveyard/rm_Graveyard.yy",},},
     {"id":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
     {"id":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
     {"id":{"name":"rm_nagato_itemshop","path":"rooms/rm_nagato_itemshop/rm_nagato_itemshop.yy",},},
@@ -166,6 +167,7 @@
     {"id":{"name":"spr_textBoxes","path":"sprites/spr_textBoxes/spr_textBoxes.yy",},},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
+    {"id":{"name":"Sprite57","path":"sprites/Sprite57/Sprite57.yy",},},
     {"id":{"name":"ts_diagonal_road","path":"tilesets/ts_diagonal_road/ts_diagonal_road.yy",},},
     {"id":{"name":"ts_japan_inside","path":"tilesets/ts_japan_inside/ts_japan_inside.yy",},},
     {"id":{"name":"ts_japan_master","path":"tilesets/ts_japan_master/ts_japan_master.yy",},},
@@ -210,6 +212,7 @@
     {"roomId":{"name":"rm_nagato_weaponshop","path":"rooms/rm_nagato_weaponshop/rm_nagato_weaponshop.yy",},},
     {"roomId":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
+    {"roomId":{"name":"rm_Graveyard","path":"rooms/rm_Graveyard/rm_Graveyard.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

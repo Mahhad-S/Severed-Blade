@@ -28,18 +28,42 @@ function status_GUI() {
     // --- Example party data ---
     // The main character is first, followed by any additional team members.
     var party = [
-        { name: global.party[0].name, 
-			hp: global.party[0].hp, 
-			maxHP: global.party[0].hpMax, 
+        { name: "Player", 
+			hp: 100, 
+			maxHP: 100, 
 			ep: 50,  
 			maxEP: 50,  
-			atk: global.party[0].strength, 
+			atk: 10, 
 			def: 15, 
 			spd: 10, 
 			sprites: spr_player_idle},
-        { name: "Mage",     hp:  60, maxHP:  60, ep: 80,  maxEP: 80,  atk: 10, def:  8, spd: 12, sprites: spr_player_idle},
-        { name: "Warrior",  hp: 120, maxHP: 120, ep: 30,  maxEP: 30,  atk: 25, def: 20, spd:  8, sprites: spr_player_idle },
-		{ name: "Janitor",  hp: 120, maxHP: 120, ep: 30,  maxEP: 30,  atk: 25, def: 20, spd:  8, sprites: spr_player_idle },
+        { name: "Mage",
+			hp:  60, 
+			maxHP:  60, 
+			ep: 80,  
+			maxEP: 80,  
+			atk: 10, 
+			def:  8, 
+			spd: 12, 
+			sprites: spr_player_idle},
+        { name: "Warrior",
+			hp: 120, 
+			maxHP: 120, 
+			ep: 30,  
+			maxEP: 30,  
+			atk: 25, 
+			def: 20, 
+			spd:  8, 
+			sprites: spr_player_idle },
+		{ name: "Janitor",  
+			hp: 120, 
+			maxHP: 120, 
+			ep: 30,  
+			maxEP: 30,  
+			atk: 25, 
+			def: 20, 
+			spd:  8, 
+			sprites: spr_player_idle },
     ];
     
     // --- Layout parameters for party member status boxes ---
@@ -113,22 +137,94 @@ function setting_GUI() {
 }
 
 function load_GUI() {
-	draw_set_font(f_text);
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_set_color(c_white);
-	draw_text(120, 28, "Load Screen");
+    // Define the inner area based on the right box dimensions.
+    var margin     = 12;
+    var box_width  = RESOLUTION_W * 0.25;
+    var box_x      = margin;
+    var gui_x      = box_x + box_width + margin;
+    var gui_y      = margin;
+    var gui_width  = RESOLUTION_W - gui_x - margin;
+    var gui_height = RESOLUTION_H - margin * 2;
+    
+    // Center a 312-pixel wide load slot region within the right box.
+    var left_offset = gui_x + (gui_width - 240) * 0.5;
+    var top_offset  = gui_y + 20;
+    
+    // Use the same fade variable for slot visibility.
+    draw_set_alpha(1.0);
+    
+    // Loop through available load slots.
+    for (var slot = 0; slot < global.loadSlotCount; slot++) {
+         var _x = left_offset + 55;
+         var _y = top_offset + slot * 48 - 13;
+         var _img = 2;
+         if (global.loadSlotSelected == slot) {
+             _img = 3;
+             draw_sprite(spr_pointer, 0, _x + 2, _y + 32);
+         }
+         scr_NineSliceBoxStretched(spr_textBoxes, _x, _y, _x + 160, _y + 48, _img);
+         
+         draw_set_font(f_text);
+         draw_set_halign(fa_left);
+         draw_set_valign(fa_top);
+         draw_set_color(c_white);
+         if (global.loadSlotData[slot] == -1) {
+             draw_text(_x + 8, _y + 16, "Empty Slot");
+         } else {
+             draw_text(_x + 8, _y + 16, RoomToAreaName(global.loadSlotData[slot][? "room"]));
+         }
+    }
+    draw_set_alpha(1.0);
 }
 
+
+
 function save_GUI() {
-	draw_set_font(f_text);
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_set_color(c_white);
-	draw_text(120, 28, "Save Screen");
-	//with (obj_game) instance_destroy();
-    //SaveGame();
+    // Define the inner area used by the pause menu's right base box.
+    var margin     = 12;
+    var box_width  = RESOLUTION_W * 0.25;  // same as your pause menu left box width
+    var box_x      = margin;
+    var gui_x      = box_x + box_width + margin;
+    var gui_y      = margin;
+    var gui_width  = RESOLUTION_W - gui_x - margin;
+    var gui_height = RESOLUTION_H - margin * 2;
+    
+    // We want our slot boxes to look similar to the title screen.
+    // Here we center a 312-pixel wide slot region within the pause right box.
+    var left_offset = gui_x + (gui_width - 240) * 0.5;
+    var top_offset  = gui_y + 20;
+    
+    // Use the fade variable for slot visibility (similar to title screen code)
+    draw_set_alpha(1.0);
+    
+    // Loop through all available save slots.
+    for (var slot = 0; slot < global.saveSlotCount; slot++) {
+         // Each slot box is 48 pixels tall, with a vertical spacing of 48 (adjust as needed).
+         var _x = left_offset + 55;
+         var _y = top_offset + slot * 48 - 13;
+         var _img = 2;  // default box design index
+         if (global.saveSlotSelected == slot) {
+             _img = 3;  // highlighted box index
+             // Draw the pointer to the left of the slot box.
+             draw_sprite(spr_pointer, 0, _x + 2, _y + 32);
+         }
+         // Draw the slot box using your nine-slice function.
+         scr_NineSliceBoxStretched(spr_textBoxes, _x, _y, _x + 160, _y + 48, _img);
+         
+         // Draw the slot's text.
+         draw_set_font(f_text);
+         draw_set_halign(fa_left);
+         draw_set_valign(fa_top);
+         draw_set_color(c_white);
+         if (global.saveSlotData[slot] == -1) {
+             draw_text(_x + 8, _y + 16, "Empty Slot");
+         } else {
+             draw_text(_x + 8, _y + 16, RoomToAreaName(global.saveSlotData[slot][? "room"]));
+         }
+    }
+    draw_set_alpha(1.0);
 }
+
 
 function exit_GUI() {
     // Fade out the background

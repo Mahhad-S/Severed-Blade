@@ -28,7 +28,7 @@ function status_GUI() {
     // --- Example party data ---
     // The main character is first, followed by any additional team members.
     var party = [
-        { name: "Hero",     hp: 100, maxHP: 100, ep: 50,  maxEP: 50,  atk: 20, def: 15, spd: 10, sprites: spr_player_idle},
+        { name: global.party[0].name, hp: global.party[0].hp, maxHP: global.party[0].hpMax, ep: 50,  maxEP: 50,  atk: 20, def: 15, spd: 10, sprites: spr_player_idle},
         { name: "Mage",     hp:  60, maxHP:  60, ep: 80,  maxEP: 80,  atk: 10, def:  8, spd: 12, sprites: spr_player_idle},
         { name: "Warrior",  hp: 120, maxHP: 120, ep: 30,  maxEP: 30,  atk: 25, def: 20, spd:  8, sprites: spr_player_idle },
 		{ name: "Janitor",  hp: 120, maxHP: 120, ep: 30,  maxEP: 30,  atk: 25, def: 20, spd:  8, sprites: spr_player_idle },

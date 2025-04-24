@@ -54,10 +54,16 @@ if (global.gamePaused)
 	else if (global.pauseSubmenu == "Save")
     {
         if (global.saveJustOpenedPrompt) {
-            if (keyboard_check_released(vk_space)) {
-                global.saveJustOpenedPrompt = false;
-            }
-        }
+		    for (var i = 0; i < global.saveSlotCount; i++) {
+		        var filename = "save" + string(i) + ".sav";
+		        if (file_exists(filename)) {
+		            global.saveSlotData[i] = LoadJSONFromFile(filename);
+		        } else {
+		            global.saveSlotData[i] = -1;
+		        }
+		    }
+		    global.saveJustOpenedPrompt = false;
+		}
         else
         {
             // Navigate slots
@@ -73,6 +79,13 @@ if (global.gamePaused)
             {
                 global.gameSaveSlot = global.saveSlotSelected;
                 SaveGame();
+				
+				// Immediately reload that saved slot into the GUI
+			    var slot = global.gameSaveSlot;
+			    var filename = "save" + string(slot) + ".sav";
+			    if (file_exists(filename)) {
+			        global.saveSlotData[slot] = LoadJSONFromFile(filename);
+			    }
             }
 
             // Press X to go back to main pause menu
@@ -94,10 +107,17 @@ if (global.gamePaused)
 	else if (global.pauseSubmenu == "Load")
     {
         if (global.loadJustOpenedPrompt) {
-            if (keyboard_check_released(vk_space)) {
-                global.loadJustOpenedPrompt = false;
-            }
-        }
+		    // Load the save files into the slot data array
+		    for (var i = 0; i < global.loadSlotCount; i++) {
+		        var filename = "save" + string(i) + ".sav";
+		        if (file_exists(filename)) {
+		            global.loadSlotData[i] = LoadJSONFromFile(filename);
+		        } else {
+		            global.loadSlotData[i] = -1;
+		        }
+		    }
+		    global.loadJustOpenedPrompt = false;
+		}
         else
         {
             // Navigate slots
@@ -110,10 +130,18 @@ if (global.gamePaused)
 
             // Confirm load
             if (keyboard_check_pressed(vk_space))
-            {
-                global.gameSaveSlot = global.loadSlotSelected;
-                LoadGame(global.gameSaveSlot); // Assumes this returns true/false or handles errors
-            }
+			{
+			    global.gameSaveSlot = global.loadSlotSelected;
+
+			    // --- UNPAUSE FIRST ---
+			    global.gamePaused = false;
+			    instance_activate_all();
+
+			    // Then load the game
+				instance_destroy(obj_gameController);
+				instance_destroy(obj_UI);
+			    LoadGame(global.gameSaveSlot);
+			}
 
             // Press X to go back to main pause menu
 			if (keyboard_check_pressed(ord("X")))

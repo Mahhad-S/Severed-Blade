@@ -1,5 +1,5 @@
 /// @desc Initialize Global State (runs once only)
-persistent = true;
+//persistent = true;
 
 randomize();
 
@@ -14,6 +14,8 @@ if (!variable_global_exists("exitPromptActive")) global.exitPromptActive = false
 if (!variable_global_exists("exitOptionSelected")) global.exitOptionSelected = 0;
 if (!variable_global_exists("pauseSubmenu")) global.pauseSubmenu = "Status";
 if (!variable_global_exists("justOpenedPrompt")) global.justOpenedPrompt = false;
+if (!variable_global_exists("playerXLoad")) global.playerXLoad = -1;
+if (!variable_global_exists("playerYLoad")) global.playerYLoad = -1;
 
 global.iCamera = instance_create_layer(0,0,layer,obj_camera); 
 global.iUI = instance_create_layer(0, 0, "Instances", obj_UI);

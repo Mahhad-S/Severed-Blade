@@ -28,7 +28,7 @@ function status_GUI() {
     // --- Example party data ---
     // The main character is first, followed by any additional team members.
     var party = [
-        { name: "Player", 
+        { name: global.party[0].name, 
 			hp: 100, 
 			maxHP: 100, 
 			ep: 50,  

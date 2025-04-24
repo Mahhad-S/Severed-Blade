@@ -1,5 +1,5 @@
 //global volume control
-global.masterVolume = 0.25;
+global.masterVolume = 0;
 global.musicVolume = 1;
 
 //info for the song we are currently playing / trying to play

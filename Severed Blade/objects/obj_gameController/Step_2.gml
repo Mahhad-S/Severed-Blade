@@ -7,18 +7,11 @@ if (keyboard_check_pressed(vk_escape))
 	global.gamePaused = !global.gamePaused;
 
 	if (global.gamePaused) {
-		with (all) {
-			if (!variable_instance_exists(id, "gamePausedImageSpeed")) {
-				gamePausedImageSpeed = image_speed;
-			}
-			image_speed = 0;
-		}
+		instance_deactivate_all(true);
+		instance_activate_object(obj_player);
+		instance_activate_object(obj_UI);
 	} 
 	else {
-		with (all) {
-			if (variable_instance_exists(id, "gamePausedImageSpeed")) {
-				image_speed = gamePausedImageSpeed;
-			}
-		}
+		instance_activate_all()
 	}
 }

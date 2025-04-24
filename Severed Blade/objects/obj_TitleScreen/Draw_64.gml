@@ -11,13 +11,13 @@ if (slotVisible > 0) {
 	for (var _slot = 0; _slot <= 2; _slot++) {
 		//Draw the boxes
 		var _y = 64 + _slot * 192;
-		var _x = 720;
+		var _x = 640;
 		var _img = 2;
 		if (slotSelected == _slot) {
 			_img = 3;
-			draw_sprite(spr_menu_player, 0, _x - 120, _y + 140);
+			draw_sprite_ext(spr_pointer, 0, _x, _y + 144, 5, 5, 0, c_white, 1);
 		}
-		scr_NineSliceBoxStretched(spr_textBoxes, _x, _y, 1248, _y + 162, _img);
+		scr_NineSliceBoxStretched(spr_textBoxes, _x, _y, 1248, _y + 192, _img);
 		
 		//Draw the save data (if exists)
 		draw_set_font(f_text);
@@ -25,9 +25,9 @@ if (slotVisible > 0) {
 		draw_set_valign(fa_top);
 		draw_set_color(c_white);
 		if (slotData[_slot] == -1) { //empty save slot
-			draw_text_transformed(_x + 56, _y + 56, "Start new game", 3, 3, 0);	
+			draw_text_transformed(_x + 16, _y + 64, "Start new game", 4, 4, 0);	
 		} else {
-			draw_text_transformed(_x + 56, _y + 56,RoomToAreaName(slotData[_slot][? "room"]), 3, 3, 0);
+			draw_text_transformed(_x + 16, _y + 64,RoomToAreaName(slotData[_slot][? "room"]), 4, 4, 0);
 		}
 	}
 	draw_set_alpha(1.0);

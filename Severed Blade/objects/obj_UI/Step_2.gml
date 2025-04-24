@@ -28,7 +28,7 @@ if (global.gamePaused)
 			{
 				with (obj_game) instance_destroy();
 				SaveGame();
-				//game_restart();				
+				game_restart();				
 			}break;
 			
 			case 2:

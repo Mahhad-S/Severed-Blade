@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Cave of Rebirth",
+      "path": "Locations/Caves/Cave of Rebirth.md"
+    },
+    {
       "basename": "Battle System",
       "path": "- Games/Severed Blade/Mechanics/Battle System.md"
     },
@@ -35,10 +39,6 @@
     {
       "basename": "Locations",
       "path": "- Games/Severed Blade/Writing/Locations.md"
-    },
-    {
-      "basename": "Yumihara, Akari",
-      "path": "Characters/Heroes/Yumihara, Akari.md"
     }
   ],
   "omittedPaths": [],

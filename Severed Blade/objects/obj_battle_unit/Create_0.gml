@@ -1,2 +1,4 @@
-sprite_index = sprites.idle;
 acting = false;
+defending = false;
+//myTurn = false;
+enemy = false;

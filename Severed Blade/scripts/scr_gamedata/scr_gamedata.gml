@@ -1,3 +1,10 @@
+enum MODE
+{
+	NEVER = 0,
+	ALWAYS = 1,
+	VARIES = 2
+}
+
 //Action Library
 global.actionLibrary =
 {
@@ -5,7 +12,7 @@ global.actionLibrary =
 	{
 		name: "Strike",
 		description: "{0} attacks!",
-		subMenu: -1,
+		subMenu: "Attack",
 		targetRequired: true,
 		targetEnemyByDefault: true,
 		targetAll: MODE.NEVER,
@@ -18,32 +25,96 @@ global.actionLibrary =
 			BattleChangeHP(_targets[0], -_damage, 0);
 		}
 	},
-	ice:
+	defend : 
 	{
-		name: "Ice",
-		description: "{0} casts Ice!",
-		subMenu: "Magic",
-		epCost: 4, 
+		name : "Defend",
+		description : "{0} assumes a defensive stance!",
+		subMenu : -1,
+		targetRequired: false,
+		func : function(_user, _target)
+		{
+			_user.defending = true;
+		}		
+	},
+	escape : 
+	{
+		name : "Escape",
+		description : "",
+		subMenu : -1,
+		targetRequired: false,
+		func : function(_user, _target)
+		{
+			if (random(1) < 0.8) //success
+			{
+				obj_battle.escaped = true;
+			}
+			else //fail
+			{
+				obj_battle.battleText = "Failed to escape!";
+			}
+		}		
+	},
+	ice : 
+	{
+		name : "Ice",
+		description : "{0} casts Ice!",
+		subMenu : "Magic",
+		epCost : 4,
 		targetRequired: true,
 		targetEnemyByDefault: true, //0: party/self, 1: enemy
-		targetAll: MODE.VARIES,
-		userAnimation: "cast",
+		targetAll: MODE.NEVER,
+		userAnimation : "cast",
 		effectSprite: spr_slash,
 		effectOnTarget: MODE.ALWAYS,
-		func: function(_user, _targets)
+		func : function(_user, _targets)
 		{
-			var _damage = ceil(_user.intelligence + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+			var _damage = irandom_range(10,15);
 			BattleChangeHP(_targets[0], -_damage);
-			//BattleChangeEP(_user, -_epCost);
-		}
+			BattleChangeEP(_user, -epCost)
+		}		
+	},
+	potion : 
+	{
+		name : "Potion",
+		description : "{0} uses a Potion!",
+		subMenu : "Item",
+		targetRequired: true,
+		targetEnemyByDefault: false, //0: party/self, 1: enemy
+		targetAll: MODE.NEVER,
+		func : function(_user, _targets)
+		{
+			var _heal = 30;
+			BattleChangeHP(_targets[0], _heal);
+		}		
+	},
+	ether : 
+	{
+		name : "Ether",
+		description : "{0} uses an Ether!",
+		subMenu : "Item",
+		targetEnemyByDefault: false, //0: party/self, 1: enemy
+		targetAll: MODE.NEVER,
+		targetRequired: true,
+		func : function(_user, _targets)
+		{
+			var _healEP = 50;
+			BattleChangeEP(_targets[0], _healEP, true);
+		}		
+	},
+	revive : 
+	{
+		name : "Revive",
+		description : "{0} uses a Revive!",
+		subMenu : "Item",
+		targetEnemyByDefault: false, //0: party/self, 1: enemy
+		targetAll: MODE.NEVER,
+		targetRequired: true,
+		func : function(_user, _targets)
+		{
+			var _heal = 30;
+			BattleChangeHP(_targets[0], _heal, 1);
+		}		
 	}
-}
-
-enum MODE
-{
-	NEVER = 0,
-	ALWAYS = 1,
-	VARIES = 2
 }
 
 //Party Data
@@ -53,12 +124,12 @@ global.party =
 		name: "Hashimoto Sobu",
 		hp: 70,
 		hpMax: 80,
-		mp: 0,
-		mpMax: 15,
+		ep: 0,
+		epMax: 15,
 		strength: 6,
 		intelligence: 5,
 		sprites : { idle: spr_pIdle, strike: spr_pStrike, Aura: spr_pAura, defend: spr_pDefend, item: spr_pItem, down: spr_pDown },
-		actions : [global.actionLibrary.strike, global.actionLibrary.ice]
+		actions : [global.actionLibrary.strike, global.actionLibrary.defend, global.actionLibrary.escape, global.actionLibrary.ice]
 	}
 ];
 
@@ -68,10 +139,10 @@ global.enemies =
 	slimeG: 
 	{
 		name: "Green Slime",
-		hp: 30,
+		hp: 1,
 		hpMax: 30,
-		mp: 0,
-		mpMax: 0,
+		ep: 0,
+		epMax: 0,
 		strength: 5,
 		sprites: { idle: spr_slime_idle, strike: spr_slime_strike },
 		actions: [global.actionLibrary.strike],
@@ -89,3 +160,11 @@ global.enemies =
 		}
 	}
 }
+
+//Inventory
+global.inventory =
+[
+	[global.actionLibrary.potion, 4],
+	[global.actionLibrary.revive, 2],
+	[global.actionLibrary.ether, 1],
+]

@@ -88,6 +88,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"NPC1_path","path":"paths/NPC1_path/NPC1_path.yy",},},
     {"id":{"name":"rm_Hyongo","path":"rooms/rm_Hyongo/rm_Hyongo.yy",},},
+    {"id":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},},
     {"id":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
     {"id":{"name":"rm_nagato_itemshop","path":"rooms/rm_nagato_itemshop/rm_nagato_itemshop.yy",},},
     {"id":{"name":"rm_nagato_weaponshop","path":"rooms/rm_nagato_weaponshop/rm_nagato_weaponshop.yy",},},
@@ -105,6 +106,7 @@
     {"id":{"name":"scr_LoadGame","path":"scripts/scr_LoadGame/scr_LoadGame.yy",},},
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},},
     {"id":{"name":"scr_MenuFunctions","path":"scripts/scr_MenuFunctions/scr_MenuFunctions.yy",},},
+    {"id":{"name":"scr_Music","path":"scripts/scr_Music/scr_Music.yy",},},
     {"id":{"name":"scr_NewTextBox","path":"scripts/scr_NewTextBox/scr_NewTextBox.yy",},},
     {"id":{"name":"scr_NineSliceBoxStretched","path":"scripts/scr_NineSliceBoxStretched/scr_NineSliceBoxStretched.yy",},},
     {"id":{"name":"scr_PlayerAnimateSprite","path":"scripts/scr_PlayerAnimateSprite/scr_PlayerAnimateSprite.yy",},},
@@ -205,6 +207,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_overworld_2","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},},
     {"roomId":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},

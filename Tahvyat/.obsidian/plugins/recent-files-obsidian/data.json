@@ -1,0 +1,50 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Cave of Rebirth",
+      "path": "Locations/Caves/Cave of Rebirth.md"
+    },
+    {
+      "basename": "Battle System",
+      "path": "- Games/Severed Blade/Mechanics/Battle System.md"
+    },
+    {
+      "basename": "Menus",
+      "path": "- Games/Severed Blade/Menus.canvas"
+    },
+    {
+      "basename": "Resources",
+      "path": "- Games/Severed Blade/Resources.md"
+    },
+    {
+      "basename": "Sobu, Hashimoto",
+      "path": "Characters/Heroes/Sobu, Hashimoto.md"
+    },
+    {
+      "basename": "Classes",
+      "path": "- Games/Severed Blade/Mechanics/Classes.md"
+    },
+    {
+      "basename": "Magic System",
+      "path": "Data/Magic System.canvas"
+    },
+    {
+      "basename": "Magic System",
+      "path": "- Games/Severed Blade/Mechanics/Magic System.md"
+    },
+    {
+      "basename": "Story",
+      "path": "- Games/Severed Blade/Writing/Story.md"
+    },
+    {
+      "basename": "Locations",
+      "path": "- Games/Severed Blade/Writing/Locations.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false,
+  "maxLength": 10,
+  "openType": "tab"
+}

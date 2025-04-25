@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_NineSliceBoxStretched",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_NineSliceBoxStretched",
+  "parent":{
+    "name":"Text",
+    "path":"folders/Scripts/Text.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

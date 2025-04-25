@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#char  ",
+      "color": {
+        "a": 1,
+        "rgb": 16755200
+      }
+    },
+    {
+      "query": "tag:#deities  ",
+      "color": {
+        "a": 1,
+        "rgb": 8421453
+      }
+    },
+    {
+      "query": "tag:#regions  ",
+      "color": {
+        "a": 1,
+        "rgb": 10426649
+      }
+    },
+    {
+      "query": "tag:#factions  ",
+      "color": {
+        "a": 1,
+        "rgb": 3639777
+      }
+    },
+    {
+      "query": "tag:#loc ",
+      "color": {
+        "a": 1,
+        "rgb": 14774395
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 0.993229166666667,
+  "lineSizeMultiplier": 0.993229166666667,
+  "collapse-forces": false,
+  "centerStrength": 0.75,
+  "repelStrength": 11.0416666666667,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.6554983534947184,
+  "close": false
+}

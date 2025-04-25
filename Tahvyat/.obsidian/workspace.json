@@ -1,0 +1,308 @@
+{
+  "main": {
+    "id": "14dd922d83dcc511",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f20d1f4f12fc9bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88271d807db0a685",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28487e2159f14fcd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1adfe909de10a5b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f4198aa89f67a6e",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "775a3fda32f132ad",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b3d37fa616b00c30",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "bc9a64d25b393acc",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f668921e7a9ebd1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e566d610fd19fa50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9bca58b8dfd4a76",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Locations/Settlements/Nagata Region/Toga.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Toga"
+            }
+          },
+          {
+            "id": "36bf92f929c7e610",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a681ddecf3097e65",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Development/Aentis/History/Countries/Hestein Timeline.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Hestein Timeline"
+            }
+          },
+          {
+            "id": "88eaaa3ced52daa6",
+            "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 329.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kanban:Create new board": false,
+      "fantasy-content-generator:Fantasy Generators": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "timelines-revamped:Insert Timeline Event": false,
+      "timelines-revamped:Insert Timeline Event (Frontmatter)": false,
+      "obsidian42-brat:BRAT": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "88271d807db0a685",
+  "lastOpenFiles": [
+    "Locations/Caves/Cave of Rebirth.md",
+    "- Games/Severed Blade/Mechanics/Battle System.md",
+    "- Games/Severed Blade/Menus.canvas",
+    "- Games/Severed Blade/Resources.md",
+    "Characters/Heroes/Sobu, Hashimoto.md",
+    "- Games/Severed Blade/Mechanics/Classes.md",
+    "Data/Magic System.canvas",
+    "- Games/Severed Blade/Mechanics/Magic System.md",
+    "- Games/Severed Blade/Writing/Locations.md",
+    "Characters/Villains/Akuto, Iori.md",
+    "Factions/Political/Sobu Clan.md",
+    "Characters/Villains/Ikari, Aizen.md",
+    "Characters/Villains/Morren Hart.md",
+    "Characters/Villains/Yatsir Amiad.md",
+    "Characters/Heroes/Yumihara, Akari.md",
+    "Characters/Heroes/Siora Lubella.md",
+    "Characters/Heroes/Ardeshir Azad.md",
+    "Locations/Settlements/Nagata Region/Osara.md",
+    "- Games/Severed Blade/Writing/Story.md",
+    "Locations/Settlements/Nagata Region/Toga.md",
+    "Locations/Settlements/Zguk Region/Olgrog.md",
+    "Locations/Settlements/Zguk Region/Ezro.md",
+    "Locations/Settlements/Zguk Region/Brohg.md",
+    "Locations/Settlements/Silvahn Region/Lenora.md",
+    "Locations/Settlements/Silvahn Region/Rhous.md",
+    "Locations/Settlements/Silvahn Region/Mhalert.md",
+    "Locations/Settlements/Krassut Region/Tharmut.md",
+    "Locations/Settlements/Cordonia West Region/Galiaga.md",
+    "Deities",
+    "Factions/Criminal",
+    "Factions/Political",
+    "Data",
+    "- Games/Severed Blade/Writing",
+    "- Games/Severed Blade/Mechanics",
+    "Characters/Untitled",
+    "Characters/Villains",
+    "Characters/Heroes",
+    "Locations/Camps",
+    "Development/Aentis/Data/Timelines/Canvas/Hestein Empire Timeline.canvas",
+    "Pasted image 20240817172155.png",
+    "Development/Aentis/Data/Historical Events/Country/Hestein Empire HE/Hestein History Timeline.canvas"
+  ]
+}

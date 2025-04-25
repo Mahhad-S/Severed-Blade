@@ -1,1 +1,0 @@
-The world of Tahvyat is full of a unique resource call Aether. This resource is then transformed into Aura and Mana, which gives birth to the talents of swordsman and mages.

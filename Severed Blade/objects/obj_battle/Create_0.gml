@@ -25,14 +25,14 @@ unitDepth = depth-10;
 //Make party
 for (var i = 0; i < array_length(global.party); i++)
 {
-	partyUnits[i] = instance_create_depth(x+60+(i*10), y+68+(i*15), unitDepth, obj_battle_unit_pc, global.party[i]);
+	partyUnits[i] = instance_create_depth(x+70+(i*10), y+55+(i*15), unitDepth, obj_battle_unit_pc, global.party[i]);
 	array_push(units, partyUnits[i]);
 }
 
 //Make Enemies
 for (var i = 0; i < array_length(enemies); i++)
 {
-	enemyUnits[i] = instance_create_depth(x+230+((i mod 3)*10)+((i div 3)*25),y+68+((i mod 3)*20), unitDepth, obj_battle_unit_enemy, enemies[i]);
+	enemyUnits[i] = instance_create_depth(x+230+((i mod 3)*10)+((i div 3)*25),y+55+((i mod 3)*20), unitDepth, obj_battle_unit_enemy, enemies[i]);
 	array_push(units, enemyUnits[i]);
 }
 
@@ -312,6 +312,7 @@ function BattleStateEnding()
 		transitionProg -= 0.01;
 		if (transitionProg <= 0.0)
 		{
+			SaveGlobalValuesTemp();
 			instance_destroy();
 		}
 	}

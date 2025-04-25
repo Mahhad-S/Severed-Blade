@@ -21,7 +21,7 @@ global.actionLibrary =
 		effectOnTarget: MODE.ALWAYS,
 		func: function(_user, _targets)
 		{
-			var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+			var _damage = ceil(_user.STR + random_range(-_user.STR * 0.25, _user.STR * 0.25));
 			BattleChangeHP(_targets[0], -_damage, 0);
 		}
 	},
@@ -126,8 +126,10 @@ global.party =
 		hpMax: 80,
 		ep: 0,
 		epMax: 15,
-		strength: 6,
-		intelligence: 5,
+		STR: 7,
+		INT: 5,
+		CON: 6,
+		SPD: 4,
 		sprites : { idle: spr_pIdle, strike: spr_pStrike, Aura: spr_pAura, defend: spr_pDefend, item: spr_pItem, down: spr_pDown },
 		actions : [global.actionLibrary.strike, global.actionLibrary.defend, global.actionLibrary.escape, global.actionLibrary.ice]
 	}
@@ -143,7 +145,7 @@ global.enemies =
 		hpMax: 30,
 		ep: 0,
 		epMax: 0,
-		strength: 5,
+		STR: 5,
 		sprites: { idle: spr_slime_idle, strike: spr_slime_strike },
 		actions: [global.actionLibrary.strike],
 		xpValue : 15,
@@ -151,7 +153,7 @@ global.enemies =
 		{
 			//attack random party member
 			var _action = actions[0];
-			var _possibleTargets = array_filter(obj_battle.partyUnits, function(_unit, index)
+			var _possibleTargets = array_filter(obj_battle.partyUnits, function(_unit, _index)
 			{
 				return (_unit.hp > 0);
 			});

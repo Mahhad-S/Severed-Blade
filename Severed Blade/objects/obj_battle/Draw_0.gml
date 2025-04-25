@@ -76,11 +76,11 @@ if (targetCursor.cursorActive)
 				draw_set_alpha(sin(get_timer()/50000)+1);
 				for (var i = 0; i < array_length(cursorTarget); i++)
 				{
-					draw_sprite(spr_pointer,cursorError,cursorTarget[i].x,cursorTarget[i].y);
+					draw_sprite(spr_pointer,cursorError,cursorTarget[i].x-10,cursorTarget[i].y+10);
 				}
 				draw_set_alpha(1.0);
 			}
-			else draw_sprite(spr_pointer,cursorError,cursorTarget.x,cursorTarget.y);
+			else draw_sprite(spr_pointer,cursorError,cursorTarget.x-5,cursorTarget.y+18);
 		}
 	}
 }

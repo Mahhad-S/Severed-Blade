@@ -101,3 +101,13 @@ function RemoveItemFromInventory(_item, _amount)
 		}
 	}
 }
+
+function SaveGlobalValuesTemp() {
+	for (var i = 0; i < array_length(global.party); i++)
+			{
+				if (i < array_length(partyUnits) && instance_exists(partyUnits[i])) {
+					global.party[i].hp = partyUnits[i].hp;
+					global.party[i].ep = partyUnits[i].ep;
+				}
+			}
+}

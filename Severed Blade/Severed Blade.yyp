@@ -211,6 +211,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
+    {"roomId":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},
     {"roomId":{"name":"rm_overworld_2","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},},
     {"roomId":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
     {"roomId":{"name":"rm_Osara","path":"rooms/rm_Osara/rm_Osara.yy",},},

@@ -25,7 +25,7 @@
   ],
   "name":"spr_pDown",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"player",
     "path":"folders/Sprites/turned_base_battle/party/player.yy",
@@ -85,7 +85,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":16,
     "yorigin":0,
   },
   "swatchColours":null,

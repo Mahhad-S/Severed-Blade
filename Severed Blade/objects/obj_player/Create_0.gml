@@ -9,6 +9,7 @@ yspd = 0;
 speedWalk = 1;
 
 spriteWalk = spr_player_walk;
+spriteWalk = spr_player_walk;
 spriteIdle = spr_player_idle;
 localFrame = 0;
 

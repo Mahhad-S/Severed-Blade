@@ -6,6 +6,8 @@ if (instance_exists(obj_player)) && (position_meeting(obj_player.x, obj_player.y
 		global.targetDirection = obj_player.direction;
 		with (obj_player) state = PlayerStateTransition;
 		RoomTransition(TRANS_TYPE.SLIDE,targetRoom);
-		alarm[0] = 1;
+		instance_destroy();
+		instance_destroy(obj_gameController);
+		instance_destroy(obj_UI);
 	}
 }

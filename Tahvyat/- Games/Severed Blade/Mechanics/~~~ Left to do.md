@@ -1,0 +1,8 @@
+- Combat system : In progress 
+- Audio system : In progress 
+- Menu system : In progress 
+- Inventory system : In progress 
+- Dungeons : In progress 
+- NPC : On hold 
+- Overworld : On hold 
+- Story : N/A

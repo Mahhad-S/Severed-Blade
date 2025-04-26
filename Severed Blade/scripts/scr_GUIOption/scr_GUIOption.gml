@@ -1,7 +1,4 @@
 function inventory_GUI(){
-	if (!instance_exists(obj_item_manager)) {
-        return; // Exit the function if obj_item_manager doesn't exist
-    }
     var margin     = 12;
     var box_width  = RESOLUTION_W * 0.25;
     var box_x      = margin;
@@ -23,37 +20,44 @@ function inventory_GUI(){
     // Draw title
     draw_text(120, 28, "Inventory Screen");
 
-    // Draw all inventory items in the right column
+	
+       // Draw all inventory items in the right column
     var item_spacing = 32;
     var start_y = column_y + 10;
 
-    for (var i = 0; i < array_length(obj_item_manager.inventory); i++) {
-        var item = obj_item_manager.inventory[i];
-        if (item != noone) {
-            // Highlight selected item
-            if (i == obj_item_manager.selected_index) {
-                draw_set_color(c_yellow);
-            } else {
-                draw_set_color(c_white);
+    if (array_length(global.inventory) > 0) {
+        for (var i = 0; i < array_length(global.inventory); i++) {
+            var item = global.inventory[i];
+            if (item != noone) {
+                // Highlight selected item
+                if (i == global.selected_index) {
+                    draw_set_color(c_yellow);
+                } else {
+                    draw_set_color(c_white);
+                }
+
+                draw_text(right_x + 10, start_y + (i * item_spacing), item.name);
+            }
+        }
+
+        // Draw selected item details in the left column
+        var sel_item = global.inventory[global.selected_index];
+        if (sel_item != noone) {
+            // Draw icon
+            if (sel_item.icon != -1) {
+                draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 20);
             }
 
-            draw_text(right_x + 10, start_y + (i * item_spacing), item.name);
+            // Draw description
+            var desc_y = column_y + 100;
+            draw_set_color(c_white);
+            draw_text(left_x + 20, desc_y, sel_item.description);
         }
-    }
-
-    // Draw selected item details in the left column
-    var sel_item = obj_item_manager.inventory[obj_item_manager.selected_index];
-    if (sel_item != noone) {
-        // Draw icon
-        if (sel_item.icon != -1) {
-            draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 20);
-        }
-
-        // Draw description
-        var desc_y = column_y + 100;
+    } else {
         draw_set_color(c_white);
-        draw_text(left_x + 20, desc_y, sel_item.description);
+        draw_text(right_x + 10, start_y, "Inventory is empty.");
     }
+	
 }
 
 function magic_GUI(){

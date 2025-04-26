@@ -1,9 +1,56 @@
 function inventory_GUI(){
-	draw_set_font(f_text);
+	var margin     = 12;
+    var box_width  = RESOLUTION_W * 0.25;
+    var box_x      = margin;
+    var gui_x      = box_x + box_width + margin;
+    var gui_y      = margin;
+    var gui_width  = RESOLUTION_W - gui_x - margin;
+    var gui_height = RESOLUTION_H - margin * 2;
+
+    var column_width = gui_width / 2;
+    var left_x = gui_x;
+    var right_x = gui_x + column_width;
+    var column_y = gui_y;
+
+    draw_set_font(f_text);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
-	draw_text(120, 28, "Inventory Screen");
+
+    // Draw title
+    draw_text(120, 28, "Inventory Screen");
+
+    // Draw all inventory items in the right column
+    var item_spacing = 32;
+    var start_y = column_y + 10;
+
+    for (var i = 0; i < array_length(obj_item_manager.inventory); i++) {
+        var item = obj_item_manager.inventory[i];
+        if (item != noone) {
+            // Highlight selected item
+            if (i == obj_item_manager.selected_index) {
+                draw_set_color(c_yellow);
+            } else {
+                draw_set_color(c_white);
+            }
+
+            draw_text(right_x + 10, start_y + (i * item_spacing), item.name);
+        }
+    }
+
+    // Draw selected item details in the left column
+    var sel_item = obj_item_manager.inventory[obj_item_manager.selected_index];
+    if (sel_item != noone) {
+        // Draw icon
+        if (sel_item.icon != -1) {
+            draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 20);
+        }
+
+        // Draw description
+        var desc_y = column_y + 100;
+        draw_set_color(c_white);
+        draw_text(left_x + 20, desc_y, sel_item.description);
+    }
 }
 
 function magic_GUI(){

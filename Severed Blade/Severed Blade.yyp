@@ -75,6 +75,7 @@
     {"id":{"name":"obj_battle_unit","path":"objects/obj_battle_unit/obj_battle_unit.yy",},},
     {"id":{"name":"obj_battle","path":"objects/obj_battle/obj_battle.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
     {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},

@@ -1,1 +1,1 @@
-item = global.item;
+item = global.item_list.minor_ep_potion;

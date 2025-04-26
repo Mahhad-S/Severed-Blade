@@ -84,6 +84,7 @@
     {"id":{"name":"obj_npc1","path":"objects/obj_npc1/obj_npc1.yy",},},
     {"id":{"name":"obj_npc2","path":"objects/obj_npc2/obj_npc2.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_potion_test_1","path":"objects/obj_potion_test_1/obj_potion_test_1.yy",},},
     {"id":{"name":"obj_potion_test","path":"objects/obj_potion_test/obj_potion_test.yy",},},
     {"id":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},},
     {"id":{"name":"obj_Slime","path":"objects/obj_Slime/obj_Slime.yy",},},

@@ -1,0 +1,1 @@
+item = global.item_list.standard_ep_potion;

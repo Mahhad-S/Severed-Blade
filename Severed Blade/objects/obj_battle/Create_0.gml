@@ -118,7 +118,7 @@ function BattleStateSelectAction()
 					{
 						var _itemAction = global.inventory[i][0];
 						_itemAction.count = global.inventory[i][1];
-						array_push(_inventoryActions, _itemAction); 
+						array_push(_inventoryActions, _itemAction);
 					}
 				}
 				

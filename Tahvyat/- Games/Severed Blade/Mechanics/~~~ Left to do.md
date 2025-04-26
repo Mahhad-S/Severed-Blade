@@ -1,16 +1,41 @@
-- Combat system : In progress
-	- Adapt to our own Stat system
-	- Modify the turn order system to use SPD
-	- Create more attacks and spells
-- Audio system : In progress 
-	- All types of Effects needed
-	- More research into music background
-- Menu system : In progress
-	- Finishing drawing all sections with persistent data (Status, Inventory, )
-	- Make a functional Setting System
-	- 
-- Inventory system : In progress 
-- Dungeons : In progress 
-- NPC : On hold 
-- Overworld : On hold 
-- Story : N/A
+- Save & Load System: IP
+	- Persistent Data !!!!!!!!
+- Interactables:
+	- Signs !!!
+	- Chests !!!
+		- Inventory Add
+		- Text appearance
+	- Doors !!!
+	- Boulders (Moving) !!!
+	- Overworld Magic !!!!!
+- Combat system : IP
+	- Adapt to our own Stat system !!!!!
+	- Modify the turn order system to use SPD !!!!!
+	- Create more attacks and spells !!!!
+	- Enemy generation system!!!!!!!!
+- Audio system : IP
+	- All types of Effects needed !
+	- More research into music background !
+- Menu system : IP
+	- Finishing drawing all sections with persistent data (Status, Inventory,...) !!!!!!!!
+	- Make a functional Setting System !!!!!!!!
+- Inventory system : IP
+	- Coupling with Combat System !!!!!!!!
+	- Redefining items with functionality !!!!!!!!
+- Dungeons : IP
+	- Level Design look up !
+- NPC : On hold
+	- Interactions
+		- Talking !!!
+		- Trading --- FTF
+		- Movement --- FTF
+	- Scripting !!
+- Overworld : On hold
+	- Decoration
+	- Walling Up
+- Writing : N/A
+	- Worldbuilding !
+	- Story !!
+
+Glossary:
+- FTF: For The Future

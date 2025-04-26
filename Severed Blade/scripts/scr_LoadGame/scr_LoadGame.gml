@@ -6,7 +6,7 @@ function LoadGame(_slot){
 		var _json = LoadJSONFromFile(_file);
 		
 		//global variables
-		//global.playerHealth = _json[? "playerHealth"];
+		global.party[0].hp = _json[? "playerHealth"];
 		//global.playerHealthMax = _json[? "playerHealthMax"];
 		//global.playerMoney = _json[? "playerMoney"];
 		//global.playerEquipped = _json[? "playerEquipped"];

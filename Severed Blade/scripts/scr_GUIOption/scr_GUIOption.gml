@@ -82,8 +82,8 @@ function status_GUI() {
     // The main character is first, followed by any additional team members.
     var party = [
         { name: global.party[0].name, 
-			hp: 100, 
-			maxHP: 100, 
+			hp: global.party[0].hp,
+			maxHP: global.party[0].hpMax, 
 			ep: 50,  
 			maxEP: 50,  
 			atk: 10, 

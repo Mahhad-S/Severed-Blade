@@ -1,3 +1,5 @@
+/// @desc Create all items and inventory
+
 depth = -9999;
 
 //create the items
@@ -380,5 +382,5 @@ global.item_list =
 
 //create the inventory
 
-inventory = array_create(0);
-selected_index = 0;
+global.inventory = array_create(0);
+global.selected_index = 0;

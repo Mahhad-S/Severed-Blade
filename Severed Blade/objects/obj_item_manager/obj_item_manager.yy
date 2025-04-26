@@ -9,8 +9,8 @@
   "name":"obj_item_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Battle",
-    "path":"folders/Objects/Battle.yy",
+    "name":"Manager",
+    "path":"folders/Objects/Manager.yy",
   },
   "parentObjectId":null,
   "persistent":true,

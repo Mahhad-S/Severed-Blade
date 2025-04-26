@@ -18,7 +18,8 @@ if (!variable_global_exists("playerXLoad")) global.playerXLoad = -1;
 if (!variable_global_exists("playerYLoad")) global.playerYLoad = -1;
 
 global.iCamera = instance_create_layer(0,0,layer,obj_camera); 
+global.item_manager = instance_create_layer(0, 0, "Instances", obj_item_manager);
 global.iUI = instance_create_layer(0, 0, "Instances", obj_UI);
-global.iManager = instance_create_layer(0, 0, "Instances", obj_item_manager);
+
 
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);

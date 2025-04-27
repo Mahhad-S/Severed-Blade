@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Cave of Rebirth",
-      "path": "Locations/Caves/Cave of Rebirth.md"
+      "basename": "~~~ Left to do",
+      "path": "- Games/Severed Blade/Mechanics/~~~ Left to do.md"
     },
     {
-      "basename": "Battle System",
-      "path": "- Games/Severed Blade/Mechanics/Battle System.md"
+      "basename": "Akuto, Iori",
+      "path": "Characters/Villains/Akuto, Iori.md"
+    },
+    {
+      "basename": "Ardeshir Azad",
+      "path": "Characters/Heroes/Ardeshir Azad.md"
     },
     {
       "basename": "Menus",
@@ -15,6 +19,14 @@
     {
       "basename": "Resources",
       "path": "- Games/Severed Blade/Resources.md"
+    },
+    {
+      "basename": "Cave of Rebirth",
+      "path": "Locations/Caves/Cave of Rebirth.md"
+    },
+    {
+      "basename": "Battle System",
+      "path": "- Games/Severed Blade/Mechanics/Battle System.md"
     },
     {
       "basename": "Sobu, Hashimoto",
@@ -27,18 +39,6 @@
     {
       "basename": "Magic System",
       "path": "Data/Magic System.canvas"
-    },
-    {
-      "basename": "Magic System",
-      "path": "- Games/Severed Blade/Mechanics/Magic System.md"
-    },
-    {
-      "basename": "Story",
-      "path": "- Games/Severed Blade/Writing/Story.md"
-    },
-    {
-      "basename": "Locations",
-      "path": "- Games/Severed Blade/Writing/Locations.md"
     }
   ],
   "omittedPaths": [],

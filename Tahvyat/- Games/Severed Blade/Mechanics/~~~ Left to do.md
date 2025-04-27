@@ -1,0 +1,16 @@
+- Combat system : In progress
+	- Adapt to our own Stat system
+	- Modify the turn order system to use SPD
+	- Create more attacks and spells
+- Audio system : In progress 
+	- All types of Effects needed
+	- More research into music background
+- Menu system : In progress
+	- Finishing drawing all sections with persistent data (Status, Inventory, )
+	- Make a functional Setting System
+	- 
+- Inventory system : In progress 
+- Dungeons : In progress 
+- NPC : On hold 
+- Overworld : On hold 
+- Story : N/A

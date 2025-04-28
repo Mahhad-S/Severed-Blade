@@ -18,6 +18,30 @@
                   "eState": "{}"
                 },
                 {
+                  "title": "Stats",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Stats.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Stats\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "~~~ Left to do",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/~~~ Left to do.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"~~~ Left to do\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":5,\"ch\":17},\"to\":{\"line\":5,\"ch\":17}}}"
+                },
+                {
+                  "title": "Stats",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/Stats.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Stats\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+                },
+                {
+                  "title": "~~~ Left to do",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"- Games/Severed Blade/Mechanics/~~~ Left to do.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"~~~ Left to do\"}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":37},\"to\":{\"line\":11,\"ch\":37}},\"scroll\":0.9313154831199069}"
+                },
+                {
                   "title": "Akuto, Iori",
                   "icon": "lucide-file",
                   "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Characters/Villains/Akuto, Iori.md\",\"mode\":\"source\",\"source\":false,\"backlinks\":false},\"icon\":\"lucide-file\",\"title\":\"Akuto, Iori\"}",
@@ -275,6 +299,8 @@
   },
   "active": "87b62cf30bfea7b1",
   "lastOpenFiles": [
+    "- Games/Severed Blade/Mechanics/Stats.md",
+    "- Games/Severed Blade/Mechanics/~~~ Left to do.md",
     "Characters/Villains/Akuto, Iori.md",
     "Factions/Political/Sobu Clan.md",
     "Factions/Criminal/Icaria Cluster.md",
@@ -286,7 +312,6 @@
     "Characters/Villains/Yatsir Amiad.md",
     "Characters/Villains/Morren Hart.md",
     "- Games/Severed Blade/Menus.canvas",
-    "- Games/Severed Blade/Mechanics/~~~ Left to do.md",
     "- Games/Severed Blade/Mechanics/Battle System.md",
     "Factions/Sobu Clan.md",
     "Characters/Heroes/Ardeshir Azad.md",
@@ -306,7 +331,6 @@
     "Locations/Settlements/Zguk Region/Olgrog.md",
     "Locations/Settlements/Zguk Region/Ezro.md",
     "Locations/Settlements/Zguk Region/Brohg.md",
-    "Locations/Settlements/Silvahn Region/Lenora.md",
     "Data",
     "- Games/Severed Blade/Writing",
     "- Games/Severed Blade/Mechanics",

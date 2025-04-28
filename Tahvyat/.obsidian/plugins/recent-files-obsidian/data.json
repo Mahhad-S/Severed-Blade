@@ -5,6 +5,10 @@
       "path": "- Games/Severed Blade/Mechanics/~~~ Left to do.md"
     },
     {
+      "basename": "Stats",
+      "path": "- Games/Severed Blade/Mechanics/Stats.md"
+    },
+    {
       "basename": "Akuto, Iori",
       "path": "Characters/Villains/Akuto, Iori.md"
     },
@@ -35,10 +39,6 @@
     {
       "basename": "Classes",
       "path": "- Games/Severed Blade/Mechanics/Classes.md"
-    },
-    {
-      "basename": "Magic System",
-      "path": "Data/Magic System.canvas"
     }
   ],
   "omittedPaths": [],

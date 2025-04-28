@@ -80,7 +80,7 @@ if (targetCursor.cursorActive)
 				}
 				draw_set_alpha(1.0);
 			}
-			else draw_sprite(spr_pointer,cursorError,cursorTarget.x-5,cursorTarget.y+18);
+			else draw_sprite(spr_pointer,cursorError,cursorTarget.x-5,cursorTarget.y+5);
 		}
 	}
 }

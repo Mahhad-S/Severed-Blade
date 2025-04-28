@@ -14,7 +14,7 @@ global.item_list =
 		{
 	
 		name: "Attack Up Potion",
-		description: "A bright red colored potion in a slim bottle. Raises attack by 10%",
+		itemDescription: "A bright red colored potion in a slim bottle. Raises attack by 10%",
 		consumable: true,
 		icon: spr_attack_up_potion,
 	
@@ -23,7 +23,7 @@ global.item_list =
 		{
 	
 		name: "Camping Set",
-		description: "Everything you need to camp out in the wilderness! Recovers 30% of HP and EP for the party when used",
+		itemDescription: "Everything you need to camp out in the wilderness! Recovers 30% of HP and EP for the party when used",
 		consumable: true,
 		icon: spr_camping_set,
 	
@@ -32,7 +32,7 @@ global.item_list =
 		{
 	
 		name: "Defense Up Potion",
-		description: "A bright green colored potion in a slim bottle. Raises defense by 10%",
+		itemDescription: "A bright green colored potion in a slim bottle. Raises defense by 10%",
 		consumable: true,
 		icon: spr_defense_up_potion,
 	
@@ -41,7 +41,7 @@ global.item_list =
 		{
 	
 		name: "",
-		description: "",
+		itemDescription: "",
 		consumable: false,
 		icon: spr_dropped_item,
 	
@@ -50,7 +50,7 @@ global.item_list =
 		{
 	
 		name: "Bag of Gold",
-		description: "A bag of gold, open it to find out how much gold is inside!",
+		itemDescription: "A bag of gold, open it to find out how much gold is inside!",
 		consumable: false,
 		icon: spr_gold_bag,
 	
@@ -59,9 +59,9 @@ global.item_list =
 		{
 	
 		name: "Minor Potion of EP",
-		description: "A dull blue colored potion diluted in water. Restores 20% of total EP",
+		itemDescription: "A dull blue colored potion diluted in water. Restores 20% of total EP",
 		consumable: true,
-		battleDescription : "{0} uses a Minor Potion of EP!",
+		description : "{0} uses a Minor Potion of EP!",
 		icon: spr_minor_ep_potion,
 		subMenu : "Item",
 		targetEnemyByDefault: false, //0: party/self, 1: enemy
@@ -78,7 +78,7 @@ global.item_list =
 		{
 	
 		name: "Standard Potion of EP",
-		description: "A blue colored potion. Restores 40% of total EP",
+		itemDescription: "A blue colored potion. Restores 40% of total EP",
 		consumable: true,
 		icon: spr_standard_ep_potion,
 	
@@ -87,7 +87,7 @@ global.item_list =
 		{
 	
 		name: "Major Potion of EP",
-		description: "A bright blue potion in a large bottle. Restores 60% of total EP",
+		itemDescription: "A bright blue potion in a large bottle. Restores 60% of total EP",
 		consumable: true,
 		icon: spr_major_ep_potion,
 	
@@ -96,8 +96,8 @@ global.item_list =
 		{
 	
 		name: "Minor Potion of HP",
-		description: "A dull red colored potion diluted in water. Restores 20% of total HP",
-		battleDescription : "{0} uses a Minor Potion of HP!",
+		itemDescription: "A dull red colored potion diluted in water. Restores 20% of total HP",
+		description : "{0} uses a Minor Potion of HP!",
 		consumable: true,
 		icon: spr_minor_hp_potion,
 		subMenu : "Item",
@@ -115,7 +115,7 @@ global.item_list =
 		{
 	
 		name: "Standard Potion of HP",
-		description: "A red colored potion. Restores 40% of total HP",
+		itemDescription: "A red colored potion. Restores 40% of total HP",
 		consumable: true,
 		icon: spr_standard_hp_potion,
 	
@@ -124,7 +124,7 @@ global.item_list =
 		{
 	
 		name: "Major Potion of HP",
-		description: "A bright red colored potion in a gold bottle. Restores 60% of total HP",
+		itemDescription: "A bright red colored potion in a gold bottle. Restores 60% of total HP",
 		consumable: true,
 		icon: spr_major_hp_potion,
 	
@@ -134,8 +134,8 @@ global.item_list =
 		{
 		
 		name: "Potion of Revival",
-		description: "A potion capped with a heart shaped revival stone. Revives one party member",
-		battleDescription : "{0} uses a Potion of Revival!",
+		itemDescription: "A potion capped with a heart shaped revival stone. Revives one party member",
+		description : "{0} uses a Potion of Revival!",
 		consumable: true,
 		icon: spr_revival_potion,
 		subMenu : "Item",
@@ -155,7 +155,7 @@ global.item_list =
 		{
 	
 		name: "Staff of Aqua Efficiency",
-		description: "A blue staff adorned with an Aqua crystal at its tip. Increased Aqua Spell Power. Decreased Terra Spell Power",
+		itemDescription: "A blue staff adorned with an Aqua crystal at its tip. Increased Aqua Spell Power. Decreased Terra Spell Power",
 		consumable: false,
 		icon: spr_aqua_staff,
 	
@@ -164,7 +164,7 @@ global.item_list =
 		{
 	
 		name: "Staff of Ignis Efficiency",
-		description: "A red staff adorned with an Ignis crystal at its tip. Increased Ignis Spell Power, Decreased Aqua Spell Power",
+		itemDescription: "A red staff adorned with an Ignis crystal at its tip. Increased Ignis Spell Power, Decreased Aqua Spell Power",
 		consumable: false,
 		icon: spr_ignis_staff,
 	
@@ -173,7 +173,7 @@ global.item_list =
 		{
 	
 		name: "Staff of Lux Efficiency",
-		description: "A gold staff adorned with a Lux crystal at its tip. Increased Lux Spell Power, Decreased Umbra Spell Power",
+		itemDescription: "A gold staff adorned with a Lux crystal at its tip. Increased Lux Spell Power, Decreased Umbra Spell Power",
 		consumable: false,
 		icon: spr_lux_staff,
 	
@@ -182,7 +182,7 @@ global.item_list =
 		{
 	
 		name: "Basic Staff",
-		description: "A basic wooden staff. Assists the user in casting spells",
+		itemDescription: "A basic wooden staff. Assists the user in casting spells",
 		consumable: false,
 		icon: spr_staff,
 	
@@ -191,7 +191,7 @@ global.item_list =
 		{
 	
 		name: "Staff of Terra Efficiency",
-		description: "An amber staff adorned with a Terra crystal at its tip. Increased Terra Spell Power, Decreased Ventus Spell Power",
+		itemDescription: "An amber staff adorned with a Terra crystal at its tip. Increased Terra Spell Power, Decreased Ventus Spell Power",
 		consumable: false,
 		icon: spr_terra_staff,
 	
@@ -200,7 +200,7 @@ global.item_list =
 		{
 	
 		name: "Staff of Umbra Efficiency",
-		description: "A grey staff adorned with an Umbra crystal at its tip. Increased Umbra Spell Power, Decreased Lux Spell Power",
+		itemDescription: "A grey staff adorned with an Umbra crystal at its tip. Increased Umbra Spell Power, Decreased Lux Spell Power",
 		consumable: false,
 		icon: spr_umbra_staff,
 	
@@ -209,7 +209,7 @@ global.item_list =
 		{
 	
 		name: "Staff of Ventus Efficiency",
-		description: "A green staff adorned with a Ventus crystal at its tip. Increased Ventus Spell Power, Decreased Ignis Spell Power",
+		itemDescription: "A green staff adorned with a Ventus crystal at its tip. Increased Ventus Spell Power, Decreased Ignis Spell Power",
 		consumable: false,
 		icon: spr_ventus_staff,
 	
@@ -218,7 +218,7 @@ global.item_list =
 		{
 	
 		name: "Basic Bow",
-		description: "A basic shitty bow, I don't even think it's worth using. God I hate bow users. you're better off selling this shit",
+		itemDescription: "A basic shitty bow, I don't even think it's worth using. God I hate bow users. you're better off selling this shit",
 		consumable: false,
 		icon: spr_bow,
 	
@@ -227,7 +227,7 @@ global.item_list =
 		{
 	
 		name: "Elven Bow",
-		description: "A beautiful ornate bow, made of silverwood and metal fittings, will not fail you",
+		itemDescription: "A beautiful ornate bow, made of silverwood and metal fittings, will not fail you",
 		consumable: false,
 		icon: spr_elven_bow,
 	
@@ -236,7 +236,7 @@ global.item_list =
 		{
 	
 		name: "Dwarven Bow",
-		description: "A bow made of strong, pure metal, with a string made of braided steel cable. Whatever you're shooting at will NOT be moving afterwards",
+		itemDescription: "A bow made of strong, pure metal, with a string made of braided steel cable. Whatever you're shooting at will NOT be moving afterwards",
 		consumable: false,
 		icon: spr_dwarven_bow,
 	
@@ -245,7 +245,7 @@ global.item_list =
 		{
 	
 		name: "Excalibur",
-		description: "The Holy Sword Excalibur, King of all Blades. Made of an unknown material. He who draws this sword will rule the world",
+		itemDescription: "The Holy Sword Excalibur, King of all Blades. Made of an unknown material. He who draws this sword will rule the world",
 		consumable: false,
 		icon: spr_holy_sword,
 	
@@ -254,7 +254,7 @@ global.item_list =
 		{
 	
 		name: "Katana",
-		description: "The sword left behind by the leader of the bandits who killed Sobu's family.",
+		itemDescription: "The sword left behind by the leader of the bandits who killed Sobu's family.",
 		consumable: false,
 		icon: spr_katana,
 	
@@ -263,7 +263,7 @@ global.item_list =
 		{
 	
 		name: "Wakizashi",
-		description: "A small, shortsword-like blade, forged in the same fashion as Sobu's Katana",
+		itemDescription: "A small, shortsword-like blade, forged in the same fashion as Sobu's Katana",
 		consumable: false,
 		icon: spr_wakizashi,
 	
@@ -272,7 +272,7 @@ global.item_list =
 		{
 	
 		name: "Slayer's Sword",
-		description: "A great behemoth of a blade. No doubt a swing from this monster would split boulders in half",
+		itemDescription: "A great behemoth of a blade. No doubt a swing from this monster would split boulders in half",
 		consumable: false,
 		icon: spr_slayer_sword,
 	
@@ -281,7 +281,7 @@ global.item_list =
 		{
 	
 		name: "Wooden Club",
-		description: "A large somewhat long log of wood fashioned to look like a club",
+		itemDescription: "A large somewhat long log of wood fashioned to look like a club",
 		consumable: false,
 		icon: spr_wooden_club,
 	
@@ -290,7 +290,7 @@ global.item_list =
 		{
 	
 		name: "Iron Mace",
-		description: "A mass produced bludgeoning weapon for the army. Effective against heavy armor",
+		itemDescription: "A mass produced bludgeoning weapon for the army. Effective against heavy armor",
 		consumable: false,
 		icon: spr_mace,
 	
@@ -299,7 +299,7 @@ global.item_list =
 		{
 	
 		name: "Morningstar",
-		description: "Similar to a mace, reinforced with higher strength steel and increased mass. Heavy hitting and definitely lethal",
+		itemDescription: "Similar to a mace, reinforced with higher strength steel and increased mass. Heavy hitting and definitely lethal",
 		consumable: false,
 		icon: spr_morning_star,
 	
@@ -308,7 +308,7 @@ global.item_list =
 		{
 	
 		name: "Thin Head Wrap",
-		description: "A thin piece of cloth to be wrapped around the head",
+		itemDescription: "A thin piece of cloth to be wrapped around the head",
 		consumable: false,
 		icon: spr_samurai_light_head,
 	
@@ -317,7 +317,7 @@ global.item_list =
 		{
 	
 		name: "Thick Head Wrap",
-		description: "A robust, thick piece of cloth to be wrapped around the head",
+		itemDescription: "A robust, thick piece of cloth to be wrapped around the head",
 		consumable: false,
 		icon: spr_samurai_medium_head,
 	
@@ -326,7 +326,7 @@ global.item_list =
 		{
 	
 		name: "Ronin's Helmet",
-		description: "A sturdy helmet, typically worn by wandering Ronin who are walking their own path",
+		itemDescription: "A sturdy helmet, typically worn by wandering Ronin who are walking their own path",
 		consumable: false,
 		icon: spr_samurai_heavy_head,
 	
@@ -335,7 +335,7 @@ global.item_list =
 		{
 	
 		name: "Cloth Tunic",
-		description: "A simple base layer typically worn under armor",
+		itemDescription: "A simple base layer typically worn under armor",
 		consumable: false,
 		icon: spr_samurai_light_body,
 	
@@ -344,7 +344,7 @@ global.item_list =
 		{
 	
 		name: "Domaru",
-		description: "Armor worn for on foot battles by lower ranking samurai",
+		itemDescription: "Armor worn for on foot battles by lower ranking samurai",
 		consumable: false,
 		icon: spr_samurai_medium_body,
 	
@@ -353,7 +353,7 @@ global.item_list =
 		{
 	
 		name: "O-Yoroi",
-		description: "Large, overlapping boxy armor offering increased protection for samurai",
+		itemDescription: "Large, overlapping boxy armor offering increased protection for samurai",
 		consumable: false,
 		icon: spr_samurai_heavy_body,
 	
@@ -362,7 +362,7 @@ global.item_list =
 		{
 	
 		name: "Apprentice Mage Hat",
-		description: "If you want to be a mage you have to dress for the part",
+		itemDescription: "If you want to be a mage you have to dress for the part",
 		consumable: false,
 		icon: spr_mage_light_head,
 	
@@ -371,7 +371,7 @@ global.item_list =
 		{
 	
 		name: "Novice Mage Hat",
-		description: "The mark of an established mage who has learned more than a couple spells",
+		itemDescription: "The mark of an established mage who has learned more than a couple spells",
 		consumable: false,
 		icon: spr_mage_medium_head,
 	
@@ -380,7 +380,7 @@ global.item_list =
 		{
 	
 		name: "Mage's Crown",
-		description: "Mages who wear a crown are the most masterful of mages in their discipline",
+		itemDescription: "Mages who wear a crown are the most masterful of mages in their discipline",
 		consumable: false,
 		icon: spr_mage_heavy_head,
 	
@@ -389,7 +389,7 @@ global.item_list =
 		{
 	
 		name: "Apprentice Mage Robes",
-		description: "Simple robes typicall worn by a beginner mage",
+		itemDescription: "Simple robes typicall worn by a beginner mage",
 		consumable: false,
 		icon: spr_mage_light_body,
 	
@@ -398,7 +398,7 @@ global.item_list =
 		{
 	
 		name: "Novice Mage Robes",
-		description: "Magically reinforced mail that the majority of mages wear in their everyday lives",
+		itemDescription: "Magically reinforced mail that the majority of mages wear in their everyday lives",
 		consumable: false,
 		icon: spr_mage_medium_body,
 	
@@ -407,7 +407,7 @@ global.item_list =
 		{
 	
 		name: "Battlemage Armor",
-		description: "Sturdy mages armour provided enhanced protection to mages who are suited to combat",
+		itemDescription: "Sturdy mages armour provided enhanced protection to mages who are suited to combat",
 		consumable: false,
 		icon: spr_mage_heavy_body,
 	
@@ -416,7 +416,7 @@ global.item_list =
 		{
 	
 		name: "Light Helm",
-		description: "Simple light helmet made of forged scrap metal. May or may not crumble in one hit",
+		itemDescription: "Simple light helmet made of forged scrap metal. May or may not crumble in one hit",
 		consumable: false,
 		icon: spr_tank_light_head,
 	
@@ -425,7 +425,7 @@ global.item_list =
 		{
 	
 		name: "Iron Helm",
-		description: "A sturdy helmet worn by most knights, will protect the head",
+		itemDescription: "A sturdy helmet worn by most knights, will protect the head",
 		consumable: false,
 		icon: spr_tank_medium_head,
 	
@@ -434,7 +434,7 @@ global.item_list =
 		{
 	
 		name: "Reinforced Helm",
-		description: "A steel reinforced helmet that will block many sorts of blows, not sure if you can hear out of it though",
+		itemDescription: "A steel reinforced helmet that will block many sorts of blows, not sure if you can hear out of it though",
 		consumable: false,
 		icon: spr_tank_heavy_head,
 	
@@ -443,7 +443,7 @@ global.item_list =
 		{
 	
 		name: "Light Cuirass",
-		description: "Leather armour with pauldrons made of scrap metal, somewhat effective for a couple hits",
+		itemDescription: "Leather armour with pauldrons made of scrap metal, somewhat effective for a couple hits",
 		consumable: false,
 		icon: spr_tank_light_body,
 	
@@ -452,7 +452,7 @@ global.item_list =
 		{
 	
 		name: "Armoured Mail",
-		description: "Standard equipment worn by most knights, will protect the body",
+		itemDescription: "Standard equipment worn by most knights, will protect the body",
 		consumable: false,
 		icon: spr_tank_medium_body,
 	
@@ -461,7 +461,7 @@ global.item_list =
 		{
 	
 		name: "Fully Plated Armoour",
-		description: "STAY BEHIND ME MEN, WE WILL NOT FALTER, AND WE WILL NOT LOSE OUR POSITION, I AM YOUR ANCHOR",
+		itemDescription: "STAY BEHIND ME MEN, WE WILL NOT FALTER, AND WE WILL NOT LOSE OUR POSITION, I AM YOUR ANCHOR",
 		consumable: false,
 		icon: spr_tank_heavy_body,
 	

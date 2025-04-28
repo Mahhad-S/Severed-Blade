@@ -51,7 +51,7 @@ function inventory_GUI(){
             // Draw description
             var desc_y = column_y + 100;
             draw_set_color(c_white);
-            draw_text(left_x + 20, desc_y, sel_item.description);
+            draw_text(left_x + 20, desc_y, sel_item.itemDescription);
         }
     } else {
         draw_set_color(c_white);

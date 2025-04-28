@@ -1,7 +1,5 @@
 function inventory_GUI(){
-	if (!instance_exists(obj_item_manager)) {
-        return; // Exit the function if obj_item_manager doesn't exist
-    }
+	
     var margin     = 12;
     var box_width  = RESOLUTION_W * 0.25;
     var box_x      = margin;

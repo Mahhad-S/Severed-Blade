@@ -73,48 +73,6 @@ global.actionLibrary =
 			BattleChangeEP(_user, -epCost)
 		}		
 	},
-	potion : 
-	{
-		name : "Potion",
-		description : "{0} uses a Potion!",
-		subMenu : "Item",
-		targetRequired: true,
-		targetEnemyByDefault: false, //0: party/self, 1: enemy
-		targetAll: MODE.NEVER,
-		func : function(_user, _targets)
-		{
-			var _heal = 30;
-			BattleChangeHP(_targets[0], _heal);
-		}		
-	},
-	ether : 
-	{
-		name : "Ether",
-		description : "{0} uses an Ether!",
-		subMenu : "Item",
-		targetEnemyByDefault: false, //0: party/self, 1: enemy
-		targetAll: MODE.NEVER,
-		targetRequired: true,
-		func : function(_user, _targets)
-		{
-			var _healEP = 50;
-			BattleChangeEP(_targets[0], _healEP, true);
-		}		
-	},
-	revive : 
-	{
-		name : "Revive",
-		description : "{0} uses a Revive!",
-		subMenu : "Item",
-		targetEnemyByDefault: false, //0: party/self, 1: enemy
-		targetAll: MODE.NEVER,
-		targetRequired: true,
-		func : function(_user, _targets)
-		{
-			var _heal = 30;
-			BattleChangeHP(_targets[0], _heal, 1);
-		}		
-	}
 }
 
 //Party Data
@@ -162,11 +120,3 @@ global.enemies =
 		}
 	}
 }
-
-//Inventory
-global.inventory =
-[
-	[global.actionLibrary.potion, 4],
-	[global.actionLibrary.revive, 2],
-	[global.actionLibrary.ether, 1],
-]

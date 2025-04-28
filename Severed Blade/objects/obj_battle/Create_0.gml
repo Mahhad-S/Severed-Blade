@@ -1,3 +1,5 @@
+// create event for obj_battle
+
 //Transition setup
 transitionProg = 0;
 surfTransition = surface_create(surface_get_width(application_surface),surface_get_height(application_surface));
@@ -110,39 +112,36 @@ function BattleStateSelectAction()
 				var _subMenus = {};
 				
 				//add inventory to action list
-				var _inventoryActions = [];
-				for (var i = 0; i < array_length(global.inventory); i++)
+				var consumable_list = [];
+				for (var i = 0; i < array_length(global.inventory); i++) 
 				{
-					//if we have any of this item left we want to add the to the action list
-					if (global.inventory[i][1] > 0)	
+					var item = global.inventory[i];
+					if (item != undefined && item.consumable)
 					{
-						var _itemAction = global.inventory[i][0];
-						_itemAction.count = global.inventory[i][1];
-						array_push(_inventoryActions, _itemAction); 
+						array_push(consumable_list, item);
 					}
 				}
 				
-				var _actionList = array_union(_unit.actions, _inventoryActions);
+				var _actionList = array_union(_unit.actions, consumable_list);
 				
 				for (var i = 0; i < array_length(_actionList); i++)
 				{
 					var _action = _actionList[i]
 					var _available = IsActionAvailable(_unit,_action);
 					//Add item count to option name if necessary
-					var _nameAndCount = _action.name;
-					if (_action.subMenu == "Item") _nameAndCount += string(" x{0}", _action.count); 
+					var _name = _action.name;
 					//add top level action
-					if (_action.subMenu == -1) array_push(_menuOptions,[_nameAndCount, MenuSelectAction, [_unit, _action], _available]);
+					if (_action.subMenu == -1) array_push(_menuOptions,[_name, MenuSelectAction, [_unit, _action], _available]);
 					else 
 					{
 						//create or add to a submenu
 						if (is_undefined(_subMenus[$ _action.subMenu]))
 						{
-							variable_struct_set(_subMenus, _action.subMenu, [[_nameAndCount, MenuSelectAction, [_unit, _action], _available]]);
+							variable_struct_set(_subMenus, _action.subMenu, [[_name, MenuSelectAction, [_unit, _action], _available]]);
 						}				
 						else
 						{
-							array_push(_subMenus[$ _action.subMenu],[_nameAndCount, MenuSelectAction, [_unit, _action], _available]);
+							array_push(_subMenus[$ _action.subMenu],[_name, MenuSelectAction, [_unit, _action], _available]);
 						}
 					}
 				}

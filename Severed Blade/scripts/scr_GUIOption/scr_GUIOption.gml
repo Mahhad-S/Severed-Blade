@@ -1,4 +1,5 @@
 function inventory_GUI(){
+	
     var margin     = 12;
     var box_width  = RESOLUTION_W * 0.25;
     var box_x      = margin;

@@ -89,16 +89,19 @@ function IsActionAvailable(_unit, _action)
 	return false;
 }
 
-function RemoveItemFromInventory(_item, _amount)
+function RemoveItemFromInventory(item_to_use)
 {
-	
-	for (var i = 0; i < array_length(global.inventory); i++)
-	{
-		if (global.inventory[i][0] == _item)
-		{
-			global.inventory[i][1] -= _amount;
-			break;
-		}
+	// Loop through the inventory
+    for (var i = 0; i < array_length(global.inventory); i++) {
+        var item = global.inventory[i];
+        
+        // Match the item (you could match by id, name, or instance equality)
+        if (item != undefined && item == item_to_use) 
+			{
+                array_delete(global.inventory, i, 1);
+            }
+            
+        break;
 	}
 }
 

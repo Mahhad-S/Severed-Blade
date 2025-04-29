@@ -24,3 +24,11 @@ global.loadJustOpenedPrompt = false;
 
 // A fade variable (like you used in your title screen) can control slot visibility.
 slotVisible = 0.0;  // local or global, as desired
+
+// --- Settings Values ---
+global.sfxVolume   = 1.0; // Range: 0.0 to 1.0
+global.fullscreen  = false;
+
+// --- Settings Menu Navigation ---
+global.settingOptionSelected = 0; // 0 = Music, 1 = SFX, 2 = Screen Size
+global.settingOptionCount = 3;    // Total options

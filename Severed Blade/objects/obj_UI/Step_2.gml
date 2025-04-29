@@ -159,6 +159,71 @@ if (global.gamePaused)
 			}
         }
     }
+	else if (global.pauseSubmenu == "Setting")
+    {
+        // --- Setting submenu logic ---
+
+        // Navigate settings
+        if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
+            global.settingOptionSelected = (global.settingOptionSelected - 1 + global.settingOptionCount) mod global.settingOptionCount;
+        }
+        if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+            global.settingOptionSelected = (global.settingOptionSelected + 1) mod global.settingOptionCount;
+        }
+
+        // Adjust settings with Left/Right
+        if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A")))
+        {
+            switch (global.settingOptionSelected)
+            {
+                case 0:
+                    global.musicVolume = clamp(global.musicVolume - 0.05, 0, 1);
+                    audio_master_gain(global.musicVolume);
+                    break;
+                case 1:
+                    global.sfxVolume = max(0, global.sfxVolume - 0.05);
+                    audio_master_gain(global.sfxVolume);
+                    break;
+                case 2:
+                    global.fullscreen = !global.fullscreen;
+                    window_set_fullscreen(global.fullscreen);
+                    break;
+            }
+        }
+        if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D")))
+        {
+            switch (global.settingOptionSelected)
+            {
+                case 0:
+                    global.musicVolume = min(1, global.musicVolume + 0.05);
+                    audio_master_gain(global.musicVolume);
+                    break;
+                case 1:
+                    global.sfxVolume = min(1, global.sfxVolume + 0.05);
+                    audio_master_gain(global.sfxVolume);
+                    break;
+                case 2:
+                    global.fullscreen = !global.fullscreen;
+                    window_set_fullscreen(global.fullscreen);
+                    break;
+            }
+        }
+
+        // Back to main menu with X
+        if (keyboard_check_pressed(ord("X")))
+        {
+            global.pauseSubmenu = "Status";
+            pauseOptionSelected = 0;
+        }
+
+        // Close pause menu with Escape
+        if (keyboard_check_pressed(vk_escape))
+        {
+            global.gamePaused = false;
+            global.pauseSubmenu = "Status";
+            pauseOptionSelected = 0;
+        }
+    }
     // ----- Main Pause Menu Handling -----
     else
     {

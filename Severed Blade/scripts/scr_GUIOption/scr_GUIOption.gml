@@ -175,11 +175,71 @@ function status_GUI() {
 
 
 function equipment_GUI() {
-	draw_set_font(f_text);
+	// Exit early if party doesn't exist
+    if (!is_array(global.party)) {
+        return;
+    }
+
+    // === Layout Variables ===
+    var margin = 12;
+    var box_width = RESOLUTION_W * 0.25;
+    var box_x = margin;
+    var gui_x = box_x + box_width + margin;
+    var gui_y = margin;
+    var gui_width = RESOLUTION_W - gui_x - margin;
+    var gui_height = RESOLUTION_H - margin * 2;
+
+    // === Inner Content Area ===
+    var content_margin = 8;
+    var content_x = gui_x + content_margin;
+    var content_y = gui_y + content_margin;
+    var content_width = gui_width - content_margin * 2;
+    var content_height = gui_height - content_margin * 2;
+
+    // === Draw Title ===
+    draw_set_font(f_text);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
-	draw_text(120, 28, "Equipment Screen");
+    draw_text(120, 28, "Equipment Screen");
+
+    // === Draw Party Member List ===
+    var start_y = content_y + 32;
+    var spacing_y = 64; // Vertical space between party members
+
+    for (var i = 0; i < array_length(global.party); i++) {
+	    var member = global.party[i];
+
+	    var sprite_size = 64;
+	    var sprite_scale = 0.5;
+	    var sprite_x = content_x + 8 + 32;
+	    var sprite_y = start_y + (i * spacing_y);
+
+	    // --- Draw Member Idle Sprite (scaled down) ---
+	    if (variable_struct_exists(member, "sprites") && variable_struct_exists(member.sprites, "idle") && sprite_exists(member.sprites.idle)) {
+	        draw_sprite_ext(member.sprites.idle, 0, sprite_x, sprite_y, sprite_scale, sprite_scale, 0, c_white, 1);
+	    }
+
+	    // --- Draw Member Name ---
+	    draw_set_halign(fa_left);
+
+	    var name_offset_x = 8;
+	    var sprite_display_width = sprite_size * sprite_scale;
+	    var sprite_display_height = sprite_size * sprite_scale;
+
+	    draw_text(sprite_x + sprite_display_width + name_offset_x, sprite_y + sprite_display_height / 4, member.name);
+	}
+}
+
+function equipment_detail_GUI () {
+	// --- Define the inner area based on the right box dimensions ---
+	var margin     = 12;
+    var box_width  = RESOLUTION_W * 0.25;
+    var box_x      = margin;
+    var gui_x      = box_x + box_width + margin;
+    var gui_y      = margin;
+    var gui_width  = RESOLUTION_W - gui_x - margin;
+    var gui_height = RESOLUTION_H - margin * 2;
 }
 
 function setting_GUI() {

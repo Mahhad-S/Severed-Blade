@@ -224,8 +224,25 @@ if (global.gamePaused)
             pauseOptionSelected = 0;
         }
     }
+	else if(global.pauseSubmenu == "Equipment")
+	{
+		// Press X to go back to main pause menu
+		if (keyboard_check_pressed(ord("X")))
+		{
+			global.pauseSubmenu = "Status";
+			pauseOptionSelected = 0;
+		}
+		
+		// Press Escape to close the whole pause menu
+		if (keyboard_check_pressed(vk_escape))
+		{
+			global.gamePaused = false;
+			global.pauseSubmenu = "Status";
+			pauseOptionSelected = 0;
+		}
+	}
     // ----- Main Pause Menu Handling -----
-    else
+	else
     {
         // Navigation for pause menu
         var keyUp   = keyboard_check_pressed(vk_up)   || keyboard_check_pressed(ord("W"));
@@ -257,7 +274,10 @@ if (global.gamePaused)
                     case 0: global.pauseSubmenu = "Status"; break;
                     case 1: global.pauseSubmenu = "Inventory"; break;
                     case 2: global.pauseSubmenu = "Magic"; break;
-                    case 3: global.pauseSubmenu = "Equipment"; break;
+                    case 3: 
+						global.pauseSubmenu = "Equipment"; 
+						global.equipmentJustOpenedPrompt = true;
+						break;
                     case 4:
 	                    global.pauseSubmenu = "Save";
 	                    global.saveJustOpenedPrompt = true;

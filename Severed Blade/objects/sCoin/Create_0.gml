@@ -1,0 +1,1 @@
+global.fText = fnt_default; 

@@ -1,3 +1,5 @@
+// global money object 
+global.playerMoney = 0;
 state = PlayerStateFree;
 lastState = state;
 

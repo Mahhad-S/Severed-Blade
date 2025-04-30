@@ -20,10 +20,9 @@ function inventory_GUI(){
 
     // Draw title
     draw_text(120, 28, "Inventory Screen");
-
 	
-       // Draw all inventory items in the right column
-    var item_spacing = 32;
+    // Draw all inventory items in the right column
+    var item_spacing = 20;
     var start_y = column_y + 10;
 
     if (array_length(global.inventory) > 0) {
@@ -37,7 +36,7 @@ function inventory_GUI(){
                     draw_set_color(c_white);
                 }
 
-                draw_text(right_x + 10, start_y + (i * item_spacing), item.name);
+                draw_text(right_x-65, start_y+25 + (i * item_spacing), item.name);
             }
         }
 
@@ -46,7 +45,7 @@ function inventory_GUI(){
         if (sel_item != noone) {
             // Draw icon
             if (sel_item.icon != -1) {
-                draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 20);
+                draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 35);
             }
 
             // Draw description
@@ -56,7 +55,7 @@ function inventory_GUI(){
         }
     } else {
         draw_set_color(c_white);
-        draw_text(right_x + 10, start_y, "Inventory is empty.");
+        draw_text(right_x-50, start_y+60, "Inventory is empty...");
     }
 	
 }
@@ -84,8 +83,8 @@ function status_GUI() {
     // The main character is first, followed by any additional team members.
     var party = [
         { name: global.party[0].name, 
-			hp: 100, 
-			maxHP: 100, 
+			hp: global.party[0].hp,
+			maxHP: global.party[0].hpMax, 
 			ep: 50,  
 			maxEP: 50,  
 			atk: 10, 

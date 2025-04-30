@@ -113,6 +113,7 @@
     {"id":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
     {"id":{"name":"test_coin","path":"rooms/test_coin/test_coin.yy",},},
     {"id":{"name":"CollectCoins","path":"scripts/CollectCoins/CollectCoins.yy",},},
+    {"id":{"name":"RemoveCoins","path":"scripts/RemoveCoins/RemoveCoins.yy",},},
     {"id":{"name":"scr_battle_functions","path":"scripts/scr_battle_functions/scr_battle_functions.yy",},},
     {"id":{"name":"scr_DialogueResponses","path":"scripts/scr_DialogueResponses/scr_DialogueResponses.yy",},},
     {"id":{"name":"scr_ExecuteArray","path":"scripts/scr_ExecuteArray/scr_ExecuteArray.yy",},},

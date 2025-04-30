@@ -1,0 +1,1 @@
+RemoveCoins(2); // Press R to subtract 10 coins

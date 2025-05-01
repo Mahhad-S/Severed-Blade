@@ -1,6 +1,6 @@
 //global volume control
-global.masterVolume = 0;
-global.musicVolume = 0.1;
+global.masterVolume = 0.5;
+global.musicVolume = 1;
 
 //info for the song we are currently playing / trying to play
 songInstance = noone;

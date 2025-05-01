@@ -34,7 +34,7 @@ for (var i = 0; i < array_length(global.party); i++)
 //Make Enemies
 for (var i = 0; i < array_length(enemies); i++)
 {
-	enemyUnits[i] = instance_create_depth(x+230+((i mod 3)*10)+((i div 3)*25),y+71+((i mod 3)*20), unitDepth, obj_battle_unit_enemy, enemies[i]);
+	enemyUnits[i] = instance_create_depth(x+230+((i mod 3)*10)+((i div 3)*25),y+55+((i mod 3)*20), unitDepth, obj_battle_unit_enemy, enemies[i]);
 	array_push(units, enemyUnits[i]);
 }
 

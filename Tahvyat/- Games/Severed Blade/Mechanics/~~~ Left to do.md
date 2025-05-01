@@ -1,51 +1,16 @@
-- Save & Load System: IP -- Edwin & Mahhad ✅
-	- Persistent Data (Fixed but Incomplete)
-- Interactables: -- Ethan ✅
-	- Signs !!!
-		- Text pop up
-	- Chests !!!
-		- Animation
-		- Inventory Add
-		- Text pop up
-	- Doors !!!
-		- Animation: Opening
-	- Boulders (Moving) !!!
-		- Animation
-		- Logic
-	- Overworld Magic !!!!!
-		- Logic
-		- Animation
-- Combat system : IP
-	- Adapt to our own Stat system !!!!! -- Mahhad ✅
-	- Modify the turn order system to use SPD --- FTF
-	- Create more attacks and spells !!! -- Edwin ✅
-	- Enemy generation system (Shitty but workable) --------------------------------
-- Audio system : IP -- Anh ✅
-	- All types of Effects needed !
-	- More research into music background !
-- Menu system : IP -- Multiple
-	- Finishing drawing all sections with persistent data (Status, Inventory,...) !!!!!!!! -- Mahhad ✅
-	- Make a functional Setting System !!!!!!!! -- Anh ✅
-- Inventory system : IP -- Mahhad ✅
-	- Coupling with Combat System (Done) --------------------------------
-	- Redefining items with functionality (Done but Incomplete) !!!!!!!!
-	- Equipment:
-		- Equip Items !!!!!!!!
-		- Modify Stats with equipment !!!!!!!!!
-- Dungeons : IP -- Ethan ✅
-	- Level Design look up !
-- NPC : IP -- Edwin ✅
-	- Interactions
-		- Talking !!!
-		- Trading --- FTF
-		- Movement --- FTF
-	- Scripting !!
-- Overworld : On hold -- FTF
-	- Decoration
-	- Walling Up
-- Writing : On Hold -- Edwin ✅
-	- Worldbuilding !
-	- Story !!
-
-Glossary:
-- FTF: For The Future
+- Combat system : In progress
+	- Adapt to our own Stat system
+	- Modify the turn order system to use SPD
+	- Create more attacks and spells
+- Audio system : In progress 
+	- All types of Effects needed
+	- More research into music background
+- Menu system : In progress
+	- Finishing drawing all sections with persistent data (Status, Inventory, )
+	- Make a functional Setting System
+	- 
+- Inventory system : In progress 
+- Dungeons : In progress 
+- NPC : On hold 
+- Overworld : On hold 
+- Story : N/A

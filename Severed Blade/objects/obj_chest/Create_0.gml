@@ -9,3 +9,7 @@ chestOpened = false;
 //Randomized Loot
 loot_key = "";
 loot_item = undefined;
+
+//Loot message
+loot_message = "";
+loot_message_timer = 0;

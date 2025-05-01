@@ -28,6 +28,13 @@ global.equipmentJustOpenedPrompt = false;
 // A fade variable (like you used in your title screen) can control slot visibility.
 slotVisible = 0.0;  // local or global, as desired
 
+// --- Settings Values ---
+global.sfxVolume   = 1.0; // Range: 0.0 to 1.0
+global.fullscreen  = false;
+
+// --- Settings Menu Navigation ---
+global.settingOptionSelected = 0; // 0 = Music, 1 = SFX, 2 = Screen Size
+global.settingOptionCount = 3;    // Total options
 // Equipment Menu variables
 equipment_selected_index = 0; // Which party member is highlighted
 equipment_submenu_open = false; // If true, inside a character's equipment submenu

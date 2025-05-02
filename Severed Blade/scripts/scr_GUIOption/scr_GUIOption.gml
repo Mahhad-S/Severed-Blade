@@ -20,10 +20,9 @@ function inventory_GUI(){
 
     // Draw title
     draw_text(120, 28, "Inventory Screen");
-
 	
-       // Draw all inventory items in the right column
-    var item_spacing = 32;
+    // Draw all inventory items in the right column
+    var item_spacing = 20;
     var start_y = column_y + 10;
 
     if (array_length(global.inventory) > 0) {
@@ -37,7 +36,7 @@ function inventory_GUI(){
                     draw_set_color(c_white);
                 }
 
-                draw_text(right_x + 10, start_y + (i * item_spacing), item.name);
+                draw_text(right_x-65, start_y+25 + (i * item_spacing), item.name);
             }
         }
 
@@ -46,7 +45,7 @@ function inventory_GUI(){
         if (sel_item != noone) {
             // Draw icon
             if (sel_item.icon != -1) {
-                draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 20);
+                draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 35);
             }
 
             // Draw description
@@ -56,7 +55,7 @@ function inventory_GUI(){
         }
     } else {
         draw_set_color(c_white);
-        draw_text(right_x + 10, start_y, "Inventory is empty.");
+        draw_text(right_x-50, start_y+60, "Inventory is empty...");
     }
 	
 }
@@ -84,8 +83,8 @@ function status_GUI() {
     // The main character is first, followed by any additional team members.
     var party = [
         { name: global.party[0].name, 
-			hp: 100, 
-			maxHP: 100, 
+			hp: global.party[0].hp,
+			maxHP: global.party[0].hpMax, 
 			ep: 50,  
 			maxEP: 50,  
 			atk: 10, 
@@ -244,12 +243,50 @@ function equipment_detail_GUI () {
 }
 
 function setting_GUI() {
-	draw_set_font(f_text);
+    var margin = 12;
+    var box_width = RESOLUTION_W * 0.25;
+    var box_x = margin;
+    var gui_x = box_x + box_width + margin;
+    var gui_y = margin;
+    var gui_width = RESOLUTION_W - gui_x - margin;
+    var gui_height = RESOLUTION_H - margin * 2;
+
+    var left_offset = gui_x + (gui_width - 120) * 0.5;
+    var top_offset = gui_y + 36;
+    
+    // Titles
+    draw_set_font(f_text);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
-	draw_text(120, 28, "Setting Screen");
+
+    draw_text(left_offset, gui_y + 10, "Settings");
+
+    var settings = ["Music Volume", "Sound Effects", "Screen Size"];
+    var values = [
+        string_format(global.musicVolume * 100, 0, 0) + "%",
+        string_format(global.sfxVolume * 100, 0, 0) + "%",
+        global.fullscreen ? "Fullscreen" : "Windowed"
+    ];
+
+    // Draw each setting
+    for (var i = 0; i < array_length(settings); i++) {
+        var setting_y = top_offset + i * 30;
+
+        // Highlight selected option
+        if (i == global.settingOptionSelected) {
+            draw_set_color(c_yellow);
+			draw_sprite(spr_pointer, 0, left_offset + 5, setting_y + 18);
+        }
+        draw_set_color(c_white);
+        
+        draw_text(left_offset, setting_y, settings[i] + ": " + values[i]);
+    }
+
+    // Reset draw color
+    draw_set_color(c_white);
 }
+
 
 function load_GUI() {
     // Define the inner area based on the right box dimensions.

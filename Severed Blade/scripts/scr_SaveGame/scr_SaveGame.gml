@@ -3,7 +3,7 @@ function SaveGame(){
 	var _map = ds_map_create();
 	
 	_map[? "room"] = room;
-	//_map[? "playerHealth"] = global.playerHealth;
+	_map[? "playerHealth"] = global.party[0].hp;
 	//_map[? "playerHealthMax"] = global.playerHealthMax;
 	//_map[? "playerMoney"] = global.playerMoney;
 	//_map[? "playerEquipped"] = global.playerEquipped;

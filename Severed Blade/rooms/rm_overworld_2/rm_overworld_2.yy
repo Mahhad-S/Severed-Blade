@@ -14,6 +14,9 @@
     {"name":"inst_7DE8ED33","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},
     {"name":"inst_3C2451B7","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},
     {"name":"inst_4744C367","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},
+    {"name":"inst_6F9FA96","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},
+    {"name":"inst_7EF4F36D","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},
+    {"name":"inst_58EEA64D","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -110,6 +113,9 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"propertyId":{"name":"targetX","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"760",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"propertyId":{"name":"targetY","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"144",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":2976.0,"y":1216.0,},
+        {"$GMRInstance":"v2","%Name":"inst_6F9FA96","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F9FA96","objectId":{"name":"obj_potion_test","path":"objects/obj_potion_test/obj_potion_test.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3232.0,"y":1664.0,},
+        {"$GMRInstance":"v2","%Name":"inst_7EF4F36D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EF4F36D","objectId":{"name":"obj_potion_test","path":"objects/obj_potion_test/obj_potion_test.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3200.0,"y":1696.0,},
+        {"$GMRInstance":"v2","%Name":"inst_58EEA64D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58EEA64D","objectId":{"name":"obj_potion_test","path":"objects/obj_potion_test/obj_potion_test.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3264.0,"y":1696.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"overworld","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRTileLayer":"","%Name":"objects","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[

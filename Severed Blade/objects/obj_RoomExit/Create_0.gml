@@ -1,0 +1,2 @@
+doorOpening = false;
+transitionStarted = false;

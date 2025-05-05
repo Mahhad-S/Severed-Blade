@@ -36,7 +36,7 @@ if (interact_key) {
         var _moveY = _pushBlockInst.y + lengthdir_y(moveSpeed, _pushBlockInst.faceDir * 90);
 
         // Check if the new position is clear of collisions with obj_wall
-        if (!place_meeting(_moveX, _moveY, obj_wall)) {  // Use 'obj_wall' here
+        if (!tilemap_get_at_pixel(global.collisionMap, _moveX, _moveY)){  // Use 'obj_wall' here
             // Save the new position
             _pushBlockInst.x = _moveX;
             _pushBlockInst.y = _moveY;

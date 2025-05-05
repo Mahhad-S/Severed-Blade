@@ -20,11 +20,11 @@ if (sliding) {
 	xspd = lengthdir_x(_finalSpd, _realDir);
 	yspd = lengthdir_y(_finalSpd, _realDir);
 	
-	// Cancel movement if wall is in the way
-	if (place_meeting(targetX, targetY, obj_wall)) {
-		xspd = 0;
-		yspd = 0;
-		sliding = false;
+	// Cancel movement if wall tile is in the way
+	if (tilemap_get_at_pixel(global.collisionMap, targetX, targetY)) {
+	    xspd = 0;
+	    yspd = 0;
+	    sliding = false;
 	}
 }
 

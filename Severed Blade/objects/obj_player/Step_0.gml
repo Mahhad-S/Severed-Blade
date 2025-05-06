@@ -31,7 +31,7 @@ if (interact_key) {
         _pushBlockInst.sliding = true;
         _pushBlockInst.faceDir = faceDir;
 
-        // Move the push block
+
         var _moveX = _pushBlockInst.x + lengthdir_x(moveSpeed, _pushBlockInst.faceDir * 90);
         var _moveY = _pushBlockInst.y + lengthdir_y(moveSpeed, _pushBlockInst.faceDir * 90);
 
@@ -41,13 +41,71 @@ if (interact_key) {
             _pushBlockInst.x = _moveX;
             _pushBlockInst.y = _moveY;
 
-            // Optionally, store the position for future use
+
             _pushBlockInst.savedX = _moveX;
             _pushBlockInst.savedY = _moveY;
             
-            // Save the push block's position globally for room transition
+
             global.savedPushBlockX = _moveX;
             global.savedPushBlockY = _moveY;
         }
     }
 }
+
+if (place_meeting(x, y, obj_statue) && activate_key) {
+    global.fire_magic_unlocked = true;
+    show_message("You have unlocked Fire Magic!");
+	show_debug_message(global.fire_magic_unlocked);
+}
+
+
+if (global.fire_magic_unlocked && activate_key) {
+    var target = noone; 
+
+
+    if (place_meeting(x + 16, y, obj_mushroom) ||  
+        place_meeting(x - 16, y, obj_mushroom) ||  
+        place_meeting(x, y + 16, obj_mushroom)) {
+
+        target = instance_place(x + 16, y, obj_mushroom); 
+        if (target == noone) {
+            target = instance_place(x - 16, y, obj_mushroom); 
+        }
+        if (target == noone) {
+            target = instance_place(x, y + 16, obj_mushroom); 
+        }
+    }
+
+
+    if (target == noone) {
+        var fire_dir = faceDir * 90;
+        var check_x = x + lengthdir_x(16, fire_dir);
+        var check_y = y + lengthdir_y(16, fire_dir);
+        target = instance_place(check_x, check_y, obj_mushroom);
+    }
+
+
+    if (target != noone) {
+        with (target) {
+            var burn = instance_create_layer(x, y, layer, obj_overworld_burn);
+
+
+            switch (other.faceDir) {
+                case 0: // Facing right
+                    burn.image_angle = 270;
+                    break;
+                case 1: // Facing up
+                    burn.image_angle = 0;
+                    break;
+                case 2: // Facing left
+                    burn.image_angle = 90;
+                    break;
+                case 3: // Facing down
+                    burn.image_angle = 180;
+                    break;
+            }
+        }
+    }
+}
+
+

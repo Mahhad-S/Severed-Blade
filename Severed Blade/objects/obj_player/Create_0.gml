@@ -17,6 +17,7 @@ localFrame = 0;
 
 interactDist = 4;
 moveSpeed = 4;
+
 // Priority: Load file position > Room transition
 if (variable_global_exists("playerXLoad") && global.playerXLoad != -1) {
     x = global.playerXLoad;

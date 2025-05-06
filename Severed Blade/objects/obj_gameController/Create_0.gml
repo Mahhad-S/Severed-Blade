@@ -16,6 +16,7 @@ if (!variable_global_exists("pauseSubmenu")) global.pauseSubmenu = "Status";
 if (!variable_global_exists("justOpenedPrompt")) global.justOpenedPrompt = false;
 if (!variable_global_exists("playerXLoad")) global.playerXLoad = -1;
 if (!variable_global_exists("playerYLoad")) global.playerYLoad = -1;
+if (!variable_global_exists("fire_magic_unlocked")) global.fire_magic_unlocked = false;
 
 global.iCamera = instance_create_layer(0,0,"Instances",obj_camera);
 global.item_manager = instance_create_layer(0, 0, "Instances", obj_item_manager);

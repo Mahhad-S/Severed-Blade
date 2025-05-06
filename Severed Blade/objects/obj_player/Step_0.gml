@@ -31,21 +31,21 @@ if (interact_key) {
         _pushBlockInst.sliding = true;
         _pushBlockInst.faceDir = faceDir;
 
-        // Move the push block
+
         var _moveX = _pushBlockInst.x + lengthdir_x(moveSpeed, _pushBlockInst.faceDir * 90);
         var _moveY = _pushBlockInst.y + lengthdir_y(moveSpeed, _pushBlockInst.faceDir * 90);
 
-        // Check if the new position is clear of collisions with obj_wall
-        if (!place_meeting(_moveX, _moveY, obj_wall)) {  // Use 'obj_wall' here
-            // Save the new position
+
+        if (!place_meeting(_moveX, _moveY, obj_wall)) {  
+
             _pushBlockInst.x = _moveX;
             _pushBlockInst.y = _moveY;
 
-            // Optionally, store the position for future use
+
             _pushBlockInst.savedX = _moveX;
             _pushBlockInst.savedY = _moveY;
             
-            // Save the push block's position globally for room transition
+
             global.savedPushBlockX = _moveX;
             global.savedPushBlockY = _moveY;
         }
@@ -62,7 +62,7 @@ if (place_meeting(x, y, obj_statue) && activate_key) {
 if (global.fire_magic_unlocked && activate_key) {
     var target = noone; 
 
-    // Check nearby mushrooms
+
     if (place_meeting(x + 16, y, obj_mushroom) ||  
         place_meeting(x - 16, y, obj_mushroom) ||  
         place_meeting(x, y + 16, obj_mushroom)) {
@@ -76,7 +76,7 @@ if (global.fire_magic_unlocked && activate_key) {
         }
     }
 
-    // If no mushroom found nearby, check in facing direction
+
     if (target == noone) {
         var fire_dir = faceDir * 90;
         var check_x = x + lengthdir_x(16, fire_dir);
@@ -84,12 +84,12 @@ if (global.fire_magic_unlocked && activate_key) {
         target = instance_place(check_x, check_y, obj_mushroom);
     }
 
-    // If a mushroom was found, create the burn effect at the mushroom's position
+
     if (target != noone) {
         with (target) {
             var burn = instance_create_layer(x, y, layer, obj_overworld_burn);
 
-            // Set the rotation based on the player's facing direction (faceDir)
+
             switch (other.faceDir) {
                 case 0: // Facing right
                     burn.image_angle = 270;

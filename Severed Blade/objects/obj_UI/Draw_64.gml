@@ -48,7 +48,13 @@ if (global.gamePaused) {
 	    case "Inventory": inventory_GUI(); break;
 	    case "Magic": magic_GUI(); break;
 	    case "Status": status_GUI(); break;
-	    case "Equipment": equipment_GUI(); break;
+	    case "Equipment":
+			if (global.inEquipmentPartySelect) {
+		        equipment_GUI(); // shows party member list
+		    } else {
+		        equipment2_GUI(); // detailed submenu
+		    }
+			break;
 		case "Save": save_GUI(); break;
 	    case "Load": load_GUI(); break;
 	    case "Setting": setting_GUI(); break;

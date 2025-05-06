@@ -70,7 +70,6 @@ function magic_GUI(){
 
 function status_GUI() {
     // --- Define the inner area based on the right box dimensions ---
-    // (These values match the ones used in your pause menu drawing code.)
     var margin     = 12;
     var box_width  = RESOLUTION_W * 0.25;
     var box_x      = margin;
@@ -78,96 +77,71 @@ function status_GUI() {
     var gui_y      = margin;
     var gui_width  = RESOLUTION_W - gui_x - margin;
     var gui_height = RESOLUTION_H - margin * 2;
-    
-    // --- Example party data ---
-    // The main character is first, followed by any additional team members.
-    var party = [
-        { name: global.party[0].name, 
-			hp: global.party[0].hp,
-			maxHP: global.party[0].hpMax, 
-			ep: 50,  
-			maxEP: 50,  
-			atk: 10, 
-			def: 15, 
-			spd: 10, 
-			sprites: spr_player_idle},
-        { name: "Mage",
-			hp:  60, 
-			maxHP:  60, 
-			ep: 80,  
-			maxEP: 80,  
-			atk: 10, 
-			def:  8, 
-			spd: 12, 
-			sprites: spr_player_idle},
-        { name: "Warrior",
-			hp: 120, 
-			maxHP: 120, 
-			ep: 30,  
-			maxEP: 30,  
-			atk: 25, 
-			def: 20, 
-			spd:  8, 
-			sprites: spr_player_idle },
-		{ name: "Janitor",  
-			hp: 120, 
-			maxHP: 120, 
-			ep: 30,  
-			maxEP: 30,  
-			atk: 25, 
-			def: 20, 
-			spd:  8, 
-			sprites: spr_player_idle },
-    ];
-    
+
     // --- Layout parameters for party member status boxes ---
-    // These boxes are drawn within the right-side GUI box.
-    var inner_margin      = 10;  // margin inside the right box
+    var inner_margin      = 10;
     var content_x         = gui_x + inner_margin;
     var content_y         = gui_y + inner_margin;
     var content_width     = gui_width - inner_margin * 2;
-    var party_box_height  = (gui_height - inner_margin * 2) / array_length(party);  // height for each party member’s status block (adjust as needed)
-    var party_box_spacing = 2;  // spacing between status blocks
     
-    // --- Loop through party array and draw each member’s status ---
-    for (var i = 0; i < array_length(party); i++) {
-        var member = party[i];
-        var y_pos = content_y + i * (party_box_height + party_box_spacing);
-        
-        // 2. Draw a placeholder for the character sprite
+    // how many members?
+    var count             = array_length(global.party);
+    var party_box_height  = (gui_height - inner_margin * 2) / count;
+    var party_box_spacing = 2;
+
+    // --- Loop through global.party and draw each member’s status ---
+    for (var i = 0; i < count; i++) {
+        var member = global.party[i];
+        var y_pos  = content_y + i * (party_box_height + party_box_spacing);
+
+        // Draw sprite (using the 'idle' pose from your sprites struct)
         var sprite_size = 16;
-        var sprite_x = content_x + 24;
-        var sprite_y = y_pos + (party_box_height - sprite_size) * 0.5;
-        
-        draw_sprite_ext(member.sprites, 0, sprite_x + 9, sprite_y + 15, 0.5, 0.5, 0, c_white, 1);
-        
-        // 3. Draw the character’s stats to the right of the sprite
-        var text_x = sprite_x + sprite_size + 12;
-        var availableWidth = (content_x + content_width) - text_x;
-        var colWidth = availableWidth / 3;
-        var col1_x = text_x;
-        var col2_x = text_x + colWidth + 15;
-        var col3_x = text_x + colWidth * 2 + 15;
-		var line_height = 8;
-        
-        draw_text_transformed(text_x - 28, y_pos, member.name, 0.75, 0.75, 0);
-        
-		var stat_y = y_pos + 5 + line_height;
-        draw_text_transformed(col1_x, stat_y, "HP: " + string(member.hp) + "/" + string(member.maxHP), 0.5, 0.5, 0);
-        draw_text_transformed(col2_x, stat_y, "EP: " + string(member.ep) + "/" + string(member.maxEP), 0.5, 0.5, 0);
-        draw_text_transformed(col3_x, stat_y, "ATK: " + string(member.atk), 0.5, 0.5, 0);
-        
-        // --- Second row of stats: DEF, SPD ---
+        var sprite_x    = content_x + 24;
+        var sprite_y    = y_pos + (party_box_height - sprite_size) * 0.5;
+        draw_sprite_ext(member.sprites.idle, 0,
+                        sprite_x + 9, sprite_y + 15,
+                        0.5, 0.5, 0, c_white, 1);
+
+        // Text layout
+        var text_x      = sprite_x + sprite_size + 12;
+        var availableW  = (content_x + content_width) - text_x;
+        var colWidth    = availableW / 3;
+        var col1_x      = text_x;
+        var col2_x      = text_x + colWidth + 15;
+        var col3_x      = text_x + colWidth * 2 + 15;
+        var line_height = 8;
+
+        // Name
+        draw_text_transformed(text_x - 28, y_pos,
+                              member.name, 0.75, 0.75, 0);
+
+        // First row: HP / EP / ATK
+        var stat_y = y_pos + 5 + line_height;
+        draw_text_transformed(col1_x, stat_y,
+                              "HP: " + string(member.hp) + "/" + string(member.hpMax),
+                              0.5, 0.5, 0);
+        draw_text_transformed(col2_x, stat_y,
+                              "EP: " + string(member.ep) + "/" + string(member.epMax),
+                              0.5, 0.5, 0);
+        draw_text_transformed(col3_x, stat_y,
+                              "ATK: " + string(member.ATK),
+                              0.5, 0.5, 0);
+
+        // Second row: DEF / SPD
         stat_y += line_height;
-        draw_text_transformed(col1_x, stat_y, "DEF: " + string(member.def), 0.5, 0.5, 0);
-        draw_text_transformed(col2_x, stat_y, "SPD: " + string(member.spd), 0.5, 0.5, 0);
-		
-		// 4. Draw a dividing horizontal line below each member's status block (except after the last one)
-        if (i < array_length(party) - 1) {
-            // The line's y coordinate is at the bottom edge of the block.
+        draw_text_transformed(col1_x, stat_y,
+                              "DEF: " + string(member.DEF),
+                              0.5, 0.5, 0);
+        draw_text_transformed(col2_x, stat_y,
+                              "SPD: " + string(member.SPD),
+                              0.5, 0.5, 0);
+
+        // Divider line
+        if (i < count - 1) {
             var line_y = y_pos + party_box_height - 5;
-            draw_set_color(c_gray); // Change to any preferred line color
-            draw_line(content_x, line_y, content_x + content_width, line_y);
+            draw_set_color(c_gray);
+            draw_line(content_x, line_y,
+                      content_x + content_width, line_y);
             draw_set_color(c_white);
         }
     }
@@ -208,30 +182,37 @@ function equipment_GUI() {
     var spacing_y = 64; // Vertical space between party members
 
     for (var i = 0; i < array_length(global.party); i++) {
-	    var member = global.party[i];
+        var member = global.party[i];
 
-	    var sprite_size = 64;
-	    var sprite_scale = 0.5;
-	    var sprite_x = content_x + 8 + 32;
-	    var sprite_y = start_y + (i * spacing_y);
+        var sprite_size = 64;
+        var sprite_scale = 0.5;
+        var sprite_x = content_x + 8 + 32;
+        var sprite_y = start_y + (i * spacing_y);
 
-	    // --- Draw Member Idle Sprite (scaled down) ---
-	    if (variable_struct_exists(member, "sprites") && variable_struct_exists(member.sprites, "idle") && sprite_exists(member.sprites.idle)) {
-	        draw_sprite_ext(member.sprites.idle, 0, sprite_x, sprite_y, sprite_scale, sprite_scale, 0, c_white, 1);
-	    }
+        // --- Draw Pointer if selected ---
+        if (i == global.equipSlotSelected) {
+            draw_set_color(c_yellow);
+            draw_sprite(spr_pointer, 0, content_x, sprite_y + 18); // pointer on left
+        }
 
-	    // --- Draw Member Name ---
-	    draw_set_halign(fa_left);
+        // --- Draw Member Idle Sprite (scaled down) ---
+        if (variable_struct_exists(member, "sprites") && variable_struct_exists(member.sprites, "idle") && sprite_exists(member.sprites.idle)) {
+            draw_sprite_ext(member.sprites.idle, 0, sprite_x, sprite_y, sprite_scale, sprite_scale, 0, c_white, 1);
+        }
 
-	    var name_offset_x = 8;
-	    var sprite_display_width = sprite_size * sprite_scale;
-	    var sprite_display_height = sprite_size * sprite_scale;
+        // --- Draw Member Name ---
+        draw_set_color(c_white);
+        draw_set_halign(fa_left);
 
-	    draw_text(sprite_x + sprite_display_width + name_offset_x, sprite_y + sprite_display_height / 4, member.name);
-	}
+        var name_offset_x = 8;
+        var sprite_display_width = sprite_size * sprite_scale;
+        var sprite_display_height = sprite_size * sprite_scale;
+
+        draw_text(sprite_x + sprite_display_width + name_offset_x, sprite_y + sprite_display_height / 4, member.name);
+    }
 }
 
-function equipment_detail_GUI () {
+function equipment2_GUI () {
 	// --- Define the inner area based on the right box dimensions ---
 	var margin     = 12;
     var box_width  = RESOLUTION_W * 0.25;
@@ -240,6 +221,73 @@ function equipment_detail_GUI () {
     var gui_y      = margin;
     var gui_width  = RESOLUTION_W - gui_x - margin;
     var gui_height = RESOLUTION_H - margin * 2;
+
+    var content_margin = 16;
+    var content_x = gui_x + content_margin;
+    var content_y = gui_y + content_margin;
+    var content_width = gui_width - content_margin * 2;
+
+    var categories = ["Head", "Body", "Weapon"];
+    var spacing_x = 64;
+
+    draw_set_font(f_text);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_color(c_white);
+    draw_text(content_x, content_y, "Select Slot");
+
+    for (var i = 0; i < 3; i++) {
+    var x_pos = content_x + i * spacing_x;
+
+    if (i == global.equipmentCategoryIndex) {
+        draw_set_color(c_yellow);
+        draw_sprite(spr_pointer, 0, x_pos + 8, content_y + 44);
+    } else {
+        draw_set_color(c_white);
+    }
+
+    draw_text(x_pos, content_y + 24, categories[i]);
+}
+
+    // Draw item list
+	if (global.equipSlotSelected >= 0 && global.equipSlotSelected < array_length(global.party)) {
+	    var list_y_start = content_y + 64;
+	    var list_spacing_y = 32;
+
+	    var member = global.party[global.equipSlotSelected];
+	    var category = string_lower(categories[global.equipmentCategoryIndex]);
+
+	    var equipped_item = -1;
+	    if (category == "head")    equipped_item = member.equipment.head;
+	    if (category == "body")    equipped_item = member.equipment.body;
+	    if (category == "weapon")  equipped_item = member.equipment.weapon;
+
+	    for (var j = 0; j < array_length(global.equipmentListFiltered); j++) {
+	        var item = global.equipmentListFiltered[j];
+	        var y_pos = list_y_start + j * list_spacing_y;
+
+	        if (j == global.equipmentListIndex) {
+	            draw_set_color(c_yellow);
+	            draw_sprite(spr_pointer, 0, content_x + 24, y_pos + 20);
+	            draw_set_color(c_white);
+	        }
+
+	        draw_text(content_x + 16, y_pos, item.name);
+
+	        if (item == equipped_item) {
+			    // Measure the text width in the current font
+			    var text_w = string_width(item.name);
+
+			    // X starts at the same place as the text, plus its width, plus 8px gap
+			    var ptr_x  = content_x + 16 + text_w + 8;
+
+			    // Y offset (adjust as needed for vertical centering)
+			    var ptr_y  = y_pos + 8;
+
+			    draw_sprite(spr_equip_pointer, 0, ptr_x, ptr_y);
+			}
+	    }
+	}
 }
 
 function setting_GUI() {

@@ -9,11 +9,9 @@ global.activateExitPrompt = false;
 // Global variables for the slot GUI
 global.saveSlotCount = 3;
 global.loadSlotCount = 3;
-global.equipSlotCount = 4;
 
 global.saveSlotSelected = 0;
 global.loadSlotSelected = 0;
-global.equipSlotSelected = 0;
 
 // Arrays to store slot data – use -1 for an empty slot.
 // You could load these from file or initialize them later.
@@ -28,10 +26,6 @@ global.equipmentJustOpenedPrompt = false;
 // A fade variable (like you used in your title screen) can control slot visibility.
 slotVisible = 0.0;  // local or global, as desired
 
-// Equipment Menu variables
-equipment_selected_index = 0; // Which party member is highlighted
-equipment_submenu_open = false; // If true, inside a character's equipment submenu
-
 // --- Settings Values ---
 global.sfxVolume   = 1.0; // Range: 0.0 to 1.0
 global.fullscreen  = false;
@@ -39,3 +33,13 @@ global.fullscreen  = false;
 // --- Settings Menu Navigation ---
 global.settingOptionSelected = 0; // 0 = Music, 1 = SFX, 2 = Screen Size
 global.settingOptionCount = 3;    // Total options
+
+// --- Primary Equipment Menu Navigation ---
+global.equipSlotSelected = 0;
+global.equipSlotCount = 4;
+global.inEquipmentPartySelect = true;
+
+// --- Item Equipment Menu Navigation ---
+global.equipmentCategoryIndex = 0;	// Start with "Head"
+global.equipmentListFiltered = [];	// No list shown until a category is selected
+global.equipmentListIndex = 0;		// First item in the filtered list

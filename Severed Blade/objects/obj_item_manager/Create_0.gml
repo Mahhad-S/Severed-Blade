@@ -255,6 +255,7 @@ global.item_list =
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
+		class: "Archer",
 		icon: spr_bow,
 	
 		},
@@ -266,6 +267,7 @@ global.item_list =
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
+		class: "Archer",
 		icon: spr_elven_bow,
 	
 		},
@@ -277,6 +279,7 @@ global.item_list =
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
+		class: "Archer",
 		icon: spr_dwarven_bow,
 	
 		},
@@ -285,6 +288,8 @@ global.item_list =
 	
 		name: "Excalibur",
 		itemDescription: "The Holy Sword Excalibur, King of all Blades. Made of an unknown material. He who draws this sword will rule the world",
+		atkStat: 7,
+		atkType: "Slash",
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
@@ -297,6 +302,8 @@ global.item_list =
 	
 		name: "Katana",
 		itemDescription: "The sword left behind by the leader of the bandits who killed Sobu's family.",
+		atkStat: 5,
+		atkType: "Slash",
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
@@ -309,6 +316,8 @@ global.item_list =
 	
 		name: "Wakizashi",
 		itemDescription: "A small, shortsword-like blade, forged in the same fashion as Sobu's Katana",
+		atkStat: 3,
+		atkType: "Pierce",
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
@@ -321,6 +330,8 @@ global.item_list =
 	
 		name: "Bastard Sword",
 		itemDescription: "A great behemoth of a blade. It takes a lot of GUTS to swing this",
+		atkStat: 11,
+		atkType: "Bludgeon",
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
@@ -369,10 +380,12 @@ global.item_list =
 	
 		name: "Thin Head Wrap",
 		itemDescription: "A thin piece of cloth to be wrapped around the head",
+		defStat: 2,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Samurai",
+		armorClass: "Light",
 		icon: spr_samurai_light_head,
 	
 		},
@@ -381,10 +394,12 @@ global.item_list =
 	
 		name: "Thick Head Wrap",
 		itemDescription: "A robust, thick piece of cloth to be wrapped around the head",
+		defStat: 4,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Samurai",
+		armorClass: "Medium",
 		icon: spr_samurai_medium_head,
 	
 		},
@@ -393,10 +408,12 @@ global.item_list =
 	
 		name: "Ronin's Helmet",
 		itemDescription: "A sturdy helmet, typically worn by wandering Ronin who are walking their own path",
+		defStat: 6,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Samurai",
+		armorClass: "Heavy",
 		icon: spr_samurai_heavy_head,
 	
 		},
@@ -405,10 +422,12 @@ global.item_list =
 	
 		name: "Cloth Tunic",
 		itemDescription: "A simple base layer typically worn under armor",
+		defStat: 3,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Samurai",
+		armorClass: "Light",
 		icon: spr_samurai_light_body,
 	
 		},
@@ -417,10 +436,12 @@ global.item_list =
 	
 		name: "Domaru",
 		itemDescription: "Armor worn for on foot battles by lower ranking samurai",
+		defStat: 5,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Samurai",
+		armorClass: "Medium",
 		icon: spr_samurai_medium_body,
 	
 		},
@@ -429,10 +450,12 @@ global.item_list =
 	
 		name: "O-Yoroi",
 		itemDescription: "Large, overlapping boxy armor offering increased protection for samurai",
+		defStat: 7,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Samurai",
+		armorClass: "Heavy",
 		icon: spr_samurai_heavy_body,
 	
 		},

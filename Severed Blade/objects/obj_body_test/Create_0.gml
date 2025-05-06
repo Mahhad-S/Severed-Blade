@@ -1,0 +1,1 @@
+item = global.item_list.samurai_heavy_body;

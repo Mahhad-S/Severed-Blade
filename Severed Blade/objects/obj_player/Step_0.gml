@@ -51,3 +51,34 @@ if (interact_key) {
         }
     }
 }
+
+if (place_meeting(x, y, obj_statue) && activate_key) {
+    global.fire_magic_unlocked = true;
+    show_message("You have unlocked Fire Magic!");
+	show_debug_message(global.fire_magic_unlocked);
+}
+
+
+if (global.fire_magic_unlocked && activate_key) {
+
+    if (place_meeting(x + 16, y, obj_mushroom) ||  
+        place_meeting(x - 16, y, obj_mushroom) ||  
+        place_meeting(x, y + 16, obj_mushroom)) {  
+
+        
+        var target = instance_place(x + 16, y, obj_mushroom); 
+        if (target == noone) {
+            target = instance_place(x - 16, y, obj_mushroom); 
+        }
+        if (target == noone) {
+            target = instance_place(x, y + 16, obj_mushroom); 
+        }
+
+        if (target != noone) {
+            with (target) {
+                instance_create_layer(x, y, layer, obj_overworld_fire);
+            }
+        }
+    }
+}
+

@@ -282,6 +282,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_caveofrebirth_3","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},},
     {"roomId":{"name":"rm_caveofrebirth_1","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},},
     {"roomId":{"name":"rm_overworld_2","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},},
     {"roomId":{"name":"rm_test_battleroom","path":"rooms/rm_test_battleroom/rm_test_battleroom.yy",},},
@@ -295,7 +296,6 @@
     {"roomId":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
     {"roomId":{"name":"rm_ruinsmaze","path":"rooms/rm_ruinsmaze/rm_ruinsmaze.yy",},},
     {"roomId":{"name":"rm_caveofrebirth_2","path":"rooms/rm_caveofrebirth_2/rm_caveofrebirth_2.yy",},},
-    {"roomId":{"name":"rm_caveofrebirth_3","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},},
     {"roomId":{"name":"rm_caveofrebirth_4","path":"rooms/rm_caveofrebirth_4/rm_caveofrebirth_4.yy",},},
   ],
   "templateType":"game",

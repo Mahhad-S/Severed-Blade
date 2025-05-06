@@ -60,25 +60,52 @@ if (place_meeting(x, y, obj_statue) && activate_key) {
 
 
 if (global.fire_magic_unlocked && activate_key) {
+    var target = noone; 
 
+    // Check nearby mushrooms
     if (place_meeting(x + 16, y, obj_mushroom) ||  
         place_meeting(x - 16, y, obj_mushroom) ||  
-        place_meeting(x, y + 16, obj_mushroom)) {  
+        place_meeting(x, y + 16, obj_mushroom)) {
 
-        
-        var target = instance_place(x + 16, y, obj_mushroom); 
+        target = instance_place(x + 16, y, obj_mushroom); 
         if (target == noone) {
             target = instance_place(x - 16, y, obj_mushroom); 
         }
         if (target == noone) {
             target = instance_place(x, y + 16, obj_mushroom); 
         }
+    }
 
-        if (target != noone) {
-            with (target) {
-                instance_create_layer(x, y, layer, obj_overworld_fire);
+    // If no mushroom found nearby, check in facing direction
+    if (target == noone) {
+        var fire_dir = faceDir * 90;
+        var check_x = x + lengthdir_x(16, fire_dir);
+        var check_y = y + lengthdir_y(16, fire_dir);
+        target = instance_place(check_x, check_y, obj_mushroom);
+    }
+
+    // If a mushroom was found, create the burn effect at the mushroom's position
+    if (target != noone) {
+        with (target) {
+            var burn = instance_create_layer(x, y, layer, obj_overworld_burn);
+
+            // Set the rotation based on the player's facing direction (faceDir)
+            switch (other.faceDir) {
+                case 0: // Facing right
+                    burn.image_angle = 270;
+                    break;
+                case 1: // Facing up
+                    burn.image_angle = 0;
+                    break;
+                case 2: // Facing left
+                    burn.image_angle = 90;
+                    break;
+                case 3: // Facing down
+                    burn.image_angle = 180;
+                    break;
             }
         }
     }
 }
+
 

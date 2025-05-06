@@ -9,7 +9,7 @@ enum Dir {
 
 xspd = 0;
 yspd = 0;
-moveSpd = 0.2;
+moveSpd = 1;
 faceDir = Dir.RIGHT;
 
 gridSpace = 16;

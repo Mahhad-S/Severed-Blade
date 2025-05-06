@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_overworld_region",
   "bboxMode":0,
-  "bbox_bottom":2159,
+  "bbox_bottom":4318,
   "bbox_left":0,
-  "bbox_right":3839,
+  "bbox_right":7677,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":2160,
+  "height":4319,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"7d64f227-439f-4bdc-b829-d245cea0b608","blendMode":0,"displayName":"default","isLocked":false,"name":"7d64f227-439f-4bdc-b829-d245cea0b608","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":3840,
+  "width":7678,
 }

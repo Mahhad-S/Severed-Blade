@@ -43,7 +43,7 @@ function PlayerStateFree(){
 }
 
 function PlayerStateLocked(){
-	
+    image_speed = 0;
 }
 
 function PlayerStateTransition() {

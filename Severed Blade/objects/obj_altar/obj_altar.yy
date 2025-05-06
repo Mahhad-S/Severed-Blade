@@ -6,7 +6,7 @@
   "name":"obj_altar",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"propertyId":{"name":"entityActivateScript","path":"objects/obj_entity/obj_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"scr_NewTextBox",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"propertyId":{"name":"entityActivateArgs","path":"objects/obj_entity/obj_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[\"This is an altar!\", 0]",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"propertyId":{"name":"entityActivateArgs","path":"objects/obj_entity/obj_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[\"This is an altar\", 0]",},
   ],
   "parent":{
     "name":"Ineteractable objects",

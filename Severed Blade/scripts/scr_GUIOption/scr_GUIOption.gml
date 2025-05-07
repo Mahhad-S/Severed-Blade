@@ -35,11 +35,23 @@ function inventory_GUI() {
 
     if (count > 0) {
         for (var i = 0; i < count; i++) {
-            var it = inv[i];
-            if (it == noone) continue;
-            draw_set_color(i == global.selected_index ? c_yellow : c_white);
-            draw_text(rightX + 8, listStartY + i * itemSpacing - 24, it.name);
-        }
+		    var it   = inv[i];
+		    if (it == noone) continue;
+
+		    // compute the y position once
+		    var nameY = listStartY + i * itemSpacing - 24;
+
+		    // 1) draw pointer on the selected line
+		    if (i == global.selected_index) {
+		        // draw pointer 8px to the left of the text
+		        draw_sprite(spr_pointer, 0, rightX + 16, nameY + 19);
+		        draw_set_color(c_yellow);
+		    } else {
+		        draw_set_color(c_white);
+		    }
+
+		    draw_text(rightX + 8, nameY, it.name);
+		}
     } else {
         draw_text(rightX - 64, listStartY + itemSpacing, "Inventory is empty...");
     }
@@ -70,6 +82,7 @@ function inventory_GUI() {
         var current = "";
 
         // center‐align
+		draw_set_color(c_white);
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
 

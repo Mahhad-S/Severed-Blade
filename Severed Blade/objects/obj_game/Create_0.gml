@@ -1,0 +1,1 @@
+global.burned_mushrooms = ds_map_create();

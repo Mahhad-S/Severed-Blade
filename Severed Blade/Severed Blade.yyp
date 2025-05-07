@@ -120,7 +120,6 @@
     {"id":{"name":"obj_npc1","path":"objects/obj_npc1/obj_npc1.yy",},},
     {"id":{"name":"obj_npc2","path":"objects/obj_npc2/obj_npc2.yy",},},
     {"id":{"name":"obj_Ogre","path":"objects/obj_Ogre/obj_Ogre.yy",},},
-    {"id":{"name":"obj_overworld_burn","path":"objects/obj_overworld_burn/obj_overworld_burn.yy",},},
     {"id":{"name":"obj_path_node","path":"objects/obj_path_node/obj_path_node.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_potion_test_1","path":"objects/obj_potion_test_1/obj_potion_test_1.yy",},},

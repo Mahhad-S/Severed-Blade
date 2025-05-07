@@ -143,12 +143,11 @@ if (global.gamePaused)
 			    LoadGame(global.gameSaveSlot);
 			}
 
-            // Press X to go back to main pause menu
-			if (keyboard_check_pressed(ord("X")))
-			{
-			    global.pauseSubmenu = "Status";
-			    pauseOptionSelected = 0;
-			}
+            // Press Z to step BACK to the main menu, but keep “Settings” highlighted
+		    if (keyboard_check_pressed(ord("Z"))) {
+		        global.pauseSubmenu      = "Save";
+		        pauseOptionSelected      = 4;  
+		    }
 
 			// Press Escape to close the whole pause menu
 			if (keyboard_check_pressed(vk_escape))
@@ -159,6 +158,101 @@ if (global.gamePaused)
 			}
         }
     }
+	else if(global.pauseSubmenu == "Equipment")
+	{
+		// ── PARTY MEMBER SELECT ──
+	    if (global.inEquipmentPartySelect) {
+	        if (keyboard_check_pressed(vk_up)   || keyboard_check_pressed(ord("W"))) {
+	            global.equipSlotSelected = (global.equipSlotSelected - 1 + array_length(global.party)) mod array_length(global.party);
+	        }
+	        if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+	            global.equipSlotSelected = (global.equipSlotSelected + 1) mod array_length(global.party);
+	        }
+	        if (keyboard_check_pressed(vk_space)) {
+	            global.inEquipmentPartySelect    = false;
+	            global.equipmentListFiltered     = [];
+	            global.equipmentListIndex        = -1;
+	            global.equipmentCategoryIndex    = 0;
+	        }
+	    }
+	    // ── SLOT/CATEGORY & ITEM LIST (mutually exclusive) ──
+	    else {
+	        // CATEGORY SELECT (list hidden)
+	        if (!is_array(global.equipmentListFiltered) 
+	            || array_length(global.equipmentListFiltered) == 0) 
+	        {
+	            if (keyboard_check_pressed(vk_left)  || keyboard_check_pressed(ord("A"))) {
+	                global.equipmentCategoryIndex = (global.equipmentCategoryIndex + 2) mod 3;
+	            }
+	            if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"))) {
+	                global.equipmentCategoryIndex = (global.equipmentCategoryIndex + 1) mod 3;
+	            }
+	            if (keyboard_check_pressed(vk_space)) {
+	                var slot       = ["Head","Body","Weapon"][global.equipmentCategoryIndex];
+	                var partyIndex = clamp(global.equipSlotSelected, 0, array_length(global.party)-1);
+	                var mClass     = global.party[partyIndex].class;
+	                global.equipmentListFiltered = filter_equippable_items(mClass, slot);
+	                global.equipmentListIndex    = 0;
+	            }
+	            if (keyboard_check_pressed(ord("Z"))) {
+	                // back to party select
+	                global.inEquipmentPartySelect = true;
+	                global.equipmentListFiltered  = [];
+	                global.equipmentListIndex     = -1;
+	            }
+	        }
+	        // ITEM LIST NAVIGATION (list visible)
+	        else {
+	            if (keyboard_check_pressed(vk_up)   || keyboard_check_pressed(ord("W"))) {
+	                global.equipmentListIndex = max(global.equipmentListIndex - 1, 0);
+	            }
+	            if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+	                global.equipmentListIndex = min(
+	                    global.equipmentListIndex + 1,
+	                    array_length(global.equipmentListFiltered) - 1
+	                );
+	            }
+	            if (keyboard_check_pressed(vk_space)
+	                && array_length(global.equipmentListFiltered) > 0)
+	            {
+	                var item = global.equipmentListFiltered[global.equipmentListIndex];
+	                equip_item_to_party_member(global.equipSlotSelected, item);
+	            }
+	            if (keyboard_check_pressed(ord("Z"))) {
+	                // back to category select
+	                global.equipmentListFiltered = [];
+	                global.equipmentListIndex    = -1;
+	            }
+	        }
+	    }
+    
+		// Navigate settings
+        if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
+            global.equipSlotSelected = (global.equipSlotSelected - 1 + array_length(global.party))
+                              mod array_length(global.party);
+        }
+        if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+		    global.equipSlotSelected = (global.equipSlotSelected + 1)
+		                              mod array_length(global.party);
+        }
+		
+		// Press X to go back to main pause menu
+		if (keyboard_check_pressed(ord("X")))
+		{
+			global.pauseSubmenu = "Status";
+			pauseOptionSelected = 0;
+		}
+		
+		// Press Escape to close the whole pause menu
+		if (keyboard_check_pressed(vk_escape))
+		{
+			global.gamePaused = false;
+			global.pauseSubmenu = "Status";
+			pauseOptionSelected = 0;
+		}
+	}
+	
+    
 	else if (global.pauseSubmenu == "Setting")
     {
         // --- Setting submenu logic ---
@@ -208,6 +302,12 @@ if (global.gamePaused)
                     break;
             }
         }
+		
+		// Press Z to step BACK to the main menu, but keep “Settings” highlighted
+	    if (keyboard_check_pressed(ord("Z"))) {
+	        global.pauseSubmenu = "Setting";
+	        pauseOptionSelected = 6;
+	    }
 
         // Back to main menu with X
         if (keyboard_check_pressed(ord("X")))
@@ -225,7 +325,7 @@ if (global.gamePaused)
         }
     }
     // ----- Main Pause Menu Handling -----
-    else
+	else
     {
         // Navigation for pause menu
         var keyUp   = keyboard_check_pressed(vk_up)   || keyboard_check_pressed(ord("W"));
@@ -257,7 +357,10 @@ if (global.gamePaused)
                     case 0: global.pauseSubmenu = "Status"; break;
                     case 1: global.pauseSubmenu = "Inventory"; break;
                     case 2: global.pauseSubmenu = "Magic"; break;
-                    case 3: global.pauseSubmenu = "Equipment"; break;
+                    case 3: 
+						global.pauseSubmenu = "Equipment"; 
+						global.equipmentJustOpenedPrompt = true;
+						break;
                     case 4:
 	                    global.pauseSubmenu = "Save";
 	                    global.saveJustOpenedPrompt = true;

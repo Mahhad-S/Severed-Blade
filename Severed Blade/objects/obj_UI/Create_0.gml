@@ -21,6 +21,7 @@ global.loadSlotData = array_create(global.loadSlotCount, -1);
 // Debounce flags for save/load
 global.saveJustOpenedPrompt = false;
 global.loadJustOpenedPrompt = false;
+global.equipmentJustOpenedPrompt = false;
 
 // A fade variable (like you used in your title screen) can control slot visibility.
 slotVisible = 0.0;  // local or global, as desired
@@ -32,3 +33,13 @@ global.fullscreen  = false;
 // --- Settings Menu Navigation ---
 global.settingOptionSelected = 0; // 0 = Music, 1 = SFX, 2 = Screen Size
 global.settingOptionCount = 3;    // Total options
+
+// --- Primary Equipment Menu Navigation ---
+global.equipSlotSelected = 0;
+global.equipSlotCount = 4;
+global.inEquipmentPartySelect = true;
+
+// --- Item Equipment Menu Navigation ---
+global.equipmentCategoryIndex = 0;	// Start with "Head"
+global.equipmentListFiltered = [];	// No list shown until a category is selected
+global.equipmentListIndex = 0;		// First item in the filtered list

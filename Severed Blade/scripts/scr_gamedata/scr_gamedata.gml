@@ -11,7 +11,62 @@ global.actionLibrary =
 	strike:
 	{
 		name: "Strike",
-		description: "{0} attacks!",
+		atkType: -1,
+		description: "{0} strikes!",
+		subMenu: "Attack",
+		targetRequired: true,
+		targetEnemyByDefault: true,
+		targetAll: MODE.NEVER,
+		userAnimation: "strike",
+		effectSprite: spr_slash,
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			var _damage = ceil(_user.STR + random_range(-_user.STR * 0.25, _user.STR * 0.25));
+			BattleChangeHP(_targets[0], -_damage, 0);
+		}
+	},
+	cut:
+	{
+		name: "Cut",
+		atkType: "Slash",
+		description: "{0} slashes!",
+		subMenu: "Attack",
+		targetRequired: true,
+		targetEnemyByDefault: true,
+		targetAll: MODE.NEVER,
+		userAnimation: "strike",
+		effectSprite: spr_slash,
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			var _damage = ceil(_user.STR + random_range(-_user.STR * 0.25, _user.STR * 0.25));
+			BattleChangeHP(_targets[0], -_damage, 0);
+		}
+	},
+	stab:
+	{
+		name: "Stab",
+		atkType: "Pierce",
+		description: "{0} pierces!",
+		subMenu: "Attack",
+		targetRequired: true,
+		targetEnemyByDefault: true,
+		targetAll: MODE.NEVER,
+		userAnimation: "strike",
+		effectSprite: spr_slash,
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+			var _damage = ceil(_user.STR + random_range(-_user.STR * 0.25, _user.STR * 0.25));
+			BattleChangeHP(_targets[0], -_damage, 0);
+		}
+	},
+	smash:
+	{
+		name: "Smash",
+		atkType: "Bludgeon",
+		description: "{0} bludgeons!",
 		subMenu: "Attack",
 		targetRequired: true,
 		targetEnemyByDefault: true,
@@ -75,23 +130,43 @@ global.actionLibrary =
 	},
 }
 
+// Base Values for Stats
+global.base_HP = 50;
+global.base_EP = 25;
+
 //Party Data
 global.party =
 [
 	{
 		name: "Hashimoto Sobu",
-		hp: 70,
-		hpMax: 80,
-		ep: 30,
-		epMax: 30,
-		STR: 7,
+		class: "Samurai",
+		Level: 1,
+		STR: 8,
 		INT: 5,
 		CON: 6,
-		SPD: 4,
+		SPD: 6,
+		equipment : {
+		    head: -1,
+		    body: -1,
+		    weapon: -1
+		},
 		sprites : { idle: spr_pIdle, strike: spr_pStrike, Aura: spr_pAura, defend: spr_pDefend, item: spr_pItem, down: spr_pDown },
 		actions : [global.actionLibrary.strike, global.actionLibrary.defend, global.actionLibrary.escape, global.actionLibrary.ice]
 	}
 ];
+
+// run function to refresh stats over entire party
+var cnt = array_length(global.party);
+for (var i = 0; i < cnt; i++) {
+    calc_derived_stats(global.party[i]);
+}
+
+for (var i = 0; i < array_length(global.party); i++) {
+    var pm = global.party[i];
+    calc_derived_stats(pm);
+    refresh_actions(pm);
+    global.party[i] = pm;
+}
 
 //Enemy Data
 global.enemies =

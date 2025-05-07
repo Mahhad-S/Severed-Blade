@@ -8,12 +8,12 @@
   "name":"obj_Slime",
   "overriddenProperties":[],
   "parent":{
-    "name":"Battle",
-    "path":"folders/Objects/Battle.yy",
+    "name":"Creatures",
+    "path":"folders/Objects/Battle/Enemy/Creatures.yy",
   },
   "parentObjectId":{
-    "name":"obj_enemy",
-    "path":"objects/obj_enemy/obj_enemy.yy",
+    "name":"obj_enemy_moving",
+    "path":"objects/obj_enemy_moving/obj_enemy_moving.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

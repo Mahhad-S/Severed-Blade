@@ -211,7 +211,7 @@ function BattleStatePerformAction()
 				{
 					for (var i = 0; i < array_length(currentTargets); i++)
 					{
-						instance_create_depth(currentTargets[i].x,currentTargets[i].y,currentTargets[i].depth-1,obj_battle_effect,{sprite_index : currentAction.effectSprite});	
+						instance_create_depth(currentTargets[i].x-25,currentTargets[i].y-20,currentTargets[i].depth-1,obj_battle_effect,{sprite_index : currentAction.effectSprite});	
 					}
 				}
 				else //play it at 0,0
@@ -305,7 +305,7 @@ function BattleStateTurnProgression()
 
 function BattleStateEnding()
 {
-	if (keyboard_check_pressed(vk_enter)) battleEndMessageProg++;
+	if (keyboard_check_pressed(vk_space)) battleEndMessageProg++;
 	if (battleEndMessageProg >= array_length(battleEndMessages))
 	{
 		transitionProg -= 0.01;

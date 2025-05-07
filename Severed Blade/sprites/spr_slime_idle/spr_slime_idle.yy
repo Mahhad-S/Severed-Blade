@@ -46,8 +46,8 @@
   },
   "origin":6,
   "parent":{
-    "name":"enemies",
-    "path":"folders/Sprites/turned_base_battle/enemies.yy",
+    "name":"Slime",
+    "path":"folders/Sprites/spr_overworld/turned_base_battle/enemies/Slime.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

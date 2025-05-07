@@ -15,9 +15,20 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRTileLayer":"","%Name":"Wall","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":100,"SerialiseWidth":89,"TileCompressedData":[-8900,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"ts_wall_s","path":"tilesets/ts_wall_s/ts_wall_s.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Wall","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":100,"SerialiseWidth":89,"TileCompressedData":[
+          -6392,-2147483648,-5,2,-2,-2147483648,-3,2,-79,-2147483648,-5,2,-2,-2147483648,-3,2,-79,-2147483648,
+          -5,2,-2,-2147483648,-3,2,-79,-2147483648,-5,2,-2,-2147483648,-3,2,-79,-2147483648,1,2,-4,0,-2,-2147483648,
+          -2,0,1,2,-62,-2147483648,-18,2,-8,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,
+          1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,
+          1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,
+          1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,
+          1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,
+          1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,
+          1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,
+          1,2,-25,-2147483648,1,2,-62,-2147483648,1,2,-25,-2147483648,1,2,-62,-2147483648,-27,2,-362,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_wall_s","path":"tilesets/ts_wall_s/ts_wall_s.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_493BB9FF_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_493BB9FF_1","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":104.0,"y":144.0,},
+        {"$GMRInstance":"v2","%Name":"inst_493BB9FF_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_493BB9FF_1","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":656.0,"y":544.0,},
         {"$GMRInstance":"v2","%Name":"inst_44838593","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44838593","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"propertyId":{"name":"targetRoom","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_caveofrebirth_1",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_RoomExit","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"propertyId":{"name":"targetX","path":"objects/obj_RoomExit/obj_RoomExit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"752",},

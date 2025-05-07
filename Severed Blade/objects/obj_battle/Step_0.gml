@@ -17,7 +17,7 @@ if (targetCursor.cursorActive)
 		cursorConfirmDelay++
 		if (cursorConfirmDelay > 1) 
 		{
-			_keyConfirm = keyboard_check_pressed(vk_enter);
+			_keyConfirm = keyboard_check_pressed(vk_space);
 			_keyCancel = keyboard_check_pressed(vk_escape);
 			_keyToggle = keyboard_check_pressed(vk_shift);
 		}

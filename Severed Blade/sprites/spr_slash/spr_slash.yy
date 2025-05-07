@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"effects",
-    "path":"folders/Sprites/turned_base_battle/effects.yy",
+    "path":"folders/Sprites/spr_overworld/turned_base_battle/effects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

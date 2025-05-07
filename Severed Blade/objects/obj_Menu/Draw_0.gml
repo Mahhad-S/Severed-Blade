@@ -1,5 +1,9 @@
 draw_sprite_stretched(spr_box, 0, x, y, widthFull, heightFull);
 
+// Get the camera's Y position to adjust the pointer
+var camera_y = camera_get_view_y(view_camera[0]);
+var camera_x = camera_get_view_x(view_camera[0]);
+
 draw_set_color(c_white);
 draw_set_font(f_text_battle);
 draw_set_halign(fa_left);
@@ -24,7 +28,9 @@ for (l = 0; l < (visibleOptionsMax + _desc); l++) {
 	}
 }
 
-draw_sprite(spr_pointer, 0 , x + xmargin + 8, ymargin + ((hover - _scrollPush) * heightLine) + 107);
+
+// Draw the pointer at the correct Y position, considering the camera and menu offset
+draw_sprite(spr_pointer, 0, camera_x  + xmargin + 20, camera_y + ymargin + ((hover - _scrollPush) * heightLine) + 127);
 if (visibleOptionsMax < array_length(options)) && (hover < array_length(options) - 1)
 {
 	draw_sprite(spr_downArrow, 0, x + widthFull * 0.5, y + heightFull - 7);

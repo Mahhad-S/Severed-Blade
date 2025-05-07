@@ -118,5 +118,28 @@ global.enemies =
 			var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
 			return [_action, _target];
 		}
+	},
+	ogre:
+	{
+		name: "Ogre",
+		hp: 100,
+		hpMax: 100,
+		ep: 40,
+		epMax: 40,
+		STR: 10,
+		sprites: { idle: spr_ogre_idle, strike: spr_ogre_attack },
+		actions: [global.actionLibrary.strike],
+		xpValue : 150,
+		AIscript : function()
+		{
+			//attack random party member
+			var _action = actions[0];
+			var _possibleTargets = array_filter(obj_battle.partyUnits, function(_unit, _index)
+			{
+				return (_unit.hp > 0);
+			});
+			var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
+			return [_action, _target];
+		}
 	}
 }

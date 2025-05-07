@@ -28,7 +28,7 @@
   "origin":1,
   "parent":{
     "name":"player",
-    "path":"folders/Sprites/turned_base_battle/party/player.yy",
+    "path":"folders/Sprites/spr_overworld/turned_base_battle/party/player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

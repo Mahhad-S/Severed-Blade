@@ -9,8 +9,8 @@
   "name":"obj_battle_unit_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Battle",
-    "path":"folders/Objects/Battle.yy",
+    "name":"Battle Unit",
+    "path":"folders/Objects/Battle/Battle Unit.yy",
   },
   "parentObjectId":{
     "name":"obj_battle_unit",

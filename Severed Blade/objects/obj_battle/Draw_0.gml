@@ -11,6 +11,7 @@ for (var i = 0; i < array_length(unitRenderOrder); i++)
 	}
 }
 
+
 //Draw UI Boxes
 draw_sprite_stretched(spr_box, 0, x+75, y+120, 245, 60);
 draw_sprite_stretched(spr_box, 0, x, y+120, 74, 60);
@@ -76,7 +77,7 @@ if (targetCursor.cursorActive)
 				draw_set_alpha(sin(get_timer()/50000)+1);
 				for (var i = 0; i < array_length(cursorTarget); i++)
 				{
-					draw_sprite(spr_pointer,cursorError,cursorTarget[i].x-10,cursorTarget[i].y+10);
+					draw_sprite(spr_pointer,cursorError,cursorTarget[i].x-5,cursorTarget[i].y+5);
 				}
 				draw_set_alpha(1.0);
 			}

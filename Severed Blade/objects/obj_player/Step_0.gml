@@ -10,12 +10,6 @@ interact_key = keyboard_check_pressed(ord("F"));
 input_dir = point_direction(0, 0, right_key - left_key, down_key - up_key);
 input_mag = (right_key - left_key != 0) || (down_key - up_key != 0);
 
-// Determine facing direction for block interaction
-if (right_key) faceDir = 0;
-if (up_key) faceDir = 1;
-if (left_key) faceDir = 2;
-if (down_key) faceDir = 3;
-
 if (!global.gamePaused) {
     script_execute(state);
 }
@@ -60,52 +54,33 @@ if (place_meeting(x, y, obj_statue) && activate_key) {
 
 
 if (global.fire_magic_unlocked && activate_key) {
-    var target = noone; 
-
-
-    if (place_meeting(x + 16, y, obj_mushroom) ||  
-        place_meeting(x - 16, y, obj_mushroom) ||  
-        place_meeting(x, y + 16, obj_mushroom)) {
-
-        target = instance_place(x + 16, y, obj_mushroom); 
-        if (target == noone) {
-            target = instance_place(x - 16, y, obj_mushroom); 
-        }
-        if (target == noone) {
-            target = instance_place(x, y + 16, obj_mushroom); 
+    // 1) find an adjacent mushroom…
+    var target = noone;
+    var offsets = [ [16,0], [-16,0], [0,16], [0,-16] ];
+    for (var i = 0; i < array_length(offsets); i++) {
+        var ox = offsets[i][0], oy = offsets[i][1];
+        if (place_meeting(x+ox, y+oy, obj_mushroom)) {
+            target = instance_place(x+ox, y+oy, obj_mushroom);
+            break;
         }
     }
-
-
-    if (target == noone) {
-        var fire_dir = faceDir * 90;
-        var check_x = x + lengthdir_x(16, fire_dir);
-        var check_y = y + lengthdir_y(16, fire_dir);
-        target = instance_place(check_x, check_y, obj_mushroom);
-    }
-
-
+    // 2) if we found one, spawn fire just above it:
     if (target != noone) {
-        with (target) {
-            var burn = instance_create_layer(x, y, layer, obj_overworld_burn);
-
-
-            switch (other.faceDir) {
-                case 0: // Facing right
-                    burn.image_angle = 270;
-                    break;
-                case 1: // Facing up
-                    burn.image_angle = 0;
-                    break;
-                case 2: // Facing left
-                    burn.image_angle = 90;
-                    break;
-                case 3: // Facing down
-                    burn.image_angle = 180;
-                    break;
-            }
-        }
+        // create the fire
+        var fire = instance_create_depth(
+            target.x,
+            target.y - 4,
+            -100,           // or whatever literal depth you want
+            obj_fire_burn
+        );
+        // **here** assign which mushroom to kill later
+        fire.burn_target = target;
+        // reinforce the 2-second timer (in case Create Event isn’t instant)
+        fire.alarm[0] = room_speed * 2;
     }
 }
+
+
+
 
 

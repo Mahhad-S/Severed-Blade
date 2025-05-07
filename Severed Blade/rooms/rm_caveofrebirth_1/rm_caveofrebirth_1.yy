@@ -16,15 +16,7 @@
     {"name":"inst_19D44923","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
     {"name":"inst_5B772D5E","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
     {"name":"inst_6CA6AC8A","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_239E93B4","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_3E7B661F","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_234180C8","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_E712B76","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_124ED26","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_3D05E5F5","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_1A130065","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_32D90E75","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_91C8085","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
+    {"name":"inst_239E93B4","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",}
   ],
   "isDnd":false,
   "layers":[

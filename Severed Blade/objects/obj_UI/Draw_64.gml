@@ -64,6 +64,31 @@ if (global.gamePaused) {
     draw_set_color(c_white);
     draw_set_alpha(1.0);
 	
+	var hudMargin = 12;
+    var iconSize  = 16;  
+    // bottom-left: x = margin; y = screen height minus margin minus icon height
+    var iconX = hudMargin;
+    var iconY = RESOLUTION_H - hudMargin - iconSize;
+
+    // draw the coin icon
+    draw_sprite_ext(
+        spr_Coin, 0,
+        iconX, iconY,
+        1, 1,     // no scale
+        0, c_white, 1
+    );
+
+    // draw the coin count next to it
+    draw_set_font(f_text);              
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_yellow);
+    draw_text(
+        iconX + iconSize + 4,             // 4px gap after icon
+        iconY + iconSize * 0.5,           // vertically centered on icon
+        string(global.playerMoney)
+    );
+    draw_set_color(c_white);
 }
 
 

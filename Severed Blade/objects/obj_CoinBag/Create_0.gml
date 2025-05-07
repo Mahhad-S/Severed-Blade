@@ -1,0 +1,1 @@
+coinValue = irandom_range(2, 8);

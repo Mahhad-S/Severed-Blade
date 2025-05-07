@@ -1,0 +1,1 @@
+coinValue = 1;

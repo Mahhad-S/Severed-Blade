@@ -1,63 +1,103 @@
-function inventory_GUI(){
-	
-    var margin     = 12;
-    var box_width  = RESOLUTION_W * 0.25;
-    var box_x      = margin;
-    var gui_x      = box_x + box_width + margin;
-    var gui_y      = margin;
-    var gui_width  = RESOLUTION_W - gui_x - margin;
-    var gui_height = RESOLUTION_H - margin * 2;
+function inventory_GUI() {
+    // —————— Layout setup ——————
+    var margin      = 12;
+    var boxWidth    = RESOLUTION_W * 0.25;
+    var boxX        = margin;
+    var guiX        = boxX + boxWidth + margin;
+    var guiY        = margin;
+    var guiW        = RESOLUTION_W - guiX - margin;
+    var guiH        = RESOLUTION_H - margin * 2;
 
-    var column_width = gui_width / 2;
-    var left_x = gui_x;
-    var right_x = gui_x + column_width;
-    var column_y = gui_y;
+    // two-column split
+    var leftW       = guiW * 0.5;
+    var rightX      = guiX + leftW;
+    var listStartY  = guiY + 40;
+    var detailY     = guiY + 40;
+    var itemSpacing = 24;
+    var iconSize    = 32;
 
+    // grab inventory & length
+    var inv   = global.inventory;
+    var count = array_length(inv);
+
+    // clamp selected_index into [0…count-1], or zero if no items
+    if (count > 0) {
+        global.selected_index = clamp(global.selected_index, 0, count - 1);
+    } else {
+        global.selected_index = 0;
+    }
+
+    // —————— Draw list of item names (right panel) ——————
     draw_set_font(f_text);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
 
-    // Draw title
-    draw_text(120, 28, "Inventory Screen");
-	
-    // Draw all inventory items in the right column
-    var item_spacing = 20;
-    var start_y = column_y + 10;
-
-    if (array_length(global.inventory) > 0) {
-        for (var i = 0; i < array_length(global.inventory); i++) {
-            var item = global.inventory[i];
-            if (item != noone) {
-                // Highlight selected item
-                if (i == global.selected_index) {
-                    draw_set_color(c_yellow);
-                } else {
-                    draw_set_color(c_white);
-                }
-
-                draw_text(right_x-65, start_y+25 + (i * item_spacing), item.name);
-            }
-        }
-
-        // Draw selected item details in the left column
-        var sel_item = global.inventory[global.selected_index];
-        if (sel_item != noone) {
-            // Draw icon
-            if (sel_item.icon != -1) {
-                draw_sprite(sel_item.icon, 0, left_x + 20, column_y + 35);
-            }
-
-            // Draw description
-            var desc_y = column_y + 100;
-            draw_set_color(c_white);
-            draw_text(left_x + 20, desc_y, sel_item.itemDescription);
+    if (count > 0) {
+        for (var i = 0; i < count; i++) {
+            var it = inv[i];
+            if (it == noone) continue;
+            draw_set_color(i == global.selected_index ? c_yellow : c_white);
+            draw_text(rightX + 8, listStartY + i * itemSpacing - 24, it.name);
         }
     } else {
-        draw_set_color(c_white);
-        draw_text(right_x-50, start_y+60, "Inventory is empty...");
+        draw_text(rightX - 64, listStartY + itemSpacing, "Inventory is empty...");
     }
-	
+
+    // —————— Draw details (left panel) ——————
+    if (count > 0) {
+        var sel = inv[ global.selected_index ];
+        // draw icon
+		if (sel.icon != -1) {
+            var sprW = sprite_get_width(sel.icon);
+            var sprH = sprite_get_height(sel.icon);
+            draw_sprite_ext(
+                sel.icon, 0,
+                guiX + 36, detailY - 24,
+                iconSize / sprW, iconSize / sprH,
+                0, c_white, 1
+            );
+        }
+		
+        // description — wrapped to leftW width, shifted up by 4px
+        var descX = guiX + 8;
+        var descY = detailY + iconSize + 8 - 20;  // <- subtract 4px here
+        var maxW  = leftW - 16;
+        var lineY = descY;                        // start lineY at the new, higher descY
+
+        // split into words
+        var words   = string_split(sel.itemDescription, " ");
+        var current = "";
+
+        // center‐align
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_top);
+
+        var centerX = descX + maxW * 0.5;
+
+        for (var w = 0; w < array_length(words); w++) {
+            var test = (current == "" ? words[w] : current + " " + words[w]);
+            if (string_width(test) > maxW) {
+                // flush the current line
+                draw_text(centerX, lineY, current);
+                // advance Y by line‐height of the font
+                lineY += string_height(current);
+                current = words[w];
+            } else {
+                current = test;
+            }
+        }
+        // draw any leftover
+        if (current != "") {
+            draw_text(centerX, lineY, current);
+        }
+
+        // restore alignment
+        draw_set_halign(fa_left);
+    }
+
+    // restore color
+    draw_set_color(c_white);
 }
 
 function magic_GUI(){

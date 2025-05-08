@@ -8,6 +8,9 @@ xspd = 0;
 yspd = 0;
 speedWalk = 1;
 
+jumpInit = false;
+jumpTimer = 0;
+
 is_pushing = false;
 
 spriteWalk = spr_player_walk;

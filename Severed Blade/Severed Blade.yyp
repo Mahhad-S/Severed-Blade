@@ -381,8 +381,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
     {"roomId":{"name":"rm_palace3","path":"rooms/rm_palace3/rm_palace3.yy",},},
+    {"roomId":{"name":"rm_Toga","path":"rooms/rm_Toga/rm_Toga.yy",},},
     {"roomId":{"name":"rm_caveofrebirth_2","path":"rooms/rm_caveofrebirth_2/rm_caveofrebirth_2.yy",},},
     {"roomId":{"name":"rm_caveofrebirth_4","path":"rooms/rm_caveofrebirth_4/rm_caveofrebirth_4.yy",},},
     {"roomId":{"name":"rm_caveofrebirth_3","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},},

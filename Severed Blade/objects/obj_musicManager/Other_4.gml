@@ -13,3 +13,8 @@ if room == rm_Osara || room == rm_Hyongo || room == rm_Toga
 {
 	set_song_ingame(sng_nagata, 2*60, 2*60);
 }
+
+if room == rm_caveofrebirth_1 || room == rm_caveofrebirth_2 || room == rm_caveofrebirth_3 || room == rm_caveofrebirth_4
+{
+	set_song_ingame(sng_dungeons, 2*60, 2*60);
+}

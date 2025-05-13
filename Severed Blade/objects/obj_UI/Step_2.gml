@@ -18,6 +18,8 @@ if (global.gamePaused)
 	        // Navigation for exit prompt ("Yes" = 0, "No" = 1)
 	        var exitLeft   = keyboard_check_pressed(vk_left)   || keyboard_check_pressed(ord("A"));
 	        var exitRight = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"));
+			if exitLeft set_sfx_ingame(sfx_changeTab);
+			if exitRight set_sfx_ingame(sfx_changeTab);
 	        global.exitOptionSelected += (exitLeft - exitRight);
 
 	        // Wrap selection between 0 and 1 (only two options)
@@ -32,12 +34,14 @@ if (global.gamePaused)
 	            if (global.exitOptionSelected == 0)
 	            {
 	                // "Yes" is selected: Save before exiting
+					set_sfx_ingame(sfx_click);
 	                SaveGame();   // Your save function call
 	                game_end();   // Exit the game
 	            }
 	            else
 	            {
 	                // "No" is selected: Just exit
+					set_sfx_ingame(sfx_click);
 	                game_end();
 	            }
 	        }
@@ -52,7 +56,7 @@ if (global.gamePaused)
 		}
     }
 	else if (global.pauseSubmenu == "Save")
-    {
+    {	
         if (global.saveJustOpenedPrompt) {
 		    for (var i = 0; i < global.saveSlotCount; i++) {
 		        var filename = "save" + string(i) + ".sav";
@@ -68,15 +72,18 @@ if (global.gamePaused)
         {
             // Navigate slots
             if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
+				set_sfx_ingame(sfx_changeTab);
                 global.saveSlotSelected = (global.saveSlotSelected - 1 + global.saveSlotCount) mod global.saveSlotCount;
             }
             if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+				set_sfx_ingame(sfx_changeTab);
                 global.saveSlotSelected = (global.saveSlotSelected + 1) mod global.saveSlotCount;
             }
 
             // Confirm save
             if (keyboard_check_pressed(vk_space))
-            {
+            {	
+				set_sfx_ingame(sfx_click);
                 global.gameSaveSlot = global.saveSlotSelected;
                 SaveGame();
 				
@@ -122,15 +129,18 @@ if (global.gamePaused)
         {
             // Navigate slots
             if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
+				set_sfx_ingame(sfx_changeTab);
                 global.loadSlotSelected = (global.loadSlotSelected - 1 + global.loadSlotCount) mod global.loadSlotCount;
             }
             if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+				set_sfx_ingame(sfx_changeTab);
                 global.loadSlotSelected = (global.loadSlotSelected + 1) mod global.loadSlotCount;
             }
 
             // Confirm load
             if (keyboard_check_pressed(vk_space))
-			{
+			{	
+				set_sfx_ingame(sfx_click);
 			    global.gameSaveSlot = global.loadSlotSelected;
 
 			    // --- UNPAUSE FIRST ---
@@ -163,12 +173,15 @@ if (global.gamePaused)
 		// ── PARTY MEMBER SELECT ──
 	    if (global.inEquipmentPartySelect) {
 	        if (keyboard_check_pressed(vk_up)   || keyboard_check_pressed(ord("W"))) {
+				set_sfx_ingame(sfx_changeTab);
 	            global.equipSlotSelected = (global.equipSlotSelected - 1 + array_length(global.party)) mod array_length(global.party);
 	        }
 	        if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+				set_sfx_ingame(sfx_changeTab);
 	            global.equipSlotSelected = (global.equipSlotSelected + 1) mod array_length(global.party);
 	        }
 	        if (keyboard_check_pressed(vk_space)) {
+				set_sfx_ingame(sfx_click);
 	            global.inEquipmentPartySelect    = false;
 	            global.equipmentListFiltered     = [];
 	            global.equipmentListIndex        = -1;
@@ -182,12 +195,15 @@ if (global.gamePaused)
 	            || array_length(global.equipmentListFiltered) == 0) 
 	        {
 	            if (keyboard_check_pressed(vk_left)  || keyboard_check_pressed(ord("A"))) {
+					set_sfx_ingame(sfx_changeTab);
 	                global.equipmentCategoryIndex = (global.equipmentCategoryIndex + 2) mod 3;
 	            }
 	            if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"))) {
+					set_sfx_ingame(sfx_changeTab);
 	                global.equipmentCategoryIndex = (global.equipmentCategoryIndex + 1) mod 3;
 	            }
 	            if (keyboard_check_pressed(vk_space)) {
+					set_sfx_ingame(sfx_click);
 	                var slot       = ["Head","Body","Weapon"][global.equipmentCategoryIndex];
 	                var partyIndex = clamp(global.equipSlotSelected, 0, array_length(global.party)-1);
 	                var mClass     = global.party[partyIndex].class;
@@ -228,10 +244,12 @@ if (global.gamePaused)
     
 		// Navigate settings
         if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
+			set_sfx_ingame(sfx_changeTab);
             global.equipSlotSelected = (global.equipSlotSelected - 1 + array_length(global.party))
                               mod array_length(global.party);
         }
         if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+			set_sfx_ingame(sfx_changeTab);
 		    global.equipSlotSelected = (global.equipSlotSelected + 1)
 		                              mod array_length(global.party);
         }
@@ -246,6 +264,7 @@ if (global.gamePaused)
 		// Press Escape to close the whole pause menu
 		if (keyboard_check_pressed(vk_escape))
 		{
+			set_sfx_ingame(sfx_click);
 			global.gamePaused = false;
 			global.pauseSubmenu = "Status";
 			pauseOptionSelected = 0;
@@ -259,9 +278,11 @@ if (global.gamePaused)
 
         // Navigate settings
         if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
+			set_sfx_ingame(sfx_changeTab);
             global.settingOptionSelected = (global.settingOptionSelected - 1 + global.settingOptionCount) mod global.settingOptionCount;
         }
         if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
+			set_sfx_ingame(sfx_changeTab);
             global.settingOptionSelected = (global.settingOptionSelected + 1) mod global.settingOptionCount;
         }
 
@@ -272,11 +293,9 @@ if (global.gamePaused)
             {
                 case 0:
                     global.musicVolume = clamp(global.musicVolume - 0.05, 0, 1);
-                    audio_master_gain(global.musicVolume);
                     break;
                 case 1:
-                    global.sfxVolume = max(0, global.sfxVolume - 0.05);
-                    audio_master_gain(global.sfxVolume);
+                    global.sfxVolume = clamp(global.sfxVolume - 0.05, 0, 1);
                     break;
                 case 2:
                     global.fullscreen = !global.fullscreen;
@@ -289,12 +308,10 @@ if (global.gamePaused)
             switch (global.settingOptionSelected)
             {
                 case 0:
-                    global.musicVolume = min(1, global.musicVolume + 0.05);
-                    audio_master_gain(global.musicVolume);
+                    global.musicVolume = min(1, global.musicVolume + 0.05);;
                     break;
                 case 1:
                     global.sfxVolume = min(1, global.sfxVolume + 0.05);
-                    audio_master_gain(global.sfxVolume);
                     break;
                 case 2:
                     global.fullscreen = !global.fullscreen;
@@ -330,10 +347,12 @@ if (global.gamePaused)
 
         // move selection up
         if (count > 0 && (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")))) {
+			set_sfx_ingame(sfx_changeTab);
             global.selected_index = (global.selected_index - 1 + count) mod count;
         }
         // move selection down
         if (count > 0 && (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")))) {
+			set_sfx_ingame(sfx_changeTab);
             global.selected_index = (global.selected_index + 1) mod count;
         }
 
@@ -350,6 +369,8 @@ if (global.gamePaused)
         // Navigation for pause menu
         var keyUp   = keyboard_check_pressed(vk_up)   || keyboard_check_pressed(ord("W"));
         var keyDown = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
+		if (keyUp) set_sfx_ingame(sfx_changeTab, 1 , false);
+		if (keyDown) set_sfx_ingame(sfx_changeTab, 1, false);
         pauseOptionSelected  += (keyDown - keyUp);
 
         // Ensure pauseOptionSelected stays within available options
@@ -370,7 +391,8 @@ if (global.gamePaused)
 				global.justOpenedPrompt = true; // NEW FLAG
             }
             else
-            {
+            {	
+				set_sfx_ingame(sfx_click, 1, false);
                 // Change content on the right according to pause option selection
                 switch (pauseOptionSelected)
                 {

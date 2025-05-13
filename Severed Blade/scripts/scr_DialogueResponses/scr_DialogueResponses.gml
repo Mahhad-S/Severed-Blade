@@ -9,8 +9,9 @@ function scr_DialogueResponses(){
 		
 		//Akari First Speach
 		case 4: scr_NewTextBox("Are you ready for your first steps as a Samurai???", 0, ["5:Of Course!", "6:Not really"]); break;
-		case 5: scr_NewTextBox("", 0); break;
-		case 6: scr_NewTextBox("", 0); break;
+		case 5: scr_NewTextBox("Very well, go to the South to the Cave of Rebirth", 0); break;
+		case 6: scr_NewTextBox("Nonsense", 0, ["7:Continue..."]); break;
+		case 7: scr_NewTextBox("Go challenge the Cave of Rebirth on the South", 0,); break;
 		default: break;
 	}
 }

@@ -21,5 +21,6 @@ if (!variable_global_exists("fire_magic_unlocked")) global.fire_magic_unlocked =
 global.iCamera = instance_create_layer(0,0,"Instances",obj_camera);
 global.item_manager = instance_create_layer(0, 0, "Instances", obj_item_manager);
 global.iUI = instance_create_layer(0, 0, "Instances", obj_UI);
+global.iwall = instance_create_layer(0, 0, "Instances", obj_game);
 
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);

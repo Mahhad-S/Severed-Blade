@@ -398,6 +398,7 @@
     {"roomId":{"name":"rm_nagato_armorshop","path":"rooms/rm_nagato_armorshop/rm_nagato_armorshop.yy",},},
     {"roomId":{"name":"rm_ruinsmaze","path":"rooms/rm_ruinsmaze/rm_ruinsmaze.yy",},},
     {"roomId":{"name":"rm_palace2","path":"rooms/rm_palace2/rm_palace2.yy",},},
+    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

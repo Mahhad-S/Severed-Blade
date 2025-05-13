@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sng_palace",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":512,
+  "compression":0,
+  "conversionMode":0,
+  "duration":63.990658,
+  "name":"sng_palace",
+  "parent":{
+    "name":"background",
+    "path":"folders/Sounds/background.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sng_palace.ogg",
+  "type":1,
+  "volume":1.0,
+}

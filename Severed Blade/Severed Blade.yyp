@@ -200,6 +200,7 @@
     {"id":{"name":"sng_dungeons","path":"sounds/sng_dungeons/sng_dungeons.yy",},},
     {"id":{"name":"sng_nagata","path":"sounds/sng_nagata/sng_nagata.yy",},},
     {"id":{"name":"sng_overworld","path":"sounds/sng_overworld/sng_overworld.yy",},},
+    {"id":{"name":"sng_palace","path":"sounds/sng_palace/sng_palace.yy",},},
     {"id":{"name":"sng_title","path":"sounds/sng_title/sng_title.yy",},},
     {"id":{"name":"spr_activate","path":"sprites/spr_activate/spr_activate.yy",},},
     {"id":{"name":"spr_aqua_slime_idle","path":"sprites/spr_aqua_slime_idle/spr_aqua_slime_idle.yy",},},

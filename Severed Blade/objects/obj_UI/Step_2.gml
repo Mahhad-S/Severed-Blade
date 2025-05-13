@@ -296,6 +296,18 @@ if (global.gamePaused)
                     break;
                 case 1:
                     global.sfxVolume = clamp(global.sfxVolume - 0.05, 0, 1);
+					for (var i = array_length(global.loopingSFXInstances) - 1; i >= 0; i--) {
+						var inst = global.loopingSFXInstances[i][0];
+						var volScale = global.loopingSFXInstances[i][1];
+
+						if (audio_is_playing(inst)) {
+							var finalVol = global.masterVolume * global.sfxVolume * volScale;
+							audio_sound_gain(inst, finalVol, 0);
+						} else {
+							// Clean up stopped sounds
+							array_delete(global.loopingSFXInstances, i, 1);
+						}
+					}
                     break;
                 case 2:
                     global.fullscreen = !global.fullscreen;
@@ -308,10 +320,22 @@ if (global.gamePaused)
             switch (global.settingOptionSelected)
             {
                 case 0:
-                    global.musicVolume = min(1, global.musicVolume + 0.05);;
+                    global.musicVolume = min(1, global.musicVolume + 0.05);
                     break;
                 case 1:
                     global.sfxVolume = min(1, global.sfxVolume + 0.05);
+					for (var i = array_length(global.loopingSFXInstances) - 1; i >= 0; i--) {
+						var inst = global.loopingSFXInstances[i][0];
+						var volScale = global.loopingSFXInstances[i][1];
+
+						if (audio_is_playing(inst)) {
+							var finalVol = global.masterVolume * global.sfxVolume * volScale;
+							audio_sound_gain(inst, finalVol, 0);
+						} else {
+							// Clean up stopped sounds
+							array_delete(global.loopingSFXInstances, i, 1);
+						}
+					}
                     break;
                 case 2:
                     global.fullscreen = !global.fullscreen;

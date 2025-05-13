@@ -10,4 +10,3 @@ for (var _slot = 0; _slot <= 2; _slot++) {
 		slotData[_slot] = LoadJSONFromFile(_fileName);	
 	} else slotData[_slot] = -1;
 }
-

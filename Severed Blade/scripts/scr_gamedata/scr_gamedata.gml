@@ -534,6 +534,7 @@ global.enemies =
 	{
 		name: "Ogre",
 		elementType: "Terra",
+		armorClass: "Heavy",
 		hp: 100,
 		hpMax: 100,
 		ep: 40,

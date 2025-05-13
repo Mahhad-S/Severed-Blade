@@ -16,7 +16,7 @@
     {"name":"inst_19D44923","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
     {"name":"inst_5B772D5E","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
     {"name":"inst_6CA6AC8A","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
-    {"name":"inst_239E93B4","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",}
+    {"name":"inst_239E93B4","path":"rooms/rm_caveofrebirth_1/rm_caveofrebirth_1.yy",},
   ],
   "isDnd":false,
   "layers":[

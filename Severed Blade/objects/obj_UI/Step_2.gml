@@ -153,11 +153,11 @@ if (global.gamePaused)
 			    LoadGame(global.gameSaveSlot);
 			}
 
-            // Press Z to step BACK to the main menu, but keep “Settings” highlighted
-		    if (keyboard_check_pressed(ord("Z"))) {
-		        global.pauseSubmenu      = "Save";
-		        pauseOptionSelected      = 4;  
-		    }
+            // X to go back to the main pause menu
+	        if (keyboard_check_pressed(ord("X"))) {
+	            global.pauseSubmenu   = "Status";
+	            pauseOptionSelected   = 0;
+	        }
 
 			// Press Escape to close the whole pause menu
 			if (keyboard_check_pressed(vk_escape))

@@ -65,35 +65,37 @@ function refresh_actions(member) {
     member.actions = list;
 }
 
-function award_xp(enemyUnits) {
-    // sum up XP from all defeated enemies
+function award_xp(_enemies) {
+    // Sum all XP from the defeated enemies
     var totalXP = 0;
-    for (var i = 0; i < array_length(enemyUnits); i++) {
-        var e = enemyUnits[i];
-        if (is_struct(e) && variable_struct_exists(e, "xpValue")) {
-            totalXP += e.xpValue;
-        }
+    for (var e = 0; e < array_length(_enemies); e++) {
+        totalXP += _enemies[e].xpValue;
     }
 
-    // loop through each party member and give them that XP
+    // Distribute to each surviving member
     for (var i = 0; i < array_length(global.party); i++) {
         var member = global.party[i];
-        member.currentXP += totalXP;
+        // only award to those still standing
+        if (member.hp > 0) {
+            member.currentXP += totalXP;
 
-        // handle one or more level‐ups if they’ve over-filled the bar
-        while (member.currentXP >= member.xpNeededToLevelUp) {
-            member.currentXP -= member.xpNeededToLevelUp;
-            member.Level      += 1;
-            member.STR        += 1;
-            member.INT        += 1;
-            member.CON        += 1;
-            member.SPD        += 1;
-            // bump required XP by 10%
-            member.xpNeededToLevelUp = ceil(member.xpNeededToLevelUp * 1.2);
-			calc_derived_stats(member);
+            //  Handle as many level-ups as necessary
+            while (member.currentXP >= member.xpNeededToLevelUp) {
+                member.currentXP -= member.xpNeededToLevelUp;
+                member.Level += 1;
+                // bump core stats
+                member.STR += 1;
+                member.INT += 1;
+                member.CON += 1;
+                member.SPD += 1;
+                // make the next level a bit harder
+                member.xpNeededToLevelUp = ceil(member.xpNeededToLevelUp * 1.2);
+                // recompute HP/EP/ATK/DEF after stat bumps
+                calc_derived_stats(member);
+            }
         }
 
-        // recalc stats & write back into the array
+        // Save back to the party array
         global.party[i] = member;
     }
 }

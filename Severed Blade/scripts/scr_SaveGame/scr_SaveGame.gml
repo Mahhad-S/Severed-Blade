@@ -14,10 +14,17 @@ function SaveGame(){
 	_map[? "playerSPD"] = global.party[0].SPD;
 	_map[? "playerXP"] = global.party[0].currentXP;
 	_map[? "playerXPNeeded"] = global.party[0].xpNeededToLevelUp;
-	_map[? "playerInventory"] = global.inventory
 	_map[? "playerHead"] = global.party[0].equipment.head;
 	_map[? "playerBody"] = global.party[0].equipment.body;
 	_map[? "playerWeapon"] = global.party[0].equipment.weapon;
+	
+	// ——— Save Inventory Array as a DS-list ———
+    var invList = ds_list_create();
+    for (var i = 0; i < array_length(global.inventory); i++) {
+        ds_list_add(invList, global.inventory[i]);
+    }
+    _map[? "playerInventory"] = invList;
+	
 	if (instance_exists(obj_player)) {
 	    _map[? "playerX"] = obj_player.x;
 	    _map[? "playerY"] = obj_player.y;

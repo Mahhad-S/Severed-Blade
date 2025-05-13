@@ -18,6 +18,9 @@ if (!variable_global_exists("playerXLoad")) global.playerXLoad = -1;
 if (!variable_global_exists("playerYLoad")) global.playerYLoad = -1;
 if (!variable_global_exists("fire_magic_unlocked")) global.fire_magic_unlocked = false;
 
+global.loopingSFXInstances = array_create(0);
+global.musicInstances = array_create(0);
+
 global.iCamera = instance_create_layer(0,0,"Instances",obj_camera);
 global.item_manager = instance_create_layer(0, 0, "Instances", obj_item_manager);
 global.iUI = instance_create_layer(0, 0, "Instances", obj_UI);

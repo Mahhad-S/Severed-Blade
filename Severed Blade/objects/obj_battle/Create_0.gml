@@ -273,6 +273,7 @@ function BattleStateVictoryCheck()
 			{
 				battleXpGained += enemyUnits[i].xpValue;
 			}
+			award_xp(enemyUnits);
 			battleEndMessages[1] = string("Gained {0} experience points", battleXpGained);
 		}
 	}
@@ -312,7 +313,6 @@ function BattleStateEnding()
 		if (transitionProg <= 0.0)
 		{
 			SaveGlobalValuesTemp();
-			award_xp(enemyUnits);
 			instance_destroy();
 		}
 	}

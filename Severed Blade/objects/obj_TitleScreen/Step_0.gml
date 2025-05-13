@@ -18,7 +18,7 @@ if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
 if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) && (keyPressed) && (!loadingStarted) {
 	global.gameSaveSlot = slotSelected;
 	if (!LoadGame(global.gameSaveSlot)) {
-		RoomTransition(TRANS_TYPE.SLIDE, rm_overworld_2);	
+		RoomTransition(TRANS_TYPE.SLIDE, rm_palace1);	
 	}
 	loadingStarted = true;
 }

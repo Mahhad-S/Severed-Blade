@@ -31,6 +31,7 @@ function PlayerStateFree(){
 
                 // 4) If they are holding that dir, switch to Jump
                 if (input_dir == needed_dir) {
+					set_sfx_ingame(sfx_jump, 1, false);
                     state = PlayerStateJump;
                     return; // skip the rest of Free this frame
                 }

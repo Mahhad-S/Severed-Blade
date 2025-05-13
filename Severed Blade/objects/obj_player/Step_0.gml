@@ -51,12 +51,22 @@ if (interact_key) {
     }
 }
 
-if (place_meeting(x, y, obj_statue) && activate_key) {
-    global.fire_magic_unlocked = true;
-    show_message("You have unlocked Fire Magic!");
-	show_debug_message(global.fire_magic_unlocked);
+if (place_meeting(x, y, obj_statue) && activate_key && !statueTriggered) {
+    statueTriggered = true; // Prevent repeat activation
+	global.fire_magic_unlocked = true;
+
+    // Display message setup
+    statue_message_prefix = "You have unlocked ";
+    statue_message = "Fire Magic!";
+    statue_message_timer = 90; // Display for 90 frames
+
+    show_debug_message(global.fire_magic_unlocked);
 }
 
+
+if (statue_message_timer > 0) {
+    statue_message_timer -= 1;
+}
 
 if (global.fire_magic_unlocked && activate_key) {
     // 1) find an adjacent mushroom…

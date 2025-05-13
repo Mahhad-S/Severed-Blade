@@ -337,7 +337,7 @@ global.actionLibrary =
 }
 
 // Base Values for Stats
-global.base_HP = 50;
+global.base_HP = 1;
 global.base_EP = 15;
 
 //Party Data

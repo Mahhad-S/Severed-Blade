@@ -25,6 +25,8 @@
     {"name":"inst_1E3ADA25","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},
     {"name":"inst_267A2322","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},
     {"name":"inst_6A027F1D","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},
+    {"name":"inst_596392D7","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},
+    {"name":"inst_4B8373C9","path":"rooms/rm_caveofrebirth_3/rm_caveofrebirth_3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -214,6 +216,8 @@
         {"$GMRInstance":"v2","%Name":"inst_6A027F1D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A027F1D","objectId":{"name":"obj_jump_end","path":"objects/obj_jump_end/obj_jump_end.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_jump_end","path":"objects/obj_jump_end/obj_jump_end.yy",},"propertyId":{"name":"pairID","path":"objects/obj_jump_end/obj_jump_end.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":592.0,"y":480.0,},
+        {"$GMRInstance":"v2","%Name":"inst_596392D7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_596392D7","objectId":{"name":"obj_mushroom","path":"objects/obj_mushroom/obj_mushroom.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":384.0,},
+        {"$GMRInstance":"v2","%Name":"inst_4B8373C9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B8373C9","objectId":{"name":"obj_mushroom","path":"objects/obj_mushroom/obj_mushroom.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":784.0,"y":400.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Floor","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRTileLayer":"","%Name":"Tiles_4","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_4","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":65,"SerialiseWidth":57,"TileCompressedData":[
@@ -224,15 +228,15 @@
               2,102,103,-12,-2147483648,1,83,-11,-2147483648,1,84,-15,-2147483648,1,3,-14,-2147483648,2,118,119,-28,
               -2147483648,1,3,-8,-2147483648,1,81,-6,-2147483648,1,135,-7,-2147483648,1,84,-48,-2147483648,1,72,-3,
               -2147483648,1,135,-10,-2147483648,1,135,-45,-2147483648,1,72,-34,-2147483648,1,81,-24,-2147483648,1,
-              81,-61,-2147483648,1,81,-43,-2147483648,3,135,-2147483648,135,-15,-2147483648,2,100,101,-55,-2147483648,
-              4,116,117,100,101,-20,-2147483648,1,3,-34,-2147483648,2,116,117,-30,-2147483648,1,135,-107,-2147483648,
-              1,135,-62,-2147483648,1,81,-44,-2147483648,2,102,103,-55,-2147483648,2,118,119,-17,-2147483648,1,135,
-              -7,-2147483648,1,135,-37,-2147483648,1,3,-5,-2147483648,1,3,-111,-2147483648,1,81,-188,-2147483648,3,
-              135,-2147483648,135,-280,-2147483648,1,135,-28,-2147483648,1,135,-9,-2147483648,1,3,-18,-2147483648,
-              1,3,-39,-2147483648,1,135,-12,-2147483648,1,135,-34,-2147483648,1,135,-17,-2147483648,1,135,-7,-2147483648,
-              1,81,-43,-2147483648,1,135,-45,-2147483648,1,135,-5,-2147483648,1,81,-45,-2147483648,1,81,-22,-2147483648,
-              1,3,-111,-2147483648,1,81,-48,-2147483648,1,3,-54,-2147483648,1,81,-231,-2147483648,1,3,-113,-2147483648,
-              2,102,103,-55,-2147483648,2,118,119,-257,-2147483648,
+              81,-61,-2147483648,1,81,-43,-2147483648,3,135,-2147483648,135,-15,-2147483648,-2,72,-55,-2147483648,
+              -4,72,-20,-2147483648,1,3,-34,-2147483648,-2,72,-30,-2147483648,1,135,-107,-2147483648,1,135,-62,-2147483648,
+              1,81,-44,-2147483648,2,102,103,-55,-2147483648,2,118,119,-17,-2147483648,1,135,-7,-2147483648,1,135,
+              -37,-2147483648,1,3,-5,-2147483648,1,3,-111,-2147483648,1,81,-188,-2147483648,3,135,-2147483648,135,
+              -280,-2147483648,1,135,-28,-2147483648,1,135,-9,-2147483648,1,3,-18,-2147483648,1,3,-39,-2147483648,
+              1,135,-12,-2147483648,1,135,-34,-2147483648,1,135,-17,-2147483648,1,135,-7,-2147483648,1,81,-43,-2147483648,
+              1,135,-45,-2147483648,1,135,-5,-2147483648,1,81,-45,-2147483648,1,81,-22,-2147483648,1,3,-111,-2147483648,
+              1,81,-48,-2147483648,1,3,-54,-2147483648,1,81,-231,-2147483648,1,3,-113,-2147483648,2,102,103,-55,-2147483648,
+              2,118,119,-257,-2147483648,
             ],"TileDataFormat":1,},"tilesetId":{"name":"ts_mush","path":"tilesets/ts_mush/ts_mush.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
         {"$GMRTileLayer":"","%Name":"Tiles_3","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":75,"SerialiseWidth":69,"TileCompressedData":[
               3,-2147483648,111,111,-16,679,-2,111,-8,266,-3,111,-19,679,-19,-2147483648,-2,111,-16,679,-2,111,-8,

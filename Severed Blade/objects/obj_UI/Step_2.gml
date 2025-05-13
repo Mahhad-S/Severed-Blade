@@ -293,6 +293,8 @@ if (global.gamePaused)
             {
                 case 0:
                     global.musicVolume = clamp(global.musicVolume - 0.05, 0, 1);
+					audio_sound_gain(global.songInstance, global.fadeInInstVol * (global.masterVolume * global.musicVolume), 0);
+
                     break;
                 case 1:
                     global.sfxVolume = clamp(global.sfxVolume - 0.05, 0, 1);
@@ -321,6 +323,7 @@ if (global.gamePaused)
             {
                 case 0:
                     global.musicVolume = min(1, global.musicVolume + 0.05);
+					audio_sound_gain(global.songInstance, global.fadeInInstVol * (global.masterVolume * global.musicVolume), 0);
                     break;
                 case 1:
                     global.sfxVolume = min(1, global.sfxVolume + 0.05);

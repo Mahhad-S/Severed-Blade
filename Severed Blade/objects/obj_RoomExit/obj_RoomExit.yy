@@ -39,5 +39,5 @@
     "path":"sprites/spr_activate/spr_activate.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

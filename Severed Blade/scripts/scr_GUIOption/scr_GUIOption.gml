@@ -255,7 +255,7 @@ function equipment_GUI() {
         var member = global.party[i];
 
         var sprite_size = 64;
-        var sprite_scale = 0.5;
+        var sprite_scale = 0.75;
         var sprite_x = content_x + 8 + 32;
         var sprite_y = start_y + (i * spacing_y);
 
@@ -265,20 +265,33 @@ function equipment_GUI() {
             draw_sprite(spr_pointer, 0, content_x, sprite_y + 18); // pointer on left
         }
 
-        // --- Draw Member Idle Sprite (scaled down) ---
-        if (variable_struct_exists(member, "sprites") && variable_struct_exists(member.sprites, "idle") && sprite_exists(member.sprites.idle)) {
-            draw_sprite_ext(member.sprites.idle, 0, sprite_x, sprite_y, sprite_scale, sprite_scale, 0, c_white, 1);
-        }
+        // --- Draw Member Idle Sprite (scaled) ---
+	    if (variable_struct_exists(member, "sprites") 
+	     && variable_struct_exists(member.sprites, "idle") 
+	     && sprite_exists(member.sprites.idle)) {
+	        draw_sprite_ext(
+	            member.sprites.idle, 
+	            0, 
+	            sprite_x - (sprite_size * sprite_scale) / 2, // recenter if you like
+	            sprite_y + 5, 
+	            sprite_scale, 
+	            sprite_scale, 
+	            0, 
+	            c_white, 
+	            1
+	        );
+	    }
 
         // --- Draw Member Name ---
-        draw_set_color(c_white);
+		var nameColor = (i == global.equipSlotSelected) ? c_yellow : c_white;
+        draw_set_color(nameColor);
         draw_set_halign(fa_left);
 
         var name_offset_x = 8;
         var sprite_display_width = sprite_size * sprite_scale;
         var sprite_display_height = sprite_size * sprite_scale;
 
-        draw_text(sprite_x + sprite_display_width + name_offset_x, sprite_y + sprite_display_height / 4, member.name);
+        draw_text(sprite_x + sprite_display_width + name_offset_x - 58, sprite_y + sprite_display_height - 52, member.name);
     }
 }
 

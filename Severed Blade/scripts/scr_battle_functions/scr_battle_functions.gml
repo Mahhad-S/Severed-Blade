@@ -114,3 +114,62 @@ function SaveGlobalValuesTemp() {
 				}
 			}
 }
+
+// Physical modifier: returns damage multiplier based on atkType and target armor class
+function getPhysMod(atkType, armorClass) {
+    var physMod = 1;
+    switch (atkType) {
+        case "Pierce":
+            if (armorClass == "Light")     physMod = 1.25;
+            else if (armorClass == "Medium") physMod = 1.00;
+            else if (armorClass == "Heavy")  physMod = 0.75;
+            break;
+        case "Slash":
+            if (armorClass == "Light")     physMod = 1.00;
+            else if (armorClass == "Medium") physMod = 1.25;
+            else if (armorClass == "Heavy")  physMod = 0.75;
+            break;
+        case "Bludgeon":
+            if (armorClass == "Light")     physMod = 0.75;
+            else if (armorClass == "Medium") physMod = 1.00;
+            else if (armorClass == "Heavy")  physMod = 1.25;
+            break;
+        default:
+            physMod = 1;
+    }
+    return physMod;
+}
+
+// Elemental modifier: returns damage multiplier based on action’s element and target’s element
+function getElemMod(actionElemType, targetElemType) {
+    var elemMod = 1;
+    if (actionElemType != -1) {
+        switch (actionElemType) {
+            case "Ignis":
+                if (targetElemType == "Ventus") elemMod = 1.25;
+                else if (targetElemType == "Aqua")  elemMod = 0.75;
+                break;
+            case "Ventus":
+                if (targetElemType == "Terra") elemMod = 1.25;
+                else if (targetElemType == "Ignis") elemMod = 0.75;
+                break;
+            case "Terra":
+                if (targetElemType == "Aqua")  elemMod = 1.25;
+                else if (targetElemType == "Ventus") elemMod = 0.75;
+                break;
+            case "Aqua":
+                if (targetElemType == "Ignis") elemMod = 1.25;
+                else if (targetElemType == "Terra")  elemMod = 0.75;
+                break;
+            case "Umbra":
+                if (targetElemType == "Lux")    elemMod = 1.25;
+                break;
+            case "Lux":
+                if (targetElemType == "Umbra") elemMod = 1.25;
+                break;
+            default:
+                elemMod = 1;
+        }
+    }
+    return elemMod;
+}

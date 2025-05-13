@@ -168,10 +168,12 @@ global.item_list =
 	
 		name: "Staff of Aqua Efficiency",
 		itemDescription: "A blue staff adorned with an Aqua crystal at its tip. Increased Aqua Spell Power. Decreased Terra Spell Power",
+		atkStat: 10,
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
 		class: "Mage",
+		magicType: "Aqua",
 		icon: spr_aqua_staff,
 	
 		},
@@ -180,10 +182,12 @@ global.item_list =
 	
 		name: "Staff of Ignis Efficiency",
 		itemDescription: "A red staff adorned with an Ignis crystal at its tip. Increased Ignis Spell Power, Decreased Aqua Spell Power",
+		atkStat: 10,
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
 		class: "Mage",
+		magicType: "Ignis",
 		icon: spr_ignis_staff,
 	
 		},
@@ -192,10 +196,12 @@ global.item_list =
 	
 		name: "Staff of Lux Efficiency",
 		itemDescription: "A gold staff adorned with a Lux crystal at its tip. Increased Lux Spell Power, Decreased Umbra Spell Power",
+		atkStat: 10,
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
 		class: "Mage",
+		magicType: "Lux",
 		icon: spr_lux_staff,
 	
 		},
@@ -204,10 +210,12 @@ global.item_list =
 	
 		name: "Basic Staff",
 		itemDescription: "A basic wooden staff. Assists the user in casting spells",
+		atkStat: 7,
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
 		class: "Mage",
+		magicType: -1,
 		icon: spr_staff,
 	
 		},
@@ -216,10 +224,12 @@ global.item_list =
 	
 		name: "Staff of Terra Efficiency",
 		itemDescription: "An amber staff adorned with a Terra crystal at its tip. Increased Terra Spell Power, Decreased Ventus Spell Power",
+		atkStat: 10,
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
 		class: "Mage",
+		magicType: "Terra",
 		icon: spr_terra_staff,
 	
 		},
@@ -228,10 +238,12 @@ global.item_list =
 	
 		name: "Staff of Umbra Efficiency",
 		itemDescription: "A grey staff adorned with an Umbra crystal at its tip. Increased Umbra Spell Power, Decreased Lux Spell Power",
+		atkStat: 10,
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
 		class: "Mage",
+		magicType: "Umbra",
 		icon: spr_umbra_staff,
 	
 		},
@@ -240,10 +252,12 @@ global.item_list =
 	
 		name: "Staff of Ventus Efficiency",
 		itemDescription: "A green staff adorned with a Ventus crystal at its tip. Increased Ventus Spell Power, Decreased Ignis Spell Power",
+		atkStat: 10,
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
 		class: "Mage",
+		magicType: "Ventus",
 		icon: spr_ventus_staff,
 	
 		},
@@ -344,6 +358,8 @@ global.item_list =
 	
 		name: "Wooden Club",
 		itemDescription: "A large somewhat long log of wood fashioned to look like a club",
+		atkStat: 3,
+		atkType: "Bludgeon",
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
@@ -356,6 +372,8 @@ global.item_list =
 	
 		name: "Iron Mace",
 		itemDescription: "A mass produced bludgeoning weapon for the army. Effective against heavy armor",
+		atkStat: 5,
+		atkType: "Bludgeon",
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
@@ -368,6 +386,8 @@ global.item_list =
 	
 		name: "Morningstar",
 		itemDescription: "Similar to a mace, reinforced with higher strength steel and increased mass. Heavy hitting and definitely lethal",
+		atkStat: 8,
+		atkType: "Bludgeon",
 		consumable: false,
 		equip: true,
 		equipType: "Weapon",
@@ -464,10 +484,12 @@ global.item_list =
 	
 		name: "Apprentice Mage Hat",
 		itemDescription: "If you want to be a mage you have to dress for the part",
+		defStat: 1,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Mage",
+		armorClass: "Light",
 		icon: spr_mage_light_head,
 	
 		},
@@ -476,10 +498,12 @@ global.item_list =
 	
 		name: "Novice Mage Hat",
 		itemDescription: "The mark of an established mage who has learned more than a couple spells",
+		defStat: 3,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Mage",
+		armorClass: "Medium",
 		icon: spr_mage_medium_head,
 	
 		},
@@ -488,10 +512,12 @@ global.item_list =
 	
 		name: "Mage's Crown",
 		itemDescription: "Mages who wear a crown are the most masterful of mages in their discipline",
+		defStat: 5,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Mage",
+		armorClass: "Heavy",
 		icon: spr_mage_heavy_head,
 	
 		},
@@ -500,10 +526,12 @@ global.item_list =
 	
 		name: "Apprentice Mage Robes",
 		itemDescription: "Simple robes typicall worn by a beginner mage",
+		defStat: 2,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Mage",
+		armorClass: "Light",
 		icon: spr_mage_light_body,
 	
 		},
@@ -512,10 +540,12 @@ global.item_list =
 	
 		name: "Novice Mage Robes",
 		itemDescription: "Mail reinforced by magic that the majority of mages wear in their everyday lives",
+		defStat: 4,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Mage",
+		armorClass: "Medium",
 		icon: spr_mage_medium_body,
 	
 		},
@@ -524,10 +554,12 @@ global.item_list =
 	
 		name: "Battlemage Armor",
 		itemDescription: "Sturdy mages armour provided enhanced protection to mages who are suited to combat",
+		defStat: 6,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Mage",
+		armorClass: "Heavy",
 		icon: spr_mage_heavy_body,
 	
 		},
@@ -536,10 +568,12 @@ global.item_list =
 	
 		name: "Light Helm",
 		itemDescription: "Simple light helmet made of forged scrap metal. May or may not crumble in one hit",
+		defStat: 3,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Tank",
+		armorClass: "Light",
 		icon: spr_tank_light_head,
 	
 		},
@@ -548,10 +582,12 @@ global.item_list =
 	
 		name: "Iron Helm",
 		itemDescription: "A sturdy helmet worn by most knights, will protect the head",
+		defStat: 5,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Tank",
+		armorClass: "Medium",
 		icon: spr_tank_medium_head,
 	
 		},
@@ -560,10 +596,12 @@ global.item_list =
 	
 		name: "Reinforced Helm",
 		itemDescription: "A steel reinforced helmet that will block many sorts of blows, not sure if you can hear out of it though",
+		defStat: 7,
 		consumable: false,
 		equip: true,
 		equipType: "Head",
 		class: "Tank",
+		armorClass: "Heavy",
 		icon: spr_tank_heavy_head,
 	
 		},
@@ -572,10 +610,12 @@ global.item_list =
 	
 		name: "Light Cuirass",
 		itemDescription: "Leather armour with pauldrons made of scrap metal, somewhat effective for a couple hits",
+		defStat: 4,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Tank",
+		armorClass: "Light",
 		icon: spr_tank_light_body,
 	
 		},
@@ -584,10 +624,12 @@ global.item_list =
 	
 		name: "Armoured Mail",
 		itemDescription: "Standard equipment worn by most knights, will protect the body",
+		defStat: 6,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Tank",
+		armorClass: "Medium",
 		icon: spr_tank_medium_body,
 	
 		},
@@ -596,10 +638,12 @@ global.item_list =
 	
 		name: "Fully Plated Armoour",
 		itemDescription: "STAY BEHIND ME MEN, WE WILL NOT FALTER, AND WE WILL NOT LOSE OUR POSITION, I AM YOUR ANCHOR",
+		defStat: 8,
 		consumable: false,
 		equip: true,
 		equipType: "Body",
 		class: "Tank",
+		armorClass: "Heavy",
 		icon: spr_tank_heavy_body,
 	
 		},

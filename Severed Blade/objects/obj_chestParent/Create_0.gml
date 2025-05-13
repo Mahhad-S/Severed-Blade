@@ -13,3 +13,10 @@ loot_item = undefined;
 //Loot message
 loot_message = "";
 loot_message_timer = 0;
+
+chest_id = string(x) + "_" + string(y); // Or a manually set ID
+
+if (!variable_struct_exists(global.chest_states, chest_id)) {
+    global.chest_states[chest_id] = false;
+}
+chestOpened = global.chest_states[chest_id];

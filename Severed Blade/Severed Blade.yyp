@@ -385,8 +385,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},},
-    {"roomId":{"name":"rm_palace1","path":"rooms/rm_palace1/rm_palace1.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
+    {"roomId":{"name":"rm_palace1","path":"rooms/rm_palace1/rm_palace1.yy",},},
     {"roomId":{"name":"rm_palace2","path":"rooms/rm_palace2/rm_palace2.yy",},},
     {"roomId":{"name":"rm_palace3","path":"rooms/rm_palace3/rm_palace3.yy",},},
     {"roomId":{"name":"rm_overworld_2","path":"rooms/rm_overworld_2/rm_overworld_2.yy",},},

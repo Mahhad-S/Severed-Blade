@@ -17,6 +17,8 @@ if (!variable_global_exists("justOpenedPrompt")) global.justOpenedPrompt = false
 if (!variable_global_exists("playerXLoad")) global.playerXLoad = -1;
 if (!variable_global_exists("playerYLoad")) global.playerYLoad = -1;
 if (!variable_global_exists("fire_magic_unlocked")) global.fire_magic_unlocked = false;
+if (!variable_global_exists("global.chest_states")) global.chest_states = {};
+
 
 global.loopingSFXInstances = array_create(0);
 global.musicInstances = array_create(0);

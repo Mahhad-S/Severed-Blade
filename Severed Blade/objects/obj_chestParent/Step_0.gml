@@ -20,6 +20,8 @@ if (place_meeting(x, y, obj_player) && !chestTriggered) {
             // Start chest opening animation
             image_speed = 0.2; // Tune as needed
             chestOpened = true;
+			global.chest_states[chest_id] = true;
+
         }
     }
 }

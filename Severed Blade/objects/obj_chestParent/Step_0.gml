@@ -15,7 +15,7 @@ if (place_meeting(x, y, obj_player) && !chestTriggered) {
             show_debug_message("Looted: " + loot_item.name);
 			loot_message_prefix = "You got ";
 			loot_message_item = loot_item.name;
-			loot_message_timer = 90;
+			loot_message_timer = 45;
 
             // Start chest opening animation
             image_speed = 0.2; // Tune as needed

@@ -12,8 +12,8 @@
   "duration":110.769226,
   "name":"sng_title",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"background",
+    "path":"folders/Sounds/background.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

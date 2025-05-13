@@ -35,11 +35,23 @@ function inventory_GUI() {
 
     if (count > 0) {
         for (var i = 0; i < count; i++) {
-            var it = inv[i];
-            if (it == noone) continue;
-            draw_set_color(i == global.selected_index ? c_yellow : c_white);
-            draw_text(rightX + 8, listStartY + i * itemSpacing - 24, it.name);
-        }
+		    var it   = inv[i];
+		    if (it == noone) continue;
+
+		    // compute the y position once
+		    var nameY = listStartY + i * itemSpacing - 24;
+
+		    // 1) draw pointer on the selected line
+		    if (i == global.selected_index) {
+		        // draw pointer 8px to the left of the text
+		        draw_sprite(spr_pointer, 0, rightX + 16, nameY + 19);
+		        draw_set_color(c_yellow);
+		    } else {
+		        draw_set_color(c_white);
+		    }
+
+		    draw_text(rightX + 8, nameY, it.name);
+		}
     } else {
         draw_text(rightX - 64, listStartY + itemSpacing, "Inventory is empty...");
     }
@@ -70,6 +82,7 @@ function inventory_GUI() {
         var current = "";
 
         // center‐align
+		draw_set_color(c_white);
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
 
@@ -105,7 +118,7 @@ function magic_GUI(){
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
-	draw_text(120, 28, "Magic Screen");
+	draw_text(120, 28, "Under Construction...");
 }
 
 function status_GUI() {
@@ -136,11 +149,19 @@ function status_GUI() {
 
         // Draw sprite (using the 'idle' pose from your sprites struct)
         var sprite_size = 16;
-        var sprite_x    = content_x + 24;
-        var sprite_y    = y_pos + (party_box_height - sprite_size) * 0.5;
-        draw_sprite_ext(member.sprites.idle, 0,
-                        sprite_x + 9, sprite_y + 15,
-                        0.5, 0.5, 0, c_white, 1);
+		var sprite_x    = content_x + 24;
+		var sprite_y    = y_pos + (party_box_height - sprite_size) * 0.5;
+
+		// compute a new scale
+		var base_scale  = 0.5;
+		var new_scale   = base_scale * 1.5;  // 0.5 * 1.5 = 0.75
+
+		draw_sprite_ext(
+		    member.sprites.idle, 0,
+		    sprite_x, sprite_y - 39,
+		    new_scale, new_scale,
+		    0, c_white, 1
+		);
 
         // Text layout
         var text_x      = sprite_x + sprite_size + 12;
@@ -152,10 +173,10 @@ function status_GUI() {
         var line_height = 8;
 
         // Name
-        draw_text_transformed(text_x - 28, y_pos,
+        draw_text_transformed(text_x - 50, y_pos,
                               member.name, 0.75, 0.75, 0);
 
-        // First row: HP / EP / ATK
+        // First row: HP / EP / LVL
         var stat_y = y_pos + 5 + line_height;
         draw_text_transformed(col1_x, stat_y,
                               "HP: " + string(member.hp) + "/" + string(member.hpMax),
@@ -164,16 +185,25 @@ function status_GUI() {
                               "EP: " + string(member.ep) + "/" + string(member.epMax),
                               0.5, 0.5, 0);
         draw_text_transformed(col3_x, stat_y,
-                              "ATK: " + string(member.ATK),
+                              "LVL: " + string(member.Level),
                               0.5, 0.5, 0);
 
-        // Second row: DEF / SPD
+        // Second row: DEF / SPD / ATK
         stat_y += line_height;
         draw_text_transformed(col1_x, stat_y,
                               "DEF: " + string(member.DEF),
                               0.5, 0.5, 0);
         draw_text_transformed(col2_x, stat_y,
                               "SPD: " + string(member.SPD),
+                              0.5, 0.5, 0);
+		draw_text_transformed(col3_x, stat_y,
+                              "ATK: " + string(member.ATK),
+                              0.5, 0.5, 0);
+							  
+		// Third row: EXP
+		stat_y += line_height;
+		draw_text_transformed(col1_x, stat_y,
+                              "XP: " + string(member.currentXP) + "/" + string(member.xpNeededToLevelUp),
                               0.5, 0.5, 0);
 
         // Divider line

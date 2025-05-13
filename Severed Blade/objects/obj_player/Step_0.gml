@@ -14,6 +14,11 @@ if (!global.gamePaused) {
     script_execute(state);
 }
 
+if (right_key) faceDir = 0;
+if (up_key) faceDir = 1;
+if (left_key) faceDir = 2;
+if (down_key) faceDir = 3;
+
 // Block pushing logic
 if (interact_key) {
     var _checkDir = faceDir * 90;
@@ -46,12 +51,22 @@ if (interact_key) {
     }
 }
 
-if (place_meeting(x, y, obj_statue) && activate_key) {
-    global.fire_magic_unlocked = true;
-    show_message("You have unlocked Fire Magic!");
-	show_debug_message(global.fire_magic_unlocked);
+if (place_meeting(x, y, obj_statue) && activate_key && !statueTriggered) {
+    statueTriggered = true; // Prevent repeat activation
+	global.fire_magic_unlocked = true;
+
+    // Display message setup
+    statue_message_prefix = "You have unlocked ";
+    statue_message = "Fire Magic!";
+    statue_message_timer = 90; // Display for 90 frames
+
+    show_debug_message(global.fire_magic_unlocked);
 }
 
+
+if (statue_message_timer > 0) {
+    statue_message_timer -= 1;
+}
 
 if (global.fire_magic_unlocked && activate_key) {
     // 1) find an adjacent mushroom…
@@ -66,18 +81,15 @@ if (global.fire_magic_unlocked && activate_key) {
     }
     // 2) if we found one, spawn fire just above it:
     if (target != noone) {
-        // create the fire
-        var fire = instance_create_depth(
-            target.x,
-            target.y - 4,
-            -100,           // or whatever literal depth you want
-            obj_fire_burn
-        );
-        // **here** assign which mushroom to kill later
-        fire.burn_target = target;
-        // reinforce the 2-second timer (in case Create Event isn’t instant)
-        fire.alarm[0] = room_speed * 2;
-    }
+	    var fire = instance_create_depth(
+	    target.x,
+	    target.y - 4,         // your vertical offset
+	    target.depth + 1,     // <-- depth just in front of the mushroom
+	    obj_fire_burn
+	);
+	fire.burn_target = target;
+	fire.alarm[0]   = room_speed * 2;
+	}
 }
 
 

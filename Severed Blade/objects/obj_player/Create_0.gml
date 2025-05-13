@@ -8,6 +8,9 @@ xspd = 0;
 yspd = 0;
 speedWalk = 1;
 
+jumpInit = false;
+jumpTimer = 0;
+
 is_pushing = false;
 
 spriteWalk = spr_player_walk;
@@ -17,6 +20,13 @@ localFrame = 0;
 
 interactDist = 4;
 moveSpeed = 4;
+
+// Loot message
+statue_message_timer = 0;
+
+// Prevent reactivation
+statueTriggered = false;
+
 
 // Priority: Load file position > Room transition
 if (variable_global_exists("playerXLoad") && global.playerXLoad != -1) {

@@ -312,7 +312,7 @@ function BattleStateEnding()
 		if (transitionProg <= 0.0)
 		{
 			SaveGlobalValuesTemp();
-			// xp function will go here
+			award_xp(enemyUnits);
 			instance_destroy();
 		}
 	}

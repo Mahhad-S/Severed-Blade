@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_overworld_fire",
-    "path":"sprites/spr_overworld_fire/spr_overworld_fire.yy",
+    "name":"spr_overworld_burn",
+    "path":"sprites/spr_overworld_burn/spr_overworld_burn.yy",
   },
   "spriteMaskId":null,
   "visible":true,

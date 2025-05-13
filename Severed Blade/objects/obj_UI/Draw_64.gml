@@ -45,8 +45,8 @@ if (global.gamePaused) {
 	draw_sprite_stretched(spr_box, 0, gui_x, gui_y, gui_width, gui_height);
 	
 	switch (global.pauseSubmenu) {
-	    case "Inventory": inventory_GUI(); break;
-	    case "Magic": magic_GUI(); break;
+	    case "Inventory": inventory_GUI() ; break;
+	    case "Magic": magic_GUI() ; break;
 	    case "Status": status_GUI(); break;
 	    case "Equipment":
 			if (global.inEquipmentPartySelect) {

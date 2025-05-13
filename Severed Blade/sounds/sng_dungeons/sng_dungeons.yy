@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sng_dungeons",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":512,
+  "compression":0,
+  "conversionMode":0,
+  "duration":77.333336,
+  "name":"sng_dungeons",
+  "parent":{
+    "name":"background",
+    "path":"folders/Sounds/background.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sng_dungeons.ogg",
+  "type":1,
+  "volume":1.0,
+}

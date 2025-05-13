@@ -1,17 +1,16 @@
-//global volume control
-global.masterVolume = 1;
-global.musicVolume = 0.25;
-global.sfxVolume = 1;
+/// InitAudioManager (run once at game start or in a persistent controller obj)
 
-//info for the song we are currently playing / trying to play
-songInstance = noone;
-songAsset = noone;
-targetSongAsset = noone;
-endFadeOutTime = 0; //how many frames to fade out the song currently playing
-startFadeInTime = 0; //how many frames to fade in the new song
-fadeInInstVol = 1; //the volume of songInstance
+global.masterVolume      = 1;
+global.musicVolume       = 0.25;
+global.sfxVolume         = 1;
 
-//For fading music out and stopping songs that are no longer playing
-fadeOutInstances = array_create(0); //the audio instances to fade out
-fadeOutInstVol = array_create(0); //the volumes of each individual audio instance
-fadeOutInstTime = array_create(0); //how fast the fadeout should happen
+global.songInstance      = noone;
+global.songAsset         = noone;
+global.targetSongAsset   = noone;
+global.endFadeOutTime    = 0;
+global.startFadeInTime   = 0;
+global.fadeInInstVol     = 1;
+
+global.fadeOutInstances  = array_create(0);
+global.fadeOutInstVol    = array_create(0);
+global.fadeOutInstTime   = array_create(0);

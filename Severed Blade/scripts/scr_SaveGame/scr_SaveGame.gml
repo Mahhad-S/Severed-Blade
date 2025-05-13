@@ -4,14 +4,27 @@ function SaveGame(){
 	
 	_map[? "room"] = room;
 	_map[? "playerHealth"] = global.party[0].hp;
-	//_map[? "playerHealthMax"] = global.playerHealthMax;
-	//_map[? "playerMoney"] = global.playerMoney;
-	//_map[? "playerEquipped"] = global.playerEquipped;
-	//_map[? "playerHasAnyItems"] = global.playerHasAnyItems;
+	_map[? "playerHealthMax"] = global.party[0].hpMax;
+	_map[? "playerEP"] = global.party[0].ep;
+	_map[? "playerEPMax"] = global.party[0].epMax;
+	_map[? "playerLevel"] = global.party[0].Level;
+	_map[? "playerSTR"] = global.party[0].STR;
+	_map[? "playerINT"] = global.party[0].INT;
+	_map[? "playerCON"] = global.party[0].CON;
+	_map[? "playerSPD"] = global.party[0].SPD;
+	_map[? "playerXP"] = global.party[0].currentXP;
+	_map[? "playerXPNeeded"] = global.party[0].xpNeededToLevelUp;
+	_map[? "playerInventory"] = global.inventory
+	_map[? "playerHead"] = global.party[0].equipment.head;
+	_map[? "playerBody"] = global.party[0].equipment.body;
+	_map[? "playerWeapon"] = global.party[0].equipment.weapon;
 	if (instance_exists(obj_player)) {
 	    _map[? "playerX"] = obj_player.x;
 	    _map[? "playerY"] = obj_player.y;
 	}
+	
+	//magic unlocks
+	_map[? "FireMagicUnlocked"] = global.fire_magic_unlocked;
 	
 	//var _questMap = ds_map_create();
 	//ds_map_copy(_questMap, global.questStatus);

@@ -7,12 +7,25 @@ function LoadGame(_slot){
 		
 		//global variables
 		global.party[0].hp = _json[? "playerHealth"];
-		//global.playerHealthMax = _json[? "playerHealthMax"];
-		//global.playerMoney = _json[? "playerMoney"];
-		//global.playerEquipped = _json[? "playerEquipped"];
-		//global.playerHasAnyItems = _json[? "playerHasAnyItems"];
+		global.party[0].hpMax = _json[? "playerHealthMax"];
+		global.party[0].ep = _json[? "playerEP"];
+		global.party[0].epMax = _json[? "playerEPMax"];
+		global.party[0].Level = _json[? "playerLevel"];
+		global.party[0].STR = _json[? "playerSTR"];
+		global.party[0].INT = _json[? "playerINT"];
+		global.party[0].CON = _json[? "playerCON"];
+		global.party[0].SPD = _json[? "playerSPD"];
+		global.party[0].currentXP = _json[? "playerXP"];
+		global.party[0].xpNeededToLevelUp = _json[? "playerXPNeeded"];
+		global.inventory = _json[? "playerInventory"];
+		global.party[0].equipment.head = _json[? "playerHead"];
+		global.party[0].equipment.body = _json[? "playerBody"];
+		global.party[0].equipment.weapon = _json[? "playerWeapon"];
+		
 		global.playerXLoad = _json[? "playerX"];
 		global.playerYLoad = _json[? "playerY"];
+		
+		global.fire_magic_unlocked = _json[? "FireMagicUnlocked"]
 		
 		//lists to arrays
 		/*

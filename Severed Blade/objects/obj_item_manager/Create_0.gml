@@ -648,9 +648,3 @@ global.item_list =
 	
 		},
 	}
-
-//create the inventory
-
-global.inventory = array_create(0);
-global.selected_index = 0;
-global.playerMoney = 0;

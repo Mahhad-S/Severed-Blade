@@ -17,7 +17,6 @@ function LoadGame(_slot){
 		global.party[0].SPD = _json[? "playerSPD"];
 		global.party[0].currentXP = _json[? "playerXP"];
 		global.party[0].xpNeededToLevelUp = _json[? "playerXPNeeded"];
-		global.inventory = _json[? "playerInventory"];
 		global.party[0].equipment.head = _json[? "playerHead"];
 		global.party[0].equipment.body = _json[? "playerBody"];
 		global.party[0].equipment.weapon = _json[? "playerWeapon"];
@@ -26,6 +25,20 @@ function LoadGame(_slot){
 		global.playerYLoad = _json[? "playerY"];
 		
 		global.fire_magic_unlocked = _json[? "FireMagicUnlocked"]
+		
+		// ——— Rebuild inventory array from the saved list ———
+	    var invList = _json[? "playerInventory"];
+	    if (ds_exists(invList, ds_type_list)) {
+	        var invSize = ds_list_size(invList);
+	        global.inventory = array_create(invSize, 0);
+	        for (var j = 0; j < invSize; j++) {
+	            global.inventory[j] = ds_list_find_value(invList, j);
+	        }
+	        ds_list_destroy(invList);
+	    } else {
+	        // if somehow missing, start empty
+	        global.inventory = [];
+	    }
 		
 		//lists to arrays
 		/*

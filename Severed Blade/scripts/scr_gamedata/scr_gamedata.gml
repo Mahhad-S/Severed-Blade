@@ -5,6 +5,13 @@ enum MODE
 	VARIES = 2
 }
 
+//create the inventory
+
+global.inventory = [];
+global.selected_index = 0;
+
+global.playerMoney = 0;
+
 //Action Library
 global.actionLibrary =
 {

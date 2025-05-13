@@ -31,3 +31,24 @@ function scr_NineSliceBoxStretched(){
 	//bottom edge
 	draw_sprite_part_ext(argument0, _index, _size, _size*2, 1, _size, _x1+_size, _y1+_h-(_size), _w-(_size*2), 1, c_white, draw_get_alpha);
 }
+
+function wrap_text(_string, _font, _width) {
+    var _wrapped = "";
+    var _line = "";
+    var _words = string_split(_string, " ");
+
+    draw_set_font(_font);
+
+    for (var i = 0; i < array_length(_words); i++) {
+        var _testLine = _line + _words[i] + " ";
+        if (string_width(_testLine) > _width) {
+            _wrapped += _line + "#"; // "#" = line break
+            _line = _words[i] + " ";
+        } else {
+            _line = _testLine;
+        }
+    }
+
+    _wrapped += _line;
+    return _wrapped;
+}

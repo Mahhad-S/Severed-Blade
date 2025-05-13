@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Yumihara, Akari",
+      "path": "Characters/Heroes/Yumihara, Akari.md"
+    },
+    {
+      "basename": "Ardeshir Azad",
+      "path": "Characters/Heroes/Ardeshir Azad.md"
+    },
+    {
+      "basename": "Siora Lubella",
+      "path": "Characters/Heroes/Siora Lubella.md"
+    },
+    {
+      "basename": "Sobu, Hashimoto",
+      "path": "Characters/Heroes/Sobu, Hashimoto.md"
+    },
+    {
       "basename": "~~~ Left to do",
       "path": "- Games/Severed Blade/Mechanics/~~~ Left to do.md"
     },
@@ -13,10 +29,6 @@
       "path": "Characters/Villains/Akuto, Iori.md"
     },
     {
-      "basename": "Ardeshir Azad",
-      "path": "Characters/Heroes/Ardeshir Azad.md"
-    },
-    {
       "basename": "Menus",
       "path": "- Games/Severed Blade/Menus.canvas"
     },
@@ -27,18 +39,6 @@
     {
       "basename": "Cave of Rebirth",
       "path": "Locations/Caves/Cave of Rebirth.md"
-    },
-    {
-      "basename": "Battle System",
-      "path": "- Games/Severed Blade/Mechanics/Battle System.md"
-    },
-    {
-      "basename": "Sobu, Hashimoto",
-      "path": "Characters/Heroes/Sobu, Hashimoto.md"
-    },
-    {
-      "basename": "Classes",
-      "path": "- Games/Severed Blade/Mechanics/Classes.md"
     }
   ],
   "omittedPaths": [],

@@ -12,8 +12,8 @@
   "duration":128.0,
   "name":"sng_overworld",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"background",
+    "path":"folders/Sounds/background.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

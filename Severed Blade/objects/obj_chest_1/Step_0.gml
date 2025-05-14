@@ -18,8 +18,18 @@ if (place_meeting(x, y, obj_player) && !chestTriggered) {
             // Start chest opening animation
             image_speed = 0.2; // Tune as needed
             chestOpened = true;
-			global.chest_states[chest_id] = true;
+			
+			var roomKey = room;
+			var posKey = string(x) + "," + string(y);
+			
+			if (!ds_map_exists(global.opened_chests, roomKey)) {
+				global.opened_chests[? roomKey] = ds_list_create();
+			}
 
+			var list = global.opened_chests[? roomKey];
+			if (ds_list_find_index(list, posKey) == -1) {
+				ds_list_add(list, posKey);
+			}
         }
     }
 }

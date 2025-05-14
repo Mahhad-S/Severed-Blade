@@ -14,9 +14,21 @@ loot_item = undefined;
 loot_message = "";
 loot_message_timer = 0;
 
-chest_id = string(x) + "_" + string(y); // Or a manually set ID
-
-if (!variable_struct_exists(global.chest_states, chest_id)) {
-    global.chest_states[chest_id] = false;
+// Ensure global.opened_chests exists
+if (!variable_global_exists("opened_chests")) {
+    global.opened_chests = ds_map_create();
 }
-chestOpened = global.chest_states[chest_id];
+
+// Persistent chest state check
+var roomKey = room;
+var posKey = string(x) + "," + string(y);
+
+if (ds_map_exists(global.opened_chests, roomKey)) {
+    var list = global.opened_chests[? roomKey];
+    if (ds_list_find_index(list, posKey) != -1) {
+        chestOpened = true;
+        chestTriggered = true;
+        image_index = 3; // Final frame
+        image_speed = 0;
+    }
+}

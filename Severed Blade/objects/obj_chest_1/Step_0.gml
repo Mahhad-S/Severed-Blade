@@ -1,5 +1,5 @@
 if (place_meeting(x, y, obj_player) && !chestTriggered) {
-    if (keyboard_check_pressed(vk_space)) {
+    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
         chestTriggered = true;
 
         if (!chestOpened) {
